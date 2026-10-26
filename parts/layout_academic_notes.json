@@ -1,0 +1,238 @@
+{
+  "component": "academic_v3",
+  "status": "Satellite-traced roofs; interpreted three-storey shell and proposed representative interiors",
+  "traced_roof_bounds": {
+    "east_band": [
+      [
+        82.485,
+        127.551
+      ],
+      [
+        69.634,
+        153.105
+      ]
+    ],
+    "upper_bridge": [
+      [
+        18.379,
+        134.758
+      ],
+      [
+        119.499,
+        132.346
+      ]
+    ],
+    "rounded_junction": [
+      [
+        59.012,
+        79.985
+      ],
+      [
+        114.017,
+        136.979
+      ]
+    ],
+    "north_south_spine": [
+      [
+        68.589,
+        75.146
+      ],
+      [
+        133.783,
+        151.683
+      ]
+    ]
+  },
+  "roof_cells": 2913,
+  "blocks": 23588,
+  "non_air": 20546,
+  "geometry": "All slabs and main roof outlines follow the traced polygon union. No old radius62/52 or southern half-ring was reused.",
+  "floors": [
+    64,
+    68,
+    72,
+    76
+  ],
+  "roof_y": 77,
+  "junction": "Broad round roof node is open at ground through full depth with selected columns and a representative stair. Arc/bridge and oval interfaces are also open below.",
+  "parapets": "Pale solid classroom parapets with thin horizontal iron trapdoor coping, separate from open ground colonnades; a voxel approximation to the photographed concrete wall + metal handrail.",
+  "library": {
+    "bounds": [
+      21,
+      55,
+      121,
+      127
+    ],
+    "floor": 64,
+    "bookshelf_blocks": 52,
+    "reading_seats": 12,
+    "reception": "birch counter +empty lectern",
+    "status": "Proposed function/furniture"
+  },
+  "computer": {
+    "bounds": [
+      21,
+      55,
+      121,
+      127
+    ],
+    "floor": 72,
+    "stations": 16,
+    "status": "Proposed function/furniture"
+  },
+  "ground_public_entries": {
+    "south_spine": [
+      72,
+      65,
+      150
+    ],
+    "south_oval": [
+      113,
+      65,
+      151
+    ],
+    "upper_junction": [
+      72,
+      65,
+      126
+    ],
+    "bridge_library": [
+      54,
+      65,
+      128
+    ],
+    "arc_gallery": [
+      109,
+      65,
+      130
+    ]
+  },
+  "circulation": {
+    "ground_roof_cells_reached": 2457,
+    "ground_targets_checked": [
+      [
+        72,
+        136
+      ],
+      [
+        72,
+        126
+      ],
+      [
+        55,
+        130
+      ],
+      [
+        54,
+        128
+      ],
+      [
+        22,
+        128
+      ],
+      [
+        109,
+        130
+      ],
+      [
+        110,
+        149
+      ],
+      [
+        113,
+        151
+      ]
+    ],
+    "all_reached": true,
+    "room_aisles": "x21..55,z127 and designateddoors remain2-block-body clear at floors64/72"
+  },
+  "cameras": {
+    "upper_junction": {
+      "eye": [
+        72,
+        66.7,
+        135
+      ],
+      "target": [
+        67,
+        66.7,
+        120
+      ]
+    },
+    "east_arc": {
+      "eye": [
+        102,
+        75,
+        112
+      ],
+      "target": [
+        122,
+        71,
+        105
+      ]
+    },
+    "library": {
+      "eye": [
+        54,
+        66.7,
+        127
+      ],
+      "target": [
+        34,
+        66.1,
+        124
+      ]
+    },
+    "computer": {
+      "eye": [
+        54,
+        74.7,
+        127
+      ],
+      "target": [
+        35,
+        74.2,
+        123
+      ]
+    },
+    "roof_trace_far": {
+      "eye": [
+        186,
+        180,
+        210
+      ],
+      "target": [
+        78,
+        74,
+        112
+      ]
+    }
+  },
+  "uncertainties": [
+    "Roof tracing tolerance approximately2.5m; westedges, trees and shadows limit accuracy.",
+    "Satellite does not verify floor count, room divisions, library/computer functions or exact piers.",
+    "The stair and ground-floor junction interpretation remain provisional; no in-game validation."
+  ],
+  "palette_counts": {
+    "smooth_stone": 11098,
+    "light_gray_concrete": 2913,
+    "smooth_quartz_slab[type=bottom,waterlogged=false]": 419,
+    "birch_planks": 490,
+    "quartz_block": 368,
+    "air": 3042,
+    "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 24,
+    "sea_lantern": 8,
+    "smooth_sandstone": 2685,
+    "iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]": 454,
+    "light_gray_stained_glass": 1649,
+    "white_concrete": 276,
+    "bookshelf": 52,
+    "birch_slab[type=bottom,waterlogged=false]": 36,
+    "lectern[facing=south,has_book=false,powered=false]": 1,
+    "birch_slab[type=top,waterlogged=false]": 19,
+    "oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 15,
+    "oak_slab[type=top,waterlogged=false]": 9,
+    "oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 14,
+    "black_concrete": 16
+  }
+}

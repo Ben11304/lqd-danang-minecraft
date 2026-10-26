@@ -1,0 +1,393 @@
+{
+  "audit_stage": "Independent component and assembly-code review; root final assembled visual QA not yet inspected.",
+  "components": {
+    "north": 25278,
+    "academic": 23588,
+    "south": 23453
+  },
+  "upper_crosswing_row_z125": [
+    19,
+    134
+  ],
+  "lower_crosswing_row_z158": [
+    21,
+    125
+  ],
+  "slender_spine_row_z143": [
+    69,
+    70,
+    71,
+    72,
+    73,
+    74
+  ],
+  "filled_oval": {
+    "traced_cells": 719,
+    "all_traced_cells_roofed": true,
+    "bounds_xz": [
+      [
+        97,
+        127
+      ],
+      [
+        150,
+        179
+      ]
+    ]
+  },
+  "component_mismatched_coordinate_count": 119,
+  "component_mismatch_pairs": {
+    "north->academic": 20,
+    "academic->south": 99
+  },
+  "component_mismatch_sample": [
+    [
+      "north",
+      "academic",
+      [
+        83,
+        65,
+        70
+      ],
+      "quartz_block",
+      "white_concrete"
+    ],
+    [
+      "north",
+      "academic",
+      [
+        83,
+        66,
+        70
+      ],
+      "quartz_block",
+      "white_concrete"
+    ],
+    [
+      "north",
+      "academic",
+      [
+        83,
+        67,
+        70
+      ],
+      "quartz_block",
+      "white_concrete"
+    ],
+    [
+      "north",
+      "academic",
+      [
+        83,
+        67,
+        71
+      ],
+      "light_gray_stained_glass",
+      "smooth_sandstone"
+    ],
+    [
+      "north",
+      "academic",
+      [
+        83,
+        67,
+        72
+      ],
+      "light_gray_stained_glass",
+      "smooth_sandstone"
+    ],
+    [
+      "north",
+      "academic",
+      [
+        83,
+        68,
+        70
+      ],
+      "quartz_block",
+      "smooth_stone"
+    ],
+    [
+      "north",
+      "academic",
+      [
+        83,
+        68,
+        71
+      ],
+      "light_gray_stained_glass",
+      "smooth_stone"
+    ],
+    [
+      "north",
+      "academic",
+      [
+        83,
+        68,
+        72
+      ],
+      "light_gray_stained_glass",
+      "smooth_stone"
+    ],
+    [
+      "north",
+      "academic",
+      [
+        83,
+        69,
+        70
+      ],
+      "quartz_block",
+      "white_concrete"
+    ],
+    [
+      "north",
+      "academic",
+      [
+        83,
+        69,
+        71
+      ],
+      "light_gray_stained_glass",
+      "smooth_sandstone"
+    ]
+  ],
+  "root_tree_candidates_accepted": [
+    [
+      15,
+      12
+    ],
+    [
+      37,
+      12
+    ],
+    [
+      48,
+      12
+    ],
+    [
+      94,
+      12
+    ],
+    [
+      107,
+      13
+    ],
+    [
+      13,
+      106
+    ],
+    [
+      25,
+      110
+    ],
+    [
+      41,
+      110
+    ],
+    [
+      56,
+      110
+    ],
+    [
+      14,
+      139
+    ],
+    [
+      28,
+      142
+    ],
+    [
+      43,
+      142
+    ],
+    [
+      57,
+      143
+    ],
+    [
+      91,
+      109
+    ],
+    [
+      89,
+      140
+    ],
+    [
+      100,
+      141
+    ],
+    [
+      15,
+      178
+    ],
+    [
+      24,
+      180
+    ],
+    [
+      31,
+      179
+    ],
+    [
+      47,
+      181
+    ],
+    [
+      16,
+      190
+    ],
+    [
+      27,
+      190
+    ],
+    [
+      47,
+      191
+    ],
+    [
+      91,
+      186
+    ],
+    [
+      106,
+      187
+    ],
+    [
+      123,
+      185
+    ],
+    [
+      132,
+      175
+    ],
+    [
+      132,
+      158
+    ],
+    [
+      135,
+      94
+    ],
+    [
+      136,
+      110
+    ]
+  ],
+  "tree_collision_logic": "Every accepted canopy radius<=3 is checked against all component coordinates within +-3 x/z, including air and floors. This conservatively prevents component canopy intersections.",
+  "registration_checks": {
+    "north_W_control": [
+      0,
+      0
+    ],
+    "north_E_control": [
+      148.38,
+      0
+    ],
+    "south_W_control": [
+      0,
+      208.2
+    ],
+    "south_to_north_y_offset": 354,
+    "gate_approx_source_south_pixel": [
+      640,
+      466
+    ],
+    "gate_approx_inverse_world": [
+      71.7,
+      198.01
+    ],
+    "root_copied_gate_center_approx": [
+      73,
+      198
+    ]
+  },
+  "residual_issues": [
+    {
+      "severity": "review_at_merged_visual_QA",
+      "issue": "119 differing block coordinates at touching component interfaces.",
+      "evidence": "20 at north/academic joint;99 at academic/south overlap. They are localized to intended joins, so footprint tracing remains consistent. Later component ownership changes some walls/slabs/air.",
+      "action": "Inspect the small joint areas and ground routes after final assembly; do not treat these as119 independent placement errors."
+    },
+    {
+      "severity": "documented_uncertainty",
+      "issue": "Tower roof parallax and perimeter proximity.",
+      "evidence": "Traced tower reaches x140.9 while approximate fence is x142. Off-nadir tall-roof displacement can be several metres.",
+      "action": "Keep explicit provisional footing/height notes; do not claim this tight separation is surveyed."
+    },
+    {
+      "severity": "visual_export_regression",
+      "issue": "V3 computer room again contains16 isolated black_stained_glass_pane cells with forced east/west arms.",
+      "evidence": "parts/layout_academic.json contains16 such cells; Bedrock computes pane connections from neighbours, as established in v2 readback.",
+      "action": "Before final mobile export, use the same black_concrete screen material already chosen for v2 or otherwise verify a supported native pane arrangement. No audit edit applied."
+    },
+    {
+      "severity": "documented_uncertainty",
+      "issue": "Fence/gate and statue exact positioning remain approximate.",
+      "evidence": "Fence is a rectangular approximate offset from road controls. Gate was translated from validated design and lands within~1.3m of rough live-image gate pick; statue current side is user-confirmed but exact spot is not surveyed.",
+      "action": "Describe these as approximate, and show the final overlay so the user can judge current placement."
+    }
+  ],
+  "join_details": {
+    "north->academic": {
+      "count": 20,
+      "bounds_xyz": [
+        [
+          83,
+          83
+        ],
+        [
+          65,
+          74
+        ],
+        [
+          70,
+          72
+        ]
+      ],
+      "air_removals": 0,
+      "material_changes": 20
+    },
+    "academic->south": {
+      "count": 99,
+      "bounds_xyz": [
+        [
+          70,
+          118
+        ],
+        [
+          64,
+          77
+        ],
+        [
+          150,
+          152
+        ]
+      ],
+      "air_removals": 36,
+      "material_changes": 63
+    }
+  },
+  "checks": {
+    "distinct_crosswings_and_slender_spine": "PASS against independently transformed trace coordinates and component roof rows.",
+    "solid_approximately31m_oval": "PASS, all719 traced cells have roof at y77; oval is not an annulus.",
+    "north_layout": "PASS for traced field/segmented long roof/relocated northeast tower/rounded generic annex. Long roof raster union is a single connected complex.",
+    "georeference": "PASS numerical corner inversion, consistent +354Y south registration.",
+    "gate_position": "Within stated uncertainty; current approximate centre1.3m east of an independent rough gate centre picked from south image.",
+    "tree_collision": "PASS by code inspection and independently recomputed accepted candidate list. Every canopy has radius<=3 and candidate check includes all component projection cells within3m."
+  },
+  "source_files_reviewed": [
+    "references/satellite_north.png",
+    "references/satellite_south.png",
+    "references/map_south.png",
+    "references/georeference.json",
+    "references/north_trace.json",
+    "references/academic_trace.json",
+    "references/south_trace.json",
+    "parts/layout_north.json",
+    "parts/layout_academic.json",
+    "parts/layout_south.json",
+    "assemble_layout.py"
+  ],
+  "mutations": "This review JSON only. No geometry, assembly, website, export or public repository modified."
+}

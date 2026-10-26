@@ -26,7 +26,7 @@ from nbtlib import tag as T
 DATA_VERSION = 3700
 MC_VERSION = '1.20.4'
 OUT = ROOT / 'exports'
-WORLD = OUT / 'LQD_DaNang_Detail_v2_Java_1_20_4'
+WORLD = OUT / 'LQD_DaNang_Layout_v3_Java_1_20_4'
 VALIDATION = OUT / 'qa/export_validation.json'
 MIN_Y, MAX_Y = -64, 319
 SPEC = 'https://raw.githubusercontent.com/SpongePowered/Schematic-Specification/master/versions/schematic-2.md'
@@ -247,9 +247,9 @@ def make_level():
             'biome_source': T.Compound({'type': T.String('minecraft:the_end')})})})}
     data = T.Compound({'DataVersion': T.Int(DATA_VERSION), 'version': T.Int(19133),
         'Version': T.Compound({'Id': T.Int(DATA_VERSION), 'Name': T.String(MC_VERSION), 'Snapshot': T.Byte(0), 'Series': T.String('main')}),
-        'LevelName': T.String('LQD Da Nang - Detail v2 - Java reference 1.20.4'),
+        'LevelName': T.String('LQD Da Nang - Layout v3 - Java reference 1.20.4'),
         'LastPlayed': T.Long(int(time.time() * 1000)), 'Time': T.Long(6000), 'DayTime': T.Long(6000),
-        'SpawnX': T.Int(65), 'SpawnY': T.Int(65), 'SpawnZ': T.Int(219), 'SpawnAngle': T.Float(180),
+        'SpawnX': T.Int(65), 'SpawnY': T.Int(65), 'SpawnZ': T.Int(204), 'SpawnAngle': T.Float(180),
         'GameType': T.Int(1), 'allowCommands': T.Byte(1), 'hardcore': T.Byte(0),
         'Difficulty': T.Byte(0), 'DifficultyLocked': T.Byte(1), 'initialized': T.Byte(1), 'WasModded': T.Byte(0),
         'raining': T.Byte(0), 'thundering': T.Byte(0), 'rainTime': T.Int(2147483647),
@@ -429,7 +429,7 @@ def validate_world(paths, source, cx_range, cz_range, signs):
     assert sign_positions=={tuple(s['pos']) for s in signs}
     level=nbt.load(str(WORLD/'level.dat'))['Data']
     assert 'Player' not in level and int(level['DataVersion'])==DATA_VERSION
-    assert str(level['LevelName'])=='LQD Da Nang - Detail v2 - Java reference 1.20.4'
+    assert str(level['LevelName'])=='LQD Da Nang - Layout v3 - Java reference 1.20.4'
     assert int(level['GameType'])==1 and int(level['SpawnY'])==65
     layers=level['WorldGenSettings']['dimensions']['minecraft:overworld']['generator']['settings']['layers']
     assert sum(int(s['height']) for s in layers)==129
@@ -437,7 +437,7 @@ def validate_world(paths, source, cx_range, cz_range, signs):
             'air_biome_sections_above_build_checked':sky_sections,'sections_per_chunk':24,
             'regions':region_reports,'region_bounds_and_sector_allocations':'passed',
             'source_block_states':'all matched', 'heightmaps':'all 4 maps per chunk matched decoded block-state predicates',
-            'flat_generator_layers':129,'spawn_xyz':[65,65,219],'player_credentials':'none'}
+            'flat_generator_layers':129,'spawn_xyz':[65,65,204],'player_credentials':'none'}
 
 
 def main():
@@ -450,11 +450,11 @@ def main():
     # Export only the accepted, fully merged snapshot. Detail JSON files are
     # replacement patches with explicit air deletions, while original parts
     # still describe v1 geometry; neither is a standalone final schematic.
-    source['name']='LQD_DaNang_Detail_v2_complete_campus'
+    source['name']='LQD_DaNang_Layout_v3_complete_campus'
     sources=[('Complete_Campus',source)]
     states=sorted({'minecraft:air','minecraft:bedrock','minecraft:stone','minecraft:dirt','minecraft:grass_block[snowy=false]'} |
                   {canonical(s) for _,part in sources for s in part['palette']})
-    validation={'format':'Detail v2 Java 1.20.4 supplementary reference; mobile Bedrock is the primary target','DataVersion':DATA_VERSION,
+    validation={'format':'Layout v3 Java 1.20.4 supplementary reference; mobile Bedrock is the primary target','DataVersion':DATA_VERSION,
                 'campus_sha256':hashlib.sha256(snapshot).hexdigest(), 'source_entries':len(source['blocks']),
                 'specification':SPEC,'assets':validate_assets(states),'in_game_validation':False,
                 'schematic_policy':'Only the fully merged campus snapshot is exported. Raw detail patches and v1 component schematics are excluded.',
@@ -476,27 +476,27 @@ def main():
     validation['world']['block_bounds_xz']=[[cx0*16,cx1*16+15],[cz0*16,cz1*16+15]]
     validation['schematics']=[]
     for name,part in sources:
-        path=OUT/f'LQD_DaNang_Detail_v2_{name}.schem'
+        path=OUT/f'LQD_DaNang_Layout_v3_{name}.schem'
         result=make_schematic(part,path,signs)
         result['validation']=validate_schematic(path,part,signs)
         validation['schematics'].append(result)
-    text=('LQD Da Nang - Detail v2 Minecraft reconstruction\n'
+    text=('LQD Da Nang - Layout v3 Minecraft reconstruction\n'
           'Supplementary Java reference export: Minecraft Java Edition 1.20.4, DataVersion 3700.\n'
           'The mobile deliverable targets Minecraft Bedrock. This supplementary Java world does not import directly on mobile.\n'
-          'Java import: copy the LQD_DaNang_Detail_v2_Java_1_20_4 folder into the saves directory of a Java 1.20.4 profile, then open Singleplayer.\n'
-          'Spawn: x65 y65 z219; Creative, peaceful, daylight and weather frozen.\n'
+          'Java import: copy the LQD_DaNang_Layout_v3_Java_1_20_4 folder into the saves directory of a Java 1.20.4 profile, then open Singleplayer.\n'
+          'Spawn: x65 y65 z204; Creative, peaceful, daylight and weather frozen.\n'
           'No mods are required for this world. A compatible WorldEdit/Sponge loader is needed only to import .schem files.\n'
           'The Complete_Campus schematic contains the final merged detail snapshot, including air in its bounding box. Offset preserves campus local coordinates.\n'
-          'Raw detail patches and old component schematics are intentionally excluded: they do not describe the complete Detail v2 map.\n'
+          'Raw detail patches and old component schematics are intentionally excluded: they do not describe the complete Layout v3 map.\n'
           'Architecture follows public photographs and satellite references; dimensions, room divisions and some facades are inferred.\n'
           'NBT files, all placed blocks and region allocations were read back and validated. This export has not been opened in the Minecraft game.\n'
           'No installed Minecraft saves were modified.\n')
     (OUT/'README_Detail_v2_Java_Reference.txt').write_text(text,encoding='utf-8')
     (WORLD/'REFERENCE_README.txt').write_text(text,encoding='utf-8')
-    with zipfile.ZipFile(OUT/'LQD_DaNang_Detail_v2_Java_1_20_4.zip','w',zipfile.ZIP_DEFLATED) as archive:
+    with zipfile.ZipFile(OUT/'LQD_DaNang_Layout_v3_Java_1_20_4.zip','w',zipfile.ZIP_DEFLATED) as archive:
         for path in WORLD.rglob('*'):
             if path.is_file():archive.write(path,path.relative_to(OUT))
-    with zipfile.ZipFile(OUT/'LQD_DaNang_Detail_v2_Java_1_20_4.zip') as archive:
+    with zipfile.ZipFile(OUT/'LQD_DaNang_Layout_v3_Java_1_20_4.zip') as archive:
         assert archive.testzip() is None
         validation['world_zip_crc']='passed'
     validation['elapsed_seconds']=round(time.time()-started,2)
@@ -504,7 +504,7 @@ def main():
     assert validation['campus_unchanged_during_export'],'Campus snapshot changed during export; rerun on the final snapshot.'
     own_outputs=([p for p in WORLD.rglob('*') if p.is_file()]
                  + [OUT/'README_Detail_v2_Java_Reference.txt',
-                    OUT/'LQD_DaNang_Detail_v2_Java_1_20_4.zip']
+                    OUT/'LQD_DaNang_Layout_v3_Java_1_20_4.zip']
                  + [Path(r['path']) for r in validation['schematics']])
     validation['outputs']=[{'file':str(p.relative_to(ROOT)),'bytes':p.stat().st_size} for p in own_outputs]
     VALIDATION.parent.mkdir(parents=True,exist_ok=True)

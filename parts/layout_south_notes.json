@@ -1,0 +1,200 @@
+{
+  "component": "layout_south",
+  "snapshot": "Layout v3; fresh traced geometry, no v1 half-ring retained",
+  "evidence": [
+    "references/satellite_south.png with corrected +354Y registration",
+    "references/georeference.json",
+    "research/browser_036.jpg",
+    "research/ref_020.jpg"
+  ],
+  "roof_trace": "references/south_trace.json",
+  "uncertainty_m": 2.5,
+  "floor_interpretation": {
+    "west_wing": "3 classroom storeys; slabs64/68/72/76, roof77",
+    "oval": "2 tall levels; slabs64/70/76, roof77; floor count and height inferred from photos, not a survey"
+  },
+  "ground_lobby": "Broad open lower oval and southern wing bulge beneath piers; recessed glazed rear threshold. No statue or pedestal invented.",
+  "validation": {
+    "roof_cells": 1987,
+    "oval_filled_roof_cells": 719,
+    "wing_roof_cells": 1274,
+    "routes": [
+      {
+        "from": [
+          72,
+          65,
+          152
+        ],
+        "to": [
+          72,
+          65,
+          171
+        ],
+        "check": "PASS",
+        "description": "Academic north-south gallery to open southern threshold"
+      },
+      {
+        "from": [
+          72,
+          65,
+          171
+        ],
+        "to": [
+          112,
+          65,
+          177
+        ],
+        "check": "PASS",
+        "description": "Southern entry through west-east gallery to open oval lobby"
+      },
+      {
+        "from": [
+          90,
+          65,
+          161
+        ],
+        "to": [
+          112,
+          65,
+          166
+        ],
+        "check": "PASS",
+        "description": "West connector into oval centre"
+      }
+    ],
+    "room_door_and_chair_headroom": "PASS",
+    "classroom_count": 21,
+    "public_entry_targets": [
+      [
+        72,
+        65,
+        171
+      ],
+      [
+        72,
+        65,
+        152
+      ],
+      [
+        98,
+        65,
+        164
+      ],
+      [
+        112,
+        65,
+        177
+      ]
+    ],
+    "stairs": "Two separate inferred stairs; every step has two clear blocks above, ground connectors fully tested. No direct upper-floor link is claimed between 4m classroom slabs and 6m oval slabs."
+  },
+  "bounds": [
+    [
+      21,
+      127
+    ],
+    [
+      64,
+      77
+    ],
+    [
+      150,
+      179
+    ]
+  ],
+  "palette_counts": {
+    "air": 10796,
+    "birch_slab[type=top,waterlogged=false]": 168,
+    "birch_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 126,
+    "bookshelf": 21,
+    "green_concrete": 168,
+    "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]": 12,
+    "lectern[facing=south,has_book=false,powered=false]": 21,
+    "light_blue_carpet": 210,
+    "light_gray_concrete": 1735,
+    "light_gray_stained_glass": 658,
+    "polished_andesite_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 36,
+    "quartz_block": 95,
+    "quartz_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 8,
+    "sea_lantern": 76,
+    "smooth_quartz": 1475,
+    "smooth_sandstone": 1736,
+    "smooth_stone": 5054,
+    "spruce_slab[type=top,waterlogged=false]": 46,
+    "spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 23,
+    "white_concrete": 989
+  },
+  "cameras": [
+    {
+      "label": "Gate-facing lobby eye",
+      "position": [
+        72,
+        66.6,
+        182
+      ],
+      "target": [
+        72,
+        67,
+        160
+      ]
+    },
+    {
+      "label": "Oval under piers",
+      "position": [
+        108,
+        66.6,
+        177
+      ],
+      "target": [
+        114,
+        68,
+        158
+      ]
+    },
+    {
+      "label": "Oval west connection",
+      "position": [
+        90,
+        66.6,
+        162
+      ],
+      "target": [
+        112,
+        67,
+        166
+      ]
+    },
+    {
+      "label": "Classroom",
+      "position": [
+        39,
+        66.6,
+        158
+      ],
+      "target": [
+        40,
+        66,
+        153
+      ]
+    },
+    {
+      "label": "Far top layout",
+      "position": [
+        77,
+        200,
+        166
+      ],
+      "target": [
+        77,
+        65,
+        166
+      ]
+    }
+  ],
+  "limitations": [
+    "Roof edges may differ from wall line due overhang and image parallax.",
+    "Interior room partitions, desks, reception, benches, pillars and stair locations are playable proposals.",
+    "No in-game validation; root assembles visual/export QA.",
+    "Statue, gate, landscape belong to root and are absent from this component."
+  ]
+}

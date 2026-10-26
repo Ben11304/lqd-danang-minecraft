@@ -25,8 +25,8 @@ DIM='minecraft:overworld'
 JAVA=('java',(1,20,4))
 BEDROCK=('bedrock',(1,21,0))
 OUT=ROOT/'exports'
-WORLD=OUT/'LQD_DaNang_Detail_Bedrock_v2'
-ARCHIVE=OUT/'LQD_DaNang_Detail_Bedrock_v2.mcworld'
+WORLD=OUT/'LQD_DaNang_Layout_Bedrock_v3'
+ARCHIVE=OUT/'LQD_DaNang_Layout_Bedrock_v3.mcworld'
 SOURCES=[
  'https://github.com/Amulet-Team/Amulet-Core',
  'https://pypi.org/project/amulet-core/1.9.50/',
@@ -102,9 +102,9 @@ def make_sign(entry):
 def configure(wrapper):
     r=wrapper.root_tag.compound
     values={
-      'LevelName':StringTag('Lê Quý Đôn Đà Nẵng · Detail v2'),
+      'LevelName':StringTag('Lê Quý Đôn Đà Nẵng · Layout v3'),
       'GameType':IntTag(1),'Difficulty':IntTag(0),'RandomSeed':LongTag(26001026),
-      'SpawnX':IntTag(67),'SpawnY':IntTag(65),'SpawnZ':IntTag(214),
+      'SpawnX':IntTag(65),'SpawnY':IntTag(65),'SpawnZ':IntTag(204),
       'Time':LongTag(6000),'currentTick':LongTag(0),'commandsEnabled':ByteTag(1),
       'hasBeenLoadedInCreative':ByteTag(1),'hasBeenLoadedInCreativeMode':ByteTag(1),
       'doDaylightCycle':ByteTag(0),'dodaylightcycle':ByteTag(0),
@@ -132,8 +132,8 @@ def export(expected_hash=None,replace_export=False):
     if replace_export:
         # Replace only the two derived artifacts this exporter owns. Resolved
         # absolute targets are checked before the Windows recursive removal.
-        assert WORLD.resolve().parent==OUT.resolve() and WORLD.name=='LQD_DaNang_Detail_Bedrock_v2'
-        assert ARCHIVE.resolve().parent==OUT.resolve() and ARCHIVE.name=='LQD_DaNang_Detail_Bedrock_v2.mcworld'
+        assert WORLD.resolve().parent==OUT.resolve() and WORLD.name=='LQD_DaNang_Layout_Bedrock_v3'
+        assert ARCHIVE.resolve().parent==OUT.resolve() and ARCHIVE.name=='LQD_DaNang_Layout_Bedrock_v3.mcworld'
         if WORLD.exists():
             assert (WORLD/'BEDROCK_EXPORT_INFO.json').is_file(),'Refusing to delete an unrecognized directory.'
             shutil.rmtree(WORLD)
@@ -215,14 +215,16 @@ def export(expected_hash=None,replace_export=False):
             for y,n in [(-64,'bedrock'),(-63,'stone'),(60,'stone'),(61,'dirt'),(63,'dirt')]:
                 b,_=check.get_version_block(cx*16,y,cz*16,DIM,JAVA)
                 assert b.base_name==n;terrain.append([cx,cz,y])
-        for x1,x2,z1,z2 in [(66,69,35,82),(61,64,78,85)]:
-            for x in range(x1,x2+1):
-                for z in range(z1,z2+1):
-                    for y in (66,67):
-                        b,_=check.get_version_block(x,y,z,DIM,BEDROCK)
-                        assert b.base_name=='air',('Blocked gym route',x,y,z,b)
-        for pos in [(67,65,214),(67,66,214)]:
-            b,_=check.get_version_block(*pos,DIM,BEDROCK);assert b.base_name=='air',('spawn',pos,b)
+        route_data=json.loads((ROOT/'qa/layout_routes.json').read_text(encoding='utf-8'))
+        route_cells=0
+        for route in route_data['routes']:
+            for x,z in route['points']:
+                for y in (route['feet_y'],route['feet_y']+1):
+                    block,_=check.get_version_block(x,y,z,DIM,BEDROCK)
+                    assert block.base_name=='air',('Blocked layout route',route['label'],x,y,z,block)
+                    route_cells+=1
+        for pos in [(65,65,204),(65,66,204)]:
+            block,_=check.get_version_block(*pos,DIM,BEDROCK);assert block.base_name=='air',('spawn',pos,block)
     finally:check.close()
     meta=BedrockLevelDAT.from_file(str(WORLD/'level.dat')).compound
     assert meta['GameType'].py_int==1 and meta['SpawnY'].py_int==65
@@ -233,7 +235,7 @@ def export(expected_hash=None,replace_export=False):
       'source_sha256':digest,'source_entries':len(source['blocks']),'source_palette_size':len(source['palette']),
       'source_blocks_read_back_and_compared':len(source['blocks']),'source_projection_mismatches':mismatches,
       'chunks_read_back':chunk_count,'foundation_samples':len(terrain),'door_halves_round_trip_exact':len(door_checks),
-      'signs':sign_checks,'gym_aisles_two_block_clearance':True,'spawn_clear':True,
+      'signs':sign_checks,'layout_route_body_cells_checked':route_cells,'layout_routes_clear':True,'spawn_clear':True,
       'palette_projection':projection,'library_versions':{'amulet-core':amulet.__version__,'amulet-leveldb':'1.0.7'},
       'sources':SOURCES,'limitations':[
         'Not opened in Minecraft; iPad/phone import and actual in-game appearance remain unverified.',

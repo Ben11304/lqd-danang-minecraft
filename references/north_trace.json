@@ -1,0 +1,442 @@
+{
+  "source": "Google Maps live screenshot of target school, references/satellite_north.png",
+  "georeference": "references/georeference.json",
+  "frame": "north",
+  "units": "local metres / voxels",
+  "method": "Manual observed pixel vertices transformed by supplied affine registration. No generated geometry used as evidence.",
+  "south_offset_note": "Root corrected south to north image offset to +354Y; every vertex in this file is read directly from north screenshot, so the offset is not applied.",
+  "polygons": {
+    "field_playing_surface": {
+      "pixel_vertices": [
+        [
+          381,
+          216
+        ],
+        [
+          517,
+          206
+        ],
+        [
+          540,
+          459
+        ],
+        [
+          401,
+          469
+        ]
+      ],
+      "world_vertices": [
+        [
+          11.79,
+          25.847
+        ],
+        [
+          49.385,
+          25.602
+        ],
+        [
+          50.967,
+          96.13
+        ],
+        [
+          12.546,
+          96.319
+        ]
+      ],
+      "world_bounds_xz": [
+        [
+          11.79,
+          50.967
+        ],
+        [
+          25.602,
+          96.319
+        ]
+      ],
+      "uncertainty_m": 2.5,
+      "notes": "Playing rectangle extent; painted sport markings are not reliably legible in satellite."
+    },
+    "hall_north_red_end_roof": {
+      "pixel_vertices": [
+        [
+          523,
+          142
+        ],
+        [
+          628,
+          132
+        ],
+        [
+          633,
+          171
+        ],
+        [
+          527,
+          180
+        ]
+      ],
+      "world_vertices": [
+        [
+          52.236,
+          7.981
+        ],
+        [
+          81.304,
+          7.161
+        ],
+        [
+          81.948,
+          18.059
+        ],
+        [
+          52.623,
+          18.584
+        ]
+      ],
+      "world_bounds_xz": [
+        [
+          52.236,
+          81.948
+        ],
+        [
+          7.161,
+          18.584
+        ]
+      ],
+      "uncertainty_m": 2.5,
+      "notes": "Visible roof outlines do not establish room function."
+    },
+    "hall_upper_green_main_roof": {
+      "pixel_vertices": [
+        [
+          527,
+          177
+        ],
+        [
+          634,
+          166
+        ],
+        [
+          644,
+          271
+        ],
+        [
+          535,
+          282
+        ]
+      ],
+      "world_vertices": [
+        [
+          52.679,
+          17.753
+        ],
+        [
+          82.317,
+          16.693
+        ],
+        [
+          83.098,
+          45.971
+        ],
+        [
+          52.911,
+          46.995
+        ]
+      ],
+      "world_bounds_xz": [
+        [
+          52.679,
+          83.098
+        ],
+        [
+          16.693,
+          46.995
+        ]
+      ],
+      "uncertainty_m": 2.5,
+      "notes": "Visible roof outlines do not establish room function."
+    },
+    "hall_green_divider_roof": {
+      "pixel_vertices": [
+        [
+          535,
+          282
+        ],
+        [
+          644,
+          271
+        ],
+        [
+          647,
+          303
+        ],
+        [
+          539,
+          312
+        ]
+      ],
+      "world_vertices": [
+        [
+          52.911,
+          46.995
+        ],
+        [
+          83.098,
+          45.971
+        ],
+        [
+          83.323,
+          54.894
+        ],
+        [
+          53.448,
+          55.381
+        ]
+      ],
+      "world_bounds_xz": [
+        [
+          52.911,
+          83.323
+        ],
+        [
+          45.971,
+          55.381
+        ]
+      ],
+      "uncertainty_m": 2.5,
+      "notes": "Visible roof outlines do not establish room function."
+    },
+    "hall_purple_mid_roof": {
+      "pixel_vertices": [
+        [
+          539,
+          312
+        ],
+        [
+          647,
+          303
+        ],
+        [
+          651,
+          351
+        ],
+        [
+          545,
+          361
+        ]
+      ],
+      "world_vertices": [
+        [
+          53.448,
+          55.381
+        ],
+        [
+          83.323,
+          54.894
+        ],
+        [
+          83.523,
+          68.267
+        ],
+        [
+          54.18,
+          69.069
+        ]
+      ],
+      "world_bounds_xz": [
+        [
+          53.448,
+          83.523
+        ],
+        [
+          54.894,
+          69.069
+        ]
+      ],
+      "uncertainty_m": 2.5,
+      "notes": "Visible roof outlines do not establish room function."
+    },
+    "hall_lower_green_roof": {
+      "pixel_vertices": [
+        [
+          545,
+          361
+        ],
+        [
+          651,
+          351
+        ],
+        [
+          655,
+          414
+        ],
+        [
+          551,
+          425
+        ]
+      ],
+      "world_vertices": [
+        [
+          54.18,
+          69.069
+        ],
+        [
+          83.523,
+          68.267
+        ],
+        [
+          83.442,
+          85.798
+        ],
+        [
+          54.63,
+          86.914
+        ]
+      ],
+      "world_bounds_xz": [
+        [
+          54.18,
+          83.523
+        ],
+        [
+          68.267,
+          86.914
+        ]
+      ],
+      "uncertainty_m": 2.5,
+      "notes": "Visible roof outlines do not establish room function."
+    },
+    "ne_tower_roof": {
+      "pixel_vertices": [
+        [
+          748,
+          176
+        ],
+        [
+          844,
+          165
+        ],
+        [
+          853,
+          253
+        ],
+        [
+          758,
+          266
+        ]
+      ],
+      "world_vertices": [
+        [
+          113.485,
+          21.581
+        ],
+        [
+          140.097,
+          20.316
+        ],
+        [
+          140.922,
+          44.866
+        ],
+        [
+          114.548,
+          46.704
+        ]
+      ],
+      "world_bounds_xz": [
+        [
+          113.485,
+          140.922
+        ],
+        [
+          20.316,
+          46.704
+        ]
+      ],
+      "uncertainty_m": 2.5,
+      "notes": "Roof projection; high-rise roof parallax means footprint not independently known."
+    },
+    "ne_rounded_annex_roof": {
+      "pixel_vertices": [
+        [
+          802,
+          273
+        ],
+        [
+          851,
+          266
+        ],
+        [
+          859,
+          342
+        ],
+        [
+          855,
+          357
+        ],
+        [
+          845,
+          368
+        ],
+        [
+          830,
+          372
+        ],
+        [
+          815,
+          365
+        ],
+        [
+          806,
+          354
+        ]
+      ],
+      "world_vertices": [
+        [
+          126.519,
+          49.46
+        ],
+        [
+          140.128,
+          48.431
+        ],
+        [
+          140.903,
+          69.637
+        ],
+        [
+          139.522,
+          73.719
+        ],
+        [
+          136.565,
+          76.581
+        ],
+        [
+          132.364,
+          77.411
+        ],
+        [
+          128.37,
+          75.193
+        ],
+        [
+          126.1,
+          71.978
+        ]
+      ],
+      "world_bounds_xz": [
+        [
+          126.1,
+          140.903
+        ],
+        [
+          48.431,
+          77.411
+        ]
+      ],
+      "uncertainty_m": 2.5,
+      "notes": "Visible roof outlines do not establish room function."
+    }
+  }
+}

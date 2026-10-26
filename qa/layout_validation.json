@@ -1,0 +1,25 @@
+{
+  "source_sha256": "19a1f10431c0e0b841f7941d5ae05f9db67b839d9e46ea36da9d0b2e3ba7c3e4",
+  "ground_targets_reached": [
+    "south_lobby",
+    "oval_lobby",
+    "oval_connection",
+    "upper_junction",
+    "library",
+    "east_gallery",
+    "north_hall",
+    "north_field",
+    "tower_entry",
+    "annex_entry"
+  ],
+  "ground_reachable_cells": 25447,
+  "route_body_points": 1276,
+  "roof_projection_cells": {
+    "north": 3370,
+    "academic": 2913,
+    "south": 1987
+  },
+  "southern_oval_has_solid_roof": true,
+  "in_game_validation": false,
+  "reference_overlay": "Private reference workspace; public evidence is references/*_trace.json and qa/layout_plan.svg."
+}

@@ -1,0 +1,40 @@
+{
+  "component": "north_from_registered_satellite_v3",
+  "source_trace": "references/north_trace.json",
+  "registration": "references/georeference.json",
+  "source_images": ["references/satellite_north.png", "references/satellite_south.png"],
+  "method": "Manual pixel polygons were saved before geometry construction. Every solid's x/z cell belongs to one of those affine-transformed polygons. All coordinates use north screenshot; south offset is not applied to these vertices.",
+  "source_date_limit": "Screenshots retrieved 26 October 2026; Google copyright year does not establish satellite capture date.",
+  "observed_layout": [
+    "Northwest large brown playing rectangle x approximately12..51,z26..96.",
+    "Long narrow roof complex x52..84,z7..87 has FIVE traced pieces: red/brown north end, large light-green upper roof, short adjoining green band, purple mid roof and lower green roof.",
+    "Northeast tower roof x113..141,z20..47; height/parallax can shift its observed roof relative to ground footprint.",
+    "Small red/brown rounded-end annex x126..141,z48..77, clearly separate from the misplaced old pool footprint. Its function is unverified."
+  ],
+  "model": {
+    "field": "Brown coarse dirt with muted pale boundary, a representative thin training-court marking and sparse pale bench row. Exact sport markings not legible.",
+    "upper_gym_interpretation": "Only the upper large green roof and adjoining narrow green strip contain representative gym features. Polygon footprint1126 cells, approximately30x38m; not the whole80m roof complex.",
+    "gym_detail": "Oak sports floor, court lines, supported west bleachers facing east, three step aisles, low east team benches, raised boards without central floor posts, side scoreboard, mint/white trims, ties and lanterns.",
+    "other_long_roof_sections": "Generic interconnected rooms, neutral floors, limited benches and clear centre circulation. No assertion that every segment is a gym or that a specific section is the auditorium.",
+    "tower": "11 provisional4m storeys over traced roof polygon, white facades with cyan strips, repeated windows, internal stairs and open floor circulation. Exact facades and height are inferred.",
+    "annex": "Cream low-rise rounded plan with terracotta roof, entrances and a few representative seats. NO pool basin/water is copied from v2."
+  },
+  "heights": {"ground_floor_slab":64,"clear_body": [65,66],"gym_eave":75,"gym_roof_top_block":79,"north_red_roof":72,"purple_mid_roof":73,"lower_green_roof":74,"annex_roof":72,"tower_floor_levels":[64,68,72,76,80,84,88,92,96,100,104,108],"tower_roof":109},
+  "material_rationale": {"roofs":"Smooth stone and light gray concrete approximate light gray-green sheet roofs; red terracotta for observed red/brown cap, purple terracotta for observed purple segment. These are visual Minecraft stand-ins, not claims about actual construction materials.","shell":"Cream sandstone, white quartz/concrete piers, grey glass.","gym":"Mint prismarine/cyan base and white louver rhythms follow local gym reference photographs; wood seats and steel-like neutral rails.","tower":"White and cyan repeating bays follow broad photographic cues; exact four facades remain hypothetical."},
+  "uncertainties": [
+    "Affine registration and manual edges have approximately2.5m uncertainty. Roof overhangs do not establish exact wall footprints.",
+    "High-rise roof parallax is particularly significant for the northeast tower; using the traced roof as a starting footprint is provisional.",
+    "All floor counts/heights except historical11-storey dormitory report, room partitions, stair positions and furnishings are reconstruction decisions.",
+    "Gym assignment to the upper approximately30x38m section is consistent with the reported1190m2 scale but is not a labelled floor plan.",
+    "The rounded annex is generic; no functional pool label or exact room use is justified by satellite alone."
+  ],
+  "validation": {"generation":"python parts/layout_north.py passed","stored_entries_including_air":25278,"solid_blocks":23020,"palette_size":27,"traced_mask_cell_counts":{"field":2672,"north_red_cap":311,"upper_green":871,"green_divider":255,"purple_mid":400,"lower_green":512,"tower":660,"rounded_annex":387},"solid_footprint_check":"Every solid x/z belongs to a traced mask.","hall_clearance":"x67..70,z8..86 within hall mask remains air at y65..66.","palette":"All block names exist in bundled vanilla assets; orientation-sensitive states are explicit.","scope":"No gate, statue, campus landscape plane, source v2 or shared scripts modified.","game":"No actual in-game validation claimed."},
+  "cameras": [
+    {"name":"north_layout_top","eye":[77,190,49],"target":[77,64,49],"inspect":"Field separation, five roof segments and relocated tower/annex against north screenshot."},
+    {"name":"north_overview","eye":[22,119,-42],"target":[88,75,46],"inspect":"Long segmented mass and tower clearly separated from upper academic curve."},
+    {"name":"gym_eye_level","eye":[70,66.7,44],"target":[56,68,34],"inspect":"Court scale, west bleachers facing east, rails and high roof."},
+    {"name":"gym_length","eye":[69,66.7,52],"target":[69,70,23],"inspect":"A real court inside only upper green roof section; clear middle aisle."},
+    {"name":"annex_generic","eye":[117,69,72],"target":[134,68,62],"inspect":"Rounded annex and no invented pool."},
+    {"name":"tower_mid","eye":[100,85,11],"target":[127,86,34],"inspect":"New tower position and repeated11-storey silhouette; parallax uncertainty acknowledged."}
+  ]
+}

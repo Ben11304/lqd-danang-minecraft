@@ -1,0 +1,92 @@
+{
+  "lobby_mid": {
+    "label": "Sảnh nối · nút giao giữa trường",
+    "p": [
+      72,
+      2.7,
+      135
+    ],
+    "t": [
+      67,
+      2.7,
+      120
+    ],
+    "fov": 65,
+    "note": "Nút giao mở dưới mái tròn, nối dãy ngang và trục giữa; cột và cầu thang vẫn ước dựng."
+  },
+  "east_arc": {
+    "label": "Dãy cong · mặt đứng và sân trong",
+    "p": [
+      94,
+      4.3,
+      141
+    ],
+    "t": [
+      116,
+      6,
+      119
+    ],
+    "fov": 60,
+    "note": "Đường mái truy theo Google Maps; lan can đặc và nhịp mặt đứng tham khảo ảnh mặt đất."
+  },
+  "library": {
+    "label": "Thư viện · bố trí đề xuất",
+    "p": [
+      40.5,
+      2.7,
+      127.5
+    ],
+    "t": [
+      40.5,
+      1.7,
+      122
+    ],
+    "fov": 80,
+    "note": "52 block kệ sách,12 ghế đọc và quầy. Chức năng phòng và nội thất là đề xuất trong mặt bằng mới."
+  },
+  "computer": {
+    "label": "Phòng máy · bố trí đề xuất",
+    "p": [
+      54.5,
+      10.7,
+      124.5
+    ],
+    "t": [
+      30,
+      10.35,
+      124.5
+    ],
+    "fov": 65,
+    "note": "16 trạm máy đặt trong khối mới; vị trí chức năng chưa được xác nhận bằng sơ đồ phòng."
+  },
+  "classroom": {
+    "label": "Lớp học · trong dãy ngang dưới",
+    "p": [
+      38.5,
+      2.62,
+      154.5
+    ],
+    "t": [
+      40,
+      1.7,
+      158.5
+    ],
+    "fov": 70,
+    "note": "Một trong21phòng mẫu; bố trí bàn ghế phục vụ trải nghiệm Minecraft, chưa phải khảo sát lớp thực."
+  },
+  "oval": {
+    "label": "Khối oval · sảnh dưới trụ",
+    "p": [
+      108,
+      2.6,
+      177
+    ],
+    "t": [
+      114,
+      4,
+      158
+    ],
+    "fov": 65,
+    "note": "Mái oval đặc khoảng31m, tầng trệt mở/recessed bên dưới. Chi tiết sảnh và số tầng còn ước dựng."
+  }
+}

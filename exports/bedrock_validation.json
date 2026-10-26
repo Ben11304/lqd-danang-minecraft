@@ -5,10 +5,10 @@
     21,
     0
   ],
-  "source_sha256": "97f0aada6e5ea8bcb811272aee566e628d5cfe1f823f603ab5a039cedb414654",
-  "source_entries": 124250,
-  "source_palette_size": 86,
-  "source_blocks_read_back_and_compared": 124250,
+  "source_sha256": "19a1f10431c0e0b841f7941d5ae05f9db67b839d9e46ea36da9d0b2e3ba7c3e4",
+  "source_entries": 162592,
+  "source_palette_size": 64,
+  "source_blocks_read_back_and_compared": 162592,
   "source_projection_mismatches": [],
   "chunks_read_back": 288,
   "foundation_samples": 1440,
@@ -16,48 +16,40 @@
   "signs": [
     {
       "position": [
-        91,
+        89,
         68,
-        206
+        200
       ],
       "front_back_unicode_text": true,
       "waxed": true
     },
     {
       "position": [
-        96,
+        94,
         68,
-        206
+        200
       ],
       "front_back_unicode_text": true,
       "waxed": true
     },
     {
       "position": [
-        101,
+        99,
         68,
-        206
+        200
       ],
       "front_back_unicode_text": true,
       "waxed": true
     }
   ],
-  "gym_aisles_two_block_clearance": true,
+  "layout_route_body_cells_checked": 2552,
+  "layout_routes_clear": true,
   "spawn_clear": true,
   "palette_projection": [
     {
       "java": "andesite",
       "bedrock": {
         "name": "minecraft:andesite",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "azalea",
-      "bedrock": {
-        "name": "minecraft:azalea",
         "properties": {},
         "extra_blocks": []
       },
@@ -107,12 +99,12 @@
       "block_entity": null
     },
     {
-      "java": "birch_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+      "java": "birch_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
       "bedrock": {
         "name": "minecraft:birch_stairs",
         "properties": {
           "upside_down_bit": "0b",
-          "weirdo_direction": "3"
+          "weirdo_direction": "0"
         },
         "extra_blocks": []
       },
@@ -152,33 +144,6 @@
       "block_entity": null
     },
     {
-      "java": "blue_carpet",
-      "bedrock": {
-        "name": "minecraft:blue_carpet",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "blue_concrete",
-      "bedrock": {
-        "name": "minecraft:blue_concrete",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "blue_terracotta",
-      "bedrock": {
-        "name": "minecraft:blue_terracotta",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
       "java": "bookshelf",
       "bedrock": {
         "name": "minecraft:bookshelf",
@@ -197,32 +162,12 @@
       "block_entity": null
     },
     {
-      "java": "brown_terracotta",
-      "bedrock": {
-        "name": "minecraft:brown_terracotta",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
       "java": "chiseled_quartz_block",
       "bedrock": {
         "name": "minecraft:quartz_block",
         "properties": {
           "chisel_type": "\"chiseled\"",
           "pillar_axis": "\"y\""
-        },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "chiseled_stone_bricks",
-      "bedrock": {
-        "name": "minecraft:stonebrick",
-        "properties": {
-          "stone_brick_type": "\"chiseled\""
         },
         "extra_blocks": []
       },
@@ -252,15 +197,6 @@
       "block_entity": null
     },
     {
-      "java": "cyan_carpet",
-      "bedrock": {
-        "name": "minecraft:cyan_carpet",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
       "java": "cyan_concrete",
       "bedrock": {
         "name": "minecraft:cyan_concrete",
@@ -279,30 +215,12 @@
       "block_entity": null
     },
     {
-      "java": "dark_oak_planks",
+      "java": "dirt",
       "bedrock": {
-        "name": "minecraft:dark_oak_planks",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "dark_oak_slab[type=bottom,waterlogged=false]",
-      "bedrock": {
-        "name": "minecraft:dark_oak_slab",
+        "name": "minecraft:dirt",
         "properties": {
-          "minecraft:vertical_half": "\"bottom\""
+          "dirt_type": "\"normal\""
         },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "flowering_azalea",
-      "bedrock": {
-        "name": "minecraft:flowering_azalea",
-        "properties": {},
         "extra_blocks": []
       },
       "block_entity": null
@@ -335,6 +253,15 @@
       "block_entity": null
     },
     {
+      "java": "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]",
+      "bedrock": {
+        "name": "minecraft:iron_bars",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
       "java": "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]",
       "bedrock": {
         "name": "minecraft:iron_bars",
@@ -353,19 +280,14 @@
       "block_entity": null
     },
     {
-      "java": "iron_bars[east=true,north=false,south=false,west=true,waterlogged=false]",
+      "java": "iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
       "bedrock": {
-        "name": "minecraft:iron_bars",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "iron_bars[east=true,north=true,south=true,waterlogged=false,west=true]",
-      "bedrock": {
-        "name": "minecraft:iron_bars",
-        "properties": {},
+        "name": "minecraft:iron_trapdoor",
+        "properties": {
+          "direction": "3",
+          "open_bit": "0b",
+          "upside_down_bit": "0b"
+        },
         "extra_blocks": []
       },
       "block_entity": null
@@ -401,15 +323,6 @@
       "block_entity": null
     },
     {
-      "java": "light_blue_terracotta",
-      "bedrock": {
-        "name": "minecraft:light_blue_terracotta",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
       "java": "light_gray_concrete",
       "bedrock": {
         "name": "minecraft:light_gray_concrete",
@@ -428,16 +341,7 @@
       "block_entity": null
     },
     {
-      "java": "light_gray_terracotta",
-      "bedrock": {
-        "name": "minecraft:light_gray_terracotta",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "oak_leaves[persistent=true,distance=1,waterlogged=false]",
+      "java": "oak_leaves[distance=1,persistent=true,waterlogged=false]",
       "bedrock": {
         "name": "minecraft:oak_leaves",
         "properties": {
@@ -524,10 +428,25 @@
       "block_entity": null
     },
     {
-      "java": "polished_andesite",
+      "java": "polished_andesite_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
       "bedrock": {
-        "name": "minecraft:polished_andesite",
-        "properties": {},
+        "name": "minecraft:polished_andesite_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "0"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "polished_andesite_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:polished_andesite_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "3"
+        },
         "extra_blocks": []
       },
       "block_entity": null
@@ -565,15 +484,6 @@
       "block_entity": null
     },
     {
-      "java": "polished_diorite",
-      "bedrock": {
-        "name": "minecraft:polished_diorite",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
       "java": "poppy",
       "bedrock": {
         "name": "minecraft:poppy",
@@ -583,23 +493,21 @@
       "block_entity": null
     },
     {
-      "java": "potted_fern",
-      "bedrock": {
-        "name": "minecraft:flower_pot",
-        "properties": {
-          "update_bit": "0b"
-        },
-        "extra_blocks": []
-      },
-      "block_entity": "FlowerPot"
-    },
-    {
       "java": "prismarine",
       "bedrock": {
         "name": "minecraft:prismarine",
         "properties": {
           "prismarine_block_type": "\"default\""
         },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "purple_terracotta",
+      "bedrock": {
+        "name": "minecraft:purple_terracotta",
+        "properties": {},
         "extra_blocks": []
       },
       "block_entity": null
@@ -628,11 +536,12 @@
       "block_entity": null
     },
     {
-      "java": "quartz_slab[type=top,waterlogged=false]",
+      "java": "quartz_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
       "bedrock": {
-        "name": "minecraft:quartz_slab",
+        "name": "minecraft:quartz_stairs",
         "properties": {
-          "minecraft:vertical_half": "\"top\""
+          "upside_down_bit": "0b",
+          "weirdo_direction": "0"
         },
         "extra_blocks": []
       },
@@ -646,24 +555,6 @@
           "upside_down_bit": "0b",
           "weirdo_direction": "1"
         },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "red_carpet",
-      "bedrock": {
-        "name": "minecraft:red_carpet",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "red_concrete",
-      "bedrock": {
-        "name": "minecraft:red_concrete",
-        "properties": {},
         "extra_blocks": []
       },
       "block_entity": null
@@ -711,18 +602,6 @@
       "block_entity": null
     },
     {
-      "java": "smooth_quartz_slab[type=top,waterlogged=false]",
-      "bedrock": {
-        "name": "minecraft:stone_block_slab4",
-        "properties": {
-          "minecraft:vertical_half": "\"top\"",
-          "stone_slab_type_4": "\"smooth_quartz\""
-        },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
       "java": "smooth_sandstone",
       "bedrock": {
         "name": "minecraft:sandstone",
@@ -737,26 +616,6 @@
       "java": "smooth_stone",
       "bedrock": {
         "name": "minecraft:smooth_stone",
-        "properties": {},
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "smooth_stone_slab[type=bottom,waterlogged=false]",
-      "bedrock": {
-        "name": "minecraft:smooth_stone_slab",
-        "properties": {
-          "minecraft:vertical_half": "\"bottom\""
-        },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "spruce_planks",
-      "bedrock": {
-        "name": "minecraft:spruce_planks",
         "properties": {},
         "extra_blocks": []
       },
@@ -798,60 +657,12 @@
       "block_entity": null
     },
     {
-      "java": "spruce_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
-      "bedrock": {
-        "name": "minecraft:spruce_stairs",
-        "properties": {
-          "upside_down_bit": "0b",
-          "weirdo_direction": "2"
-        },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "spruce_trapdoor[facing=west,half=top,open=true,powered=false,waterlogged=false]",
-      "bedrock": {
-        "name": "minecraft:spruce_trapdoor",
-        "properties": {
-          "direction": "1",
-          "open_bit": "1b",
-          "upside_down_bit": "1b"
-        },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "stone_brick_slab[type=bottom,waterlogged=false]",
-      "bedrock": {
-        "name": "minecraft:stone_brick_slab",
-        "properties": {
-          "minecraft:vertical_half": "\"bottom\""
-        },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
       "java": "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
       "bedrock": {
         "name": "minecraft:stone_brick_stairs",
         "properties": {
           "upside_down_bit": "0b",
           "weirdo_direction": "0"
-        },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
-      "bedrock": {
-        "name": "minecraft:stone_brick_stairs",
-        "properties": {
-          "upside_down_bit": "0b",
-          "weirdo_direction": "2"
         },
         "extra_blocks": []
       },
@@ -876,29 +687,6 @@
         "extra_blocks": []
       },
       "block_entity": null
-    },
-    {
-      "java": "water[level=0]",
-      "bedrock": {
-        "name": "minecraft:water",
-        "properties": {
-          "liquid_depth": "0"
-        },
-        "extra_blocks": []
-      },
-      "block_entity": null
-    },
-    {
-      "java": "water_cauldron[level=2]",
-      "bedrock": {
-        "name": "minecraft:cauldron",
-        "properties": {
-          "cauldron_liquid": "\"water\"",
-          "fill_level": "4"
-        },
-        "extra_blocks": []
-      },
-      "block_entity": "Cauldron"
     },
     {
       "java": "white_concrete",
@@ -946,44 +734,39 @@
     "Java-only block properties, including leaf distance and explicit pane/bars connections, map to Bedrock native semantics.",
     "Architecture dimensions and interiors retain the reconstruction uncertainties documented in the research and detail notes."
   ],
-  "elapsed_seconds": 3.73,
+  "elapsed_seconds": 3.71,
   "reverse_translation_validation": {
-    "source_coordinates_checked": 124250,
-    "exact_java_state_matches": 117602,
-    "equivalent_after_documented_property_normalization": 124250,
+    "source_coordinates_checked": 162592,
+    "exact_java_state_matches": 157715,
+    "equivalent_after_documented_property_normalization": 162592,
     "normalization_only_source_states": {
-      "oak_leaves[persistent=true,distance=1,waterlogged=false]": 3835,
-      "stone_brick_slab[type=bottom,waterlogged=false]": 336,
-      "iron_bars[east=true,north=true,south=true,waterlogged=false,west=true]": 874,
-      "smooth_quartz_slab[type=top,waterlogged=false]": 339,
-      "oak_slab[type=top,waterlogged=false]": 123,
-      "smooth_stone_slab[type=bottom,waterlogged=false]": 24,
-      "quartz_slab[type=top,waterlogged=false]": 8,
-      "birch_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 236,
-      "birch_slab[type=top,waterlogged=false]": 279,
-      "spruce_slab[type=top,waterlogged=false]": 60,
-      "spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 30,
+      "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]": 684,
+      "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 421,
+      "oak_leaves[distance=1,persistent=true,waterlogged=false]": 2130,
+      "smooth_quartz_slab[type=bottom,waterlogged=false]": 437,
+      "iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]": 450,
+      "birch_slab[type=bottom,waterlogged=false]": 36,
+      "birch_slab[type=top,waterlogged=false]": 187,
+      "polished_andesite_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 36,
+      "oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 22,
+      "oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 15,
+      "oak_slab[type=top,waterlogged=false]": 9,
+      "birch_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 126,
+      "spruce_slab[type=top,waterlogged=false]": 46,
+      "spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 23,
       "polished_blackstone_slab[type=bottom,waterlogged=false]": 6,
       "quartz_slab[type=bottom,waterlogged=false]": 3,
       "quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 4,
       "cut_sandstone_slab[type=bottom,waterlogged=false]": 1,
-      "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 56,
-      "dark_oak_slab[type=bottom,waterlogged=false]": 38,
-      "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 87,
-      "birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 108,
-      "polished_andesite_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 18,
-      "iron_bars[east=true,north=false,south=false,west=true,waterlogged=false]": 6,
-      "stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 24,
-      "spruce_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 33,
-      "smooth_quartz_slab[type=bottom,waterlogged=false]": 8,
-      "birch_slab[type=bottom,waterlogged=false]": 31,
-      "oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 7,
-      "oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 24,
-      "birch_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 3,
-      "spruce_trapdoor[facing=west,half=top,open=true,powered=false,waterlogged=false]": 2,
-      "spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 18,
+      "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 24,
+      "birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 75,
+      "polished_andesite_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 12,
+      "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 24,
+      "spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 12,
       "oak_wall_sign[facing=south,waterlogged=false]": 3,
-      "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 24
+      "quartz_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 8,
+      "polished_andesite_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 80,
+      "birch_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 3
     },
     "ignored_properties": {
       "waterlogged=false": "Bedrock source fluid storage omits explicit false waterlogging.",

@@ -1,0 +1,53 @@
+{
+  "source": "Google Maps, 01 Vu Van Dung campus, CID681546677781845227",
+  "retrieved": "2026-10-26",
+  "method": "Manual roof trace on live browser satellite screenshots, affine fit to approximately orthogonal road-center control points and earlier Google Maps distance UI measurements. Not a survey.",
+  "north_frame": {
+    "NW_road": [
+      332,
+      126
+    ],
+    "NE_road": [
+      869,
+      90
+    ],
+    "SW_road": [
+      383,
+      874
+    ],
+    "width_m": 148.38,
+    "length_m": 208.2
+  },
+  "south_frame_to_north_pixel_offset": [
+    0,
+    354
+  ],
+  "units": "one voxel metre, local x along northern road toward east; z along western road toward south",
+  "fence_approx": [
+    6,
+    7,
+    142,
+    199
+  ],
+  "ground_block_y": 64,
+  "ground_surface_y": 65,
+  "uncertainty_m": 2.5,
+  "limitations": [
+    "Roof edges may overhang actual walls and off-nadir imagery displaces tall roofs.",
+    "2026 Google attribution is not the capture date of satellite imagery.",
+    "Roof outlines do not determine floor count or room functions."
+  ],
+  "north_control_origin_pixel": [
+    332,
+    126
+  ],
+  "x_axis_pixel_per_m": [
+    3.6190861302062274,
+    -0.2426202992317024
+  ],
+  "z_axis_pixel_per_m": [
+    0.24495677233429397,
+    3.592699327569645
+  ],
+  "registration": "Agents independently matched same roof edges; screenshot settled after native UI pan, so initial274px estimate superseded by image registration354px."
+}
