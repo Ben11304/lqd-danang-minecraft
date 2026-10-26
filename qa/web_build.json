@@ -1,7 +1,7 @@
 {
-  "version": "layout_v3.2",
-  "campus_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
-  "mesh_raw_bytes": 36380544,
-  "mesh_gzip_bytes": 2967510,
+  "version": "layout_v3.3",
+  "campus_sha256": "de0d6841d81dd98c2afce0ee4b266fd5aa0ff50e9e0b7b2e54ec6c580b950ec6",
+  "mesh_raw_bytes": 36516288,
+  "mesh_gzip_bytes": 2980954,
   "gzip_roundtrip": "passed"
 }

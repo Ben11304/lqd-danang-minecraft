@@ -1,8 +1,8 @@
 {
-  "version": "layout_v3.2",
+  "version": "layout_v3.3",
   "stats": {
     "name": "LQD_DaNang_Layout_v3",
-    "blocks": 164413,
+    "blocks": 164764,
     "file": ".\\campus.json",
     "bounds": [
       [
@@ -19,7 +19,7 @@
       ]
     ]
   },
-  "campus_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
+  "campus_sha256": "de0d6841d81dd98c2afce0ee4b266fd5aa0ff50e9e0b7b2e54ec6c580b950ec6",
   "component_blocks": {
     "north": 25278,
     "academic": 23588,
@@ -27,7 +27,8 @@
     "connectors": 604,
     "parking": 3654,
     "garden_a": 7254,
-    "garden_b": 10283
+    "garden_b": 10283,
+    "ne_circulation": 1413
   },
   "georeference": "references/georeference.json",
   "trees": [
@@ -122,6 +123,26 @@
     [
       136,
       110
+    ],
+    [
+      96,
+      50
+    ],
+    [
+      102,
+      54
+    ],
+    [
+      111,
+      59
+    ],
+    [
+      118,
+      68
+    ],
+    [
+      113,
+      72
     ]
   ],
   "junction_overlaps": [
@@ -309,33 +330,6 @@
       "academic",
       "south",
       70,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      70,
-      66,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      70,
-      67,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      70,
       68,
       151,
       "smooth_stone",
@@ -403,33 +397,6 @@
       151,
       "light_gray_concrete",
       "white_concrete"
-    ],
-    [
-      "academic",
-      "south",
-      71,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      71,
-      66,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      71,
-      67,
-      151,
-      null,
-      "air"
     ],
     [
       "academic",
@@ -511,24 +478,6 @@
       151,
       "smooth_stone",
       "smooth_quartz"
-    ],
-    [
-      "academic",
-      "south",
-      108,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      108,
-      66,
-      151,
-      null,
-      "air"
     ],
     [
       "academic",
@@ -624,42 +573,6 @@
       "academic",
       "south",
       109,
-      65,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      109,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      109,
-      66,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      109,
-      66,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      109,
       68,
       150,
       "smooth_stone",
@@ -727,42 +640,6 @@
       151,
       "smooth_stone",
       "smooth_quartz"
-    ],
-    [
-      "academic",
-      "south",
-      110,
-      65,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      110,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      110,
-      66,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      110,
-      66,
-      151,
-      null,
-      "air"
     ],
     [
       "academic",
@@ -840,42 +717,6 @@
       "academic",
       "south",
       111,
-      65,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      111,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      111,
-      66,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      111,
-      66,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      111,
       68,
       150,
       "smooth_stone",
@@ -948,42 +789,6 @@
       "academic",
       "south",
       112,
-      65,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      112,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      112,
-      66,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      112,
-      66,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      112,
       68,
       150,
       "smooth_stone",
@@ -1051,42 +856,6 @@
       151,
       "smooth_stone",
       "smooth_quartz"
-    ],
-    [
-      "academic",
-      "south",
-      113,
-      65,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      113,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      113,
-      66,
-      150,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      113,
-      66,
-      151,
-      null,
-      "air"
     ],
     [
       "academic",
@@ -1150,24 +919,6 @@
       151,
       "smooth_stone",
       "smooth_quartz"
-    ],
-    [
-      "academic",
-      "south",
-      114,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      114,
-      66,
-      151,
-      null,
-      "air"
     ],
     [
       "academic",
@@ -1222,42 +973,6 @@
       152,
       "smooth_stone",
       "smooth_quartz"
-    ],
-    [
-      "academic",
-      "south",
-      115,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      115,
-      65,
-      152,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      115,
-      66,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      115,
-      66,
-      152,
-      null,
-      "air"
     ],
     [
       "academic",
@@ -1335,42 +1050,6 @@
       "academic",
       "south",
       116,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      116,
-      65,
-      152,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      116,
-      66,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      116,
-      66,
-      152,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      116,
       68,
       151,
       "smooth_stone",
@@ -1443,42 +1122,6 @@
       "academic",
       "south",
       117,
-      65,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      117,
-      65,
-      152,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      117,
-      66,
-      151,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      117,
-      66,
-      152,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      117,
       68,
       151,
       "smooth_stone",
@@ -1542,24 +1185,6 @@
       "academic",
       "south",
       118,
-      65,
-      152,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      118,
-      66,
-      152,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "south",
-      118,
       68,
       152,
       "smooth_stone",
@@ -1593,168 +1218,6 @@
       "white_concrete"
     ],
     [
-      "north",
-      "connectors",
-      67,
-      65,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      67,
-      65,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      67,
-      66,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      67,
-      66,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      67,
-      67,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      67,
-      67,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      68,
-      65,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      68,
-      65,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      68,
-      65,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      68,
-      65,
-      115,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      68,
-      66,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      68,
-      66,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      68,
-      66,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      68,
-      66,
-      115,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      68,
-      67,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      68,
-      67,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      68,
-      67,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      68,
-      67,
-      115,
-      null,
-      "air"
-    ],
-    [
       "academic",
       "connectors",
       68,
@@ -1762,114 +1225,6 @@
       114,
       "smooth_sandstone",
       "gray_concrete"
-    ],
-    [
-      "north",
-      "connectors",
-      69,
-      65,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      69,
-      65,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      69,
-      65,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      69,
-      65,
-      115,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      69,
-      66,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      69,
-      66,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      69,
-      66,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      69,
-      66,
-      115,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      69,
-      67,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      69,
-      67,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      69,
-      67,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      69,
-      67,
-      115,
-      null,
-      "air"
     ],
     [
       "academic",
@@ -1881,87 +1236,6 @@
       "gray_concrete"
     ],
     [
-      "north",
-      "connectors",
-      70,
-      65,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      70,
-      65,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      70,
-      65,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      70,
-      66,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      70,
-      66,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      70,
-      66,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      70,
-      67,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      70,
-      67,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      70,
-      67,
-      114,
-      null,
-      "air"
-    ],
-    [
       "academic",
       "connectors",
       70,
@@ -1969,87 +1243,6 @@
       114,
       "smooth_sandstone",
       "gray_concrete"
-    ],
-    [
-      "north",
-      "connectors",
-      71,
-      65,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      71,
-      65,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      71,
-      65,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      71,
-      66,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      71,
-      66,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      71,
-      66,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      71,
-      67,
-      87,
-      null,
-      "air"
-    ],
-    [
-      "north",
-      "connectors",
-      71,
-      67,
-      88,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      71,
-      67,
-      114,
-      null,
-      "air"
     ],
     [
       "academic",
@@ -2064,37 +1257,66 @@
       "academic",
       "connectors",
       72,
-      65,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      72,
-      66,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      72,
-      67,
-      114,
-      null,
-      "air"
-    ],
-    [
-      "academic",
-      "connectors",
-      72,
       69,
       114,
       "smooth_sandstone",
       "gray_concrete"
+    ]
+  ],
+  "provisional_north_door_removed_blocks": [
+    [
+      93,
+      65,
+      74,
+      "smooth_sandstone"
+    ],
+    [
+      93,
+      66,
+      74,
+      "light_gray_stained_glass"
+    ],
+    [
+      93,
+      67,
+      74,
+      "light_gray_stained_glass"
+    ],
+    [
+      94,
+      65,
+      74,
+      "smooth_sandstone"
+    ],
+    [
+      94,
+      66,
+      74,
+      "light_gray_stained_glass"
+    ],
+    [
+      94,
+      67,
+      74,
+      "light_gray_stained_glass"
+    ],
+    [
+      94,
+      65,
+      75,
+      "smooth_sandstone"
+    ],
+    [
+      94,
+      66,
+      75,
+      "light_gray_stained_glass"
+    ],
+    [
+      94,
+      67,
+      75,
+      "light_gray_stained_glass"
     ]
   ],
   "uncertainty": "Manually traced satellite roof masks, approx2.5m; heights/interiors not surveyed.",

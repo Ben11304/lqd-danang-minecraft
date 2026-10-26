@@ -1,30 +1,30 @@
-# Lê Quý Đôn Đà Nẵng · Minecraft · v3.2
+# Lê Quý Đôn Đà Nẵng · Minecraft · v3.3
 
-**[Xem vườn cạnh sảnh B](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=garden_b&v=32)** · **[Mặt bằng](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=top&v=32)** · **[Tải Bedrock cho điện thoại/iPad](https://ben11304.github.io/lqd-danang-minecraft/exports/LQD_DaNang_Layout_Bedrock_v3.mcworld?v=783a05b9d5d3)**
+**[Xem đường tới căn tin cạnh ký túc xá](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=canteen_route_context&v=33)** · **[Mặt bằng](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=top&v=33)** · **[Tải Bedrock cho điện thoại/iPad](https://ben11304.github.io/lqd-danang-minecraft/exports/LQD_DaNang_Layout_Bedrock_v3.mcworld?v=de0d6841d81d)**
 
-V3.2 thay cây mẫu ở hai vườn trong bằng bố cục tham chiếu: sân phía tây giữa hai dãy ngang có đường đá, tán cây và giàn dây leo; vườn trong phía nam có đài tròn, bồn cong và hồ súng. Ảnh có tên sảnh B hỗ trợ vị trí sân phía tây; tên sảnh A chưa được xác minh cho vườn phía nam. Tán cây che khuất một phần nên đường bồn, nhịp giàn và cây vẫn là ước dựng.
+V3.3 bổ sung nền và đường tiếp cận khu căn tin **cạnh ký túc xá**, theo hướng người dùng xác nhận. Nhánh qua sân phía bắc và tuyến phía đông dãy cong nối lên khoảng sân quanh nhà thấp cạnh tháp; dấu nền được đối chiếu ảnh vệ tinh Google Maps phóng lớn. Phần bị tán cây che được nối giản lược để đi lại trong Minecraft.
 
-Bổ sung mái thấp dài phía đông khối oval và hai mái ở mép bắc/tây sân phía tây bắc theo dấu mái vệ tinh. **Chưa đủ bằng chứng xác nhận đây là bãi giữ xe, cũng chưa chốt ranh toàn bộ bãi xe.** Không thêm xe, vạch đỗ hoặc cổng phụ từ suy đoán. Căn tin và sảnh C vẫn chưa hoàn tất việc xác định vị trí.
+Đây là khu đông bắc, khác đoạn mái nối về nhà thi đấu đã mở trước đó. Chưa đủ ảnh mặt đất để chốt chính xác cửa căn tin, ranh phòng và điểm bắt đầu mang tên sảnh C; không dựng thêm mái che từ suy đoán. Một lối mở tầng trệt trong model giúp nối nhánh phía bắc vào hành lang; vị trí cửa này là đề xuất Minecraft, chưa xác nhận bằng ảnh thực tế. Hai vườn trong và các mái phụ của v3.2 được giữ lại. Công năng bãi xe vẫn chưa được xác minh.
 
-![Vườn cạnh sảnh B](qa/v3_garden_b.png)
+![Đường tới khu căn tin cạnh ký túc xá](qa/v3_canteen_route_context.png)
 
-![Vườn trong phía nam](qa/v3_garden_south_context.png)
+![Mặt bằng tuyến đi](qa/v3_canteen_route_top.png)
 
 ## Bằng chứng và giới hạn
 
 Mái nhà và ranh sân truy thủ công từ [Google Maps tại trường, 01 Vũ Văn Dũng](https://www.google.com/maps?cid=681546677781845227), truy cập 26/10/2026, sai số dự kiến 2–3 m. Năm ghi công không phải ngày chụp vệ tinh. Vườn được đối chiếu với [ảnh công khai mang tên sảnh B](https://drive.google.com/file/d/19ASqF0LWPNKoxvaHOJ5ktPoeFQvqbRJ4/view), [ảnh sân trường năm 2008](https://commons.wikimedia.org/wiki/File:Le_Quy_Don_High_School_Campus,_Da_Nang,_Vietnam.jpg) và [kỷ yếu 40 năm](https://drive.google.com/file/d/1TXEm1fgCggApbRagWQ6FrjlikIiKA2iY/view). Chi tiết lịch sử không được xem là xác nhận hiện trạng hôm nay.
 
-[Nhật ký v3.2](references/landscape_revision.json) và các file `references/*_trace.json` phân biệt dấu vết nhìn thấy với phần ước dựng. Ảnh nguồn Google, ảnh gốc điện thoại và PDF giữ trong workspace tham chiếu riêng; repo chỉ đăng dữ liệu hình học và ảnh model. Báo cáo căn tin/sảnh C là lịch sử v3.1 với mã nguồn của bản đó.
+[Nhật ký v3.3](references/ne_circulation_revision.json), [nhật ký vườn v3.2](references/landscape_revision.json) và các file `references/*_trace.json` phân biệt dấu vết nhìn thấy với phần ước dựng. Ảnh nguồn Google, ảnh gốc điện thoại và PDF giữ trong workspace tham chiếu riêng; repo chỉ đăng dữ liệu hình học và ảnh model. Báo cáo căn tin/sảnh C là lịch sử v3.1 với mã nguồn của bản đó.
 
 Chiều cao, cột, cầu thang, số tầng và nội thất chưa được khảo sát. Thư viện, phòng máy, lớp học và gym là phương án trải nghiệm Minecraft. Tượng Lê Quý Đôn ở phía tây cổng, bên phải khi đứng trong trường nhìn ra đường, theo người dùng xác nhận; khoảng cách và hình tượng còn giản lược.
 
 ## Xem và chơi
 
-Tuyến đang đối chiếu với yêu cầu sảnh C–căn tin: [từ dãy học](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=connector_from_academic&v=32route), [chiều ngược lại](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=connector_from_north&v=32route), [mặt bằng hai đầu](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=connector_top&v=32route). Đây là các góc kiểm tra đoạn nối hiện có, chưa xác nhận tên hai đầu; lượt này không đổi hình học. [Kiểm tra đường đi trong model](qa/connector_route_audit.json).
+[Tuyến tới khu căn tin cạnh ký túc xá](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=canteen_route&v=33), [sân tiếp cận](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=canteen_approach&v=33), [toàn khu](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=canteen_route_context&v=33), [mặt bằng](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=canteen_route_top&v=33). [Kiểm tra đường đi trong model](qa/ne_circulation_audit.json). Các góc `connector_*` chỉ xem đoạn nối về nhà thi đấu, không phải tuyến căn tin cạnh ký túc xá người dùng đang yêu cầu.
 
 Web: kéo để xoay, cuộn/chụm để phóng, Shift+kéo/hai ngón để dịch. Chọn góc nhìn ở danh sách dưới màn hình. Điện thoại/iPad: tải `.mcworld`, mở bằng Minecraft Bedrock để nhập. Target Bedrock 1.21.0; có Java 1.20.4 và schematic trong `exports/`.
 
-Ảnh web là trình xem voxel. Đã đọc lại 164.413 block trong 288 chunk; 0 block sai so với nguồn. Đường đi từ cổng tới 18 điểm thông suốt, kiểm tra 2269 điểm trên tuyến. Chưa mở thử trực tiếp trong Minecraft.
+Ảnh web là trình xem voxel. Đã đọc lại 164.764 block trong 288 chunk; 0 block sai so với nguồn. Đường đi từ cổng tới 21 điểm thông suốt, kiểm tra 2988 điểm trên tuyến. Chưa mở thử trực tiếp trong Minecraft.
 
 ## Dựng lại
 

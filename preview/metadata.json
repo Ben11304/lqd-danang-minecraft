@@ -1,7 +1,7 @@
 {
-  "blocks": 164413,
-  "faces": 189482,
-  "vertices": 1136892,
+  "blocks": 164764,
+  "faces": 190189,
+  "vertices": 1141134,
   "stride": 8,
   "endianness": "little",
   "palette": [
@@ -82,10 +82,10 @@
     "yellow_terracotta"
   ],
   "source": "campus.json; exact elements and UVs from official Java1.20.4 client assets",
-  "source_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
+  "source_sha256": "de0d6841d81dd98c2afce0ee4b266fd5aa0ff50e9e0b7b2e54ec6c580b950ec6",
   "source_unchanged_during_render": true,
   "renderer_sha256": "6f8648735a309b6dba035b1e7779b25b550077d75cf063873c1a8da624c29d37",
-  "mesh_sha256": "4b190eb5b0c871c4bc249fca6c295d3b6886af2ee9690d05ec17aec2f88f2e63",
+  "mesh_sha256": "1073f7fea40382bd98f3bebe754e80af2d881c347445604a568b155027000e5e",
   "atlas_sha256": "0e8ed2f9b1661cefaf10b605dd1e9c852572da45c8d5c03acd1a65a38f53809d",
   "asset_set_sha256": "66c3a5404f8f17c04d04e399019748cd39819af18a78d5616af3fe71bc1abccd",
   "atlas": {
@@ -836,13 +836,13 @@
   "meshGroups": [
     {
       "start": 0,
-      "count": 1080144,
+      "count": 1084458,
       "materialIndex": 0,
       "name": "opaque_and_alpha_cutout"
     },
     {
-      "start": 1080144,
-      "count": 56748,
+      "start": 1084458,
+      "count": 56676,
       "materialIndex": 1,
       "name": "transparent_glass"
     }
@@ -1014,22 +1014,22 @@
   },
   "faces_by_state": {
     "dirt": 1019,
-    "grass_block[snowy=false]": 34897,
+    "grass_block[snowy=false]": 34557,
     "gray_concrete": 6464,
     "white_concrete": 11976,
-    "smooth_stone": 42341,
-    "smooth_sandstone": 14315,
+    "smooth_stone": 42344,
+    "smooth_sandstone": 14306,
     "stone_bricks": 1636,
     "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]": 13488,
-    "andesite": 2940,
+    "andesite": 3275,
     "iron_bars[east=false,north=false,south=false,west=false,waterlogged=false]": 960,
     "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 8308,
     "light_gray_concrete": 7727,
-    "oak_leaves[distance=1,persistent=true,waterlogged=false]": 4566,
+    "oak_leaves[distance=1,persistent=true,waterlogged=false]": 5175,
     "coarse_dirt": 2273,
     "smooth_quartz_slab[type=bottom,waterlogged=false]": 2208,
-    "oak_log[axis=y]": 797,
-    "light_gray_stained_glass": 9458,
+    "oak_log[axis=y]": 918,
+    "light_gray_stained_glass": 9446,
     "iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]": 2152,
     "cobblestone": 157,
     "quartz_block": 2468,

@@ -1,5 +1,5 @@
 {
-  "source_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
+  "source_sha256": "de0d6841d81dd98c2afce0ee4b266fd5aa0ff50e9e0b7b2e54ec6c580b950ec6",
   "ground_targets_reached": [
     "south_lobby",
     "oval_lobby",
@@ -18,10 +18,13 @@
     "south_garden_west",
     "south_garden_east",
     "west_garden_path",
-    "west_garden_entry"
+    "west_garden_entry",
+    "ne_east_path",
+    "ne_north_path",
+    "ne_annex_approach"
   ],
-  "ground_reachable_cells": 25100,
-  "route_body_points": 2269,
+  "ground_reachable_cells": 25098,
+  "route_body_points": 2988,
   "roof_projection_cells": {
     "north": 3370,
     "academic": 2913,
@@ -31,5 +34,10 @@
   },
   "southern_oval_has_solid_roof": true,
   "in_game_validation": false,
-  "reference_overlay": "Private reference workspace; public evidence is references/*_trace.json and qa/layout_plan.svg."
+  "reference_overlay": "Private reference workspace; public evidence is references/*_trace.json and qa/layout_plan.svg.",
+  "additional_paved_route_checks": [
+    "north_gallery_to_dorm_adjacent_annex",
+    "east_wing_to_dorm_adjacent_annex",
+    "annex_to_dorm_entry"
+  ]
 }

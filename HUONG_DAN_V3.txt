@@ -1,4 +1,4 @@
-BẢN V3.2 · VƯỜN VÀ MÁI PHỤ
+BẢN V3.3 · ĐƯỜNG TỚI KHU CĂN TIN CẠNH KÝ TÚC XÁ
 Mở preview/detail.html qua HTTP hoặc GitHub Pages.
 Điện thoại/iPad: tải exports/LQD_DaNang_Layout_Bedrock_v3.mcworld và mở bằng Minecraft.
 Chi tiết khuất tán, công năng bãi xe và tên một số sảnh còn chưa xác minh. Chưa kiểm tra trực tiếp trong game.

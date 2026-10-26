@@ -5,10 +5,10 @@
     21,
     0
   ],
-  "source_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
-  "source_entries": 164413,
+  "source_sha256": "de0d6841d81dd98c2afce0ee4b266fd5aa0ff50e9e0b7b2e54ec6c580b950ec6",
+  "source_entries": 164764,
   "source_palette_size": 75,
-  "source_blocks_read_back_and_compared": 164413,
+  "source_blocks_read_back_and_compared": 164764,
   "source_projection_mismatches": [],
   "chunks_read_back": 288,
   "foundation_samples": 1440,
@@ -42,7 +42,7 @@
       "waxed": true
     }
   ],
-  "layout_route_body_cells_checked": 4538,
+  "layout_route_body_cells_checked": 5976,
   "layout_routes_clear": true,
   "spawn_clear": true,
   "palette_projection": [
@@ -840,16 +840,16 @@
     "Java-only block properties, including leaf distance and explicit pane/bars connections, map to Bedrock native semantics.",
     "Architecture dimensions and interiors retain the reconstruction uncertainties documented in the research and detail notes."
   ],
-  "elapsed_seconds": 4.03,
+  "elapsed_seconds": 4.67,
   "reverse_translation_validation": {
-    "source_coordinates_checked": 164413,
-    "exact_java_state_matches": 158932,
-    "equivalent_after_documented_property_normalization": 164413,
+    "source_coordinates_checked": 164764,
+    "exact_java_state_matches": 158952,
+    "equivalent_after_documented_property_normalization": 164764,
     "normalization_only_source_states": {
       "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]": 684,
       "iron_bars[east=false,north=false,south=false,west=false,waterlogged=false]": 120,
       "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 421,
-      "oak_leaves[distance=1,persistent=true,waterlogged=false]": 2480,
+      "oak_leaves[distance=1,persistent=true,waterlogged=false]": 2811,
       "smooth_quartz_slab[type=bottom,waterlogged=false]": 441,
       "iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]": 450,
       "birch_slab[type=bottom,waterlogged=false]": 36,

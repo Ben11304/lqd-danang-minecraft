@@ -20,7 +20,8 @@ targets={'south_lobby':(72,171),'oval_lobby':(112,177),'oval_connection':(98,164
  'north_hall':(68,44),'north_field':(31,61),'tower_entry':(129,46),'annex_entry':(127,61),
  'north_connector':(70,103),'east_canopy':(137,170),'northwest_canopy':(25,20),'west_canopy':(9,50),
  'south_garden_west':(79,145),'south_garden_east':(103,145),
- 'west_garden_path':(42,140),'west_garden_entry':(66,147)}
+ 'west_garden_path':(42,140),'west_garden_entry':(66,147),
+ 'ne_east_path':(128,99),'ne_north_path':(105,77),'ne_annex_approach':(123,61)}
 routes=[]
 for label,target in targets.items():
     assert target in parent,(label,target,'unreachable from entrance',cells.get((target[0],65,target[1])))
@@ -45,6 +46,9 @@ for name,color in colors.items():
             if x!=last+1:fragments.append(f'M{a} {z}h{last-a+1}v1h{-last+a-1}z');a=x
             last=x
     paths.append(f'<path d="{"".join(fragments)}" fill="{color}"/>')
+ne=json.loads((ROOT/'parts/layout_ne_circulation.json').read_text(encoding='utf-8'))
+ground=[f'M{x} {z}h1v1h-1z' for x,y,z,i in ne['blocks'] if y==64 and ne['palette'][i]!='air']
+paths.append(f'<path d="{"".join(ground)}" fill="#afb4ad"/>')
 for name in ('garden_a','garden_b'):
     garden=json.loads((ROOT/'parts'/f'layout_{name}.json').read_text(encoding='utf-8'))
     top={}
@@ -57,7 +61,7 @@ for name in ('garden_a','garden_b'):
         color='#5b9361' if 'leaves' in material or 'vine' in material else '#96b87a' if 'grass' in material or 'flower' in material else '#559db6' if 'water' in material else '#a78b6c' if 'log' in material else '#c5bbaa' if 'sandstone' in material else '#b4b8ae'
         groups[color].append(f'M{x} {z}h1v1h-1z')
     for color,fragments in groups.items():paths.append(f'<path d="{"".join(fragments)}" fill="{color}"/>')
-svg='''<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 -18 172 244" role="img" aria-label="Mặt bằng mái và vườn v3.2 theo Google Maps"><rect x="-12" y="-18" width="172" height="244" fill="#f3f5ef"/><g stroke="#c1c8c6" stroke-width="7"><path d="M0 -5V213M148 -5V213M-4 0H152M-4 208H152"/></g><rect x="6" y="7" width="136" height="192" fill="#e0e9d5" stroke="#66816d" stroke-width=".6"/><rect x="12" y="26" width="39" height="70" fill="#bdac8b"/>'''+''.join(paths)+'''<path d="M64 173H80V199H64Z" fill="#c38572"/><path d="M56 199H86" stroke="#4d9eb5" stroke-width="2"/><rect x="35" y="184" width="7" height="7" fill="#696763"/><g font-family="sans-serif" text-anchor="middle" fill="#213f49" font-size="3.7"><text x="31" y="64">Sân phía tây bắc</text><text x="68" y="47">Dãy mái bắc</text><text x="125" y="35">Tháp</text><text x="134" y="66">Nhà phụ</text><text x="43" y="126">Dãy ngang trên</text><text x="111" y="100">Dãy cong</text><text x="44" y="160">Dãy ngang dưới</text><text x="112" y="166">Khối oval đặc</text><text x="72" y="190">Sân trước</text><text x="72" y="218">Vũ Văn Dũng · Cổng chính</text><text x="74" y="-8">MẶT BẰNG V3.2 · MÁI VÀ VƯỜN</text></g><g stroke="#405a60" stroke-width=".5" fill="none"><path d="M10 217H30M10 215V219M30 215V219"/></g><text x="20" y="224" text-anchor="middle" font-family="sans-serif" font-size="3.4" fill="#405a60">20 m (xấp xỉ)</text></svg>'''
+svg='''<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 -18 172 244" role="img" aria-label="Mặt bằng mái và vườn v3.3 theo Google Maps"><rect x="-12" y="-18" width="172" height="244" fill="#f3f5ef"/><g stroke="#c1c8c6" stroke-width="7"><path d="M0 -5V213M148 -5V213M-4 0H152M-4 208H152"/></g><rect x="6" y="7" width="136" height="192" fill="#e0e9d5" stroke="#66816d" stroke-width=".6"/><rect x="12" y="26" width="39" height="70" fill="#bdac8b"/>'''+''.join(paths)+'''<path d="M64 173H80V199H64Z" fill="#c38572"/><path d="M56 199H86" stroke="#4d9eb5" stroke-width="2"/><rect x="35" y="184" width="7" height="7" fill="#696763"/><g font-family="sans-serif" text-anchor="middle" fill="#213f49" font-size="3.7"><text x="31" y="64">Sân phía tây bắc</text><text x="68" y="47">Dãy mái bắc</text><text x="125" y="35">Tháp</text><text x="134" y="66">Nhà phụ</text><text x="43" y="126">Dãy ngang trên</text><text x="111" y="100">Dãy cong</text><text x="44" y="160">Dãy ngang dưới</text><text x="112" y="166">Khối oval đặc</text><text x="72" y="190">Sân trước</text><text x="72" y="218">Vũ Văn Dũng · Cổng chính</text><text x="74" y="-8">MẶT BẰNG V3.3 · MÁI VÀ VƯỜN</text></g><g stroke="#405a60" stroke-width=".5" fill="none"><path d="M10 217H30M10 215V219M30 215V219"/></g><text x="20" y="224" text-anchor="middle" font-family="sans-serif" font-size="3.4" fill="#405a60">20 m (xấp xỉ)</text></svg>'''
 (ROOT/'qa/layout_plan.svg').write_text(svg,encoding='utf-8')
 
 # Private side-by-side source overlay, retaining Google's screenshot attribution.

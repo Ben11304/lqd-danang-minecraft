@@ -20,7 +20,7 @@ def assemble():
     old=ROOT/'parts/gate_reference.json'
     assert old.exists(),'The gate reference must be present before assembly.'
     previous=load(old)
-    component_names=('north','academic','south','connectors','parking','garden_a','garden_b')
+    component_names=('north','academic','south','connectors','parking','garden_a','garden_b','ne_circulation')
     components={name:load(ROOT/'parts'/f'layout_{name}.json') for name in component_names}
     b=Builder('LQD_DaNang_Layout_v3')
     b.fill(-30,63,-30,178,63,238,'dirt')
@@ -58,7 +58,10 @@ def assemble():
       (91,91),(104,98),(91,109),(109,118),(89,140),(100,141),
       (15,178),(24,180),(31,179),(47,181),(16,190),(27,190),
       (47,191),(91,186),(106,187),(123,185),(132,175),(132,158),
-      (135,94),(136,110),(136,129)]
+      (135,94),(136,110),(136,129),
+      # Representative canopy groups visible in the northeast satellite frame;
+      # individual trunks/heights cannot be recovered from the aerial image.
+      (96,50),(102,54),(111,59),(118,68),(113,72),(105,71)]
     trees=[]
     for i,(x,z) in enumerate(candidates):
         if any((x+dx,z+dz) in occupied for dx in range(-3,4) for dz in range(-3,4)):continue
@@ -84,10 +87,20 @@ def assemble():
     overlaps=[];owners={}
     for name,c in components.items():
         for pos,s in c.items():
-            if pos in owners and b.blocks.get(pos)!=s:overlaps.append([owners[pos],name,*pos,b.blocks.get(pos),s])
+            if pos in owners and b.blocks.get(pos,'air')!=s:overlaps.append([owners[pos],name,*pos,b.blocks.get(pos,'air'),s])
             owners[pos]=name
             if s=='air':b.blocks.pop(pos,None)
             else:b.blocks[pos]=s
+    # Provisional game doorway at the traced northern approach. The satellite
+    # does not establish a real door here; retain this explicit uncertainty.
+    proposed_door=[]
+    b.fill(93,64,73,94,64,73,'andesite')
+    for x in (93,94):
+        for z in range(73,77):
+            if (x,64,z) not in components['academic']:continue
+            for y in (65,66,67):
+                old=b.blocks.pop((x,y,z),None)
+                if old is not None:proposed_door.append([x,y,z,old])
     # Statue west of gate, as user confirmed. Exact offset remains provisional.
     for (x,y,z),s in load(ROOT/'parts/detail_statue.json').items():
         assert (x-2,z-6) not in occupied or y<=64,'Statue collides with traced roof.'
@@ -95,8 +108,9 @@ def assemble():
     for s in set(b.blocks.values()):assert (ROOT/'vendor/assets/minecraft/blockstates'/f'{s.split("[")[0]}.json').exists(),s
     stats=b.save('campus.json')
     digest=hashlib.sha256((ROOT/'campus.json').read_bytes()).hexdigest()
-    report={'version':'layout_v3.2','stats':stats,'campus_sha256':digest,'component_blocks':{k:len(v) for k,v in components.items()},
+    report={'version':'layout_v3.3','stats':stats,'campus_sha256':digest,'component_blocks':{k:len(v) for k,v in components.items()},
       'georeference':'references/georeference.json','trees':trees,'junction_overlaps':overlaps,
+      'provisional_north_door_removed_blocks':proposed_door,
       'uncertainty':'Manually traced satellite roof masks, approx2.5m; heights/interiors not surveyed.',
       'v1_footprints_preserved':False,'in_game_validation':False}
     (ROOT/'qa/assembly.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
