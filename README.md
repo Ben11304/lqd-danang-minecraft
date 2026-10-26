@@ -14,9 +14,15 @@ Bản tái tạo Minecraft trường THPT chuyên Lê Quý Đôn, Đà Nẵng. G
 
 ## Chi tiết v2
 
-Thư viện với 43 block kệ sách và 12 chỗ đọc; 30 lớp học mẫu; phòng máy 16 trạm; phòng thí nghiệm; khán đài và hội trường. Có 124.218 block, giữ nguyên mái/cổng và không thêm khối nhà ngoài bố cục v1.
+Thư viện với 43 block kệ sách và 12 chỗ đọc; 30 lớp học mẫu; phòng máy 16 trạm; phòng thí nghiệm; khán đài và hội trường. Có 124.250 block, giữ nguyên mái/cổng và không thêm khối nhà ngoài bố cục v1.
 
 Nội thất và chức năng phòng là phương án đề xuất, chưa phải bản sao đo đạc của trường thực. Ảnh web là trình xem voxel từ cùng dữ liệu world, chưa phải ảnh chụp Minecraft. Các file đã được kiểm tra đọc lại toàn bộ block và 288 chunk; **chưa thử nhập/chạy trực tiếp trong game**.
+
+## Tượng và các sảnh
+
+Đã bổ sung tượng Lê Quý Đôn màu trắng trên bệ đá sẫm ở phía tây sân: bên phải cổng khi đứng trong trường nhìn ra đường, theo xác nhận của người dùng. Hình dáng được giản lược bằng block từ [ảnh tư liệu năm 2012](https://nguoikemon.blogspot.com/2012/05/68-truong-toi-tu-mot-goc-nhin.html); khoảng cách đến cổng, kích thước và chi tiết điêu khắc chưa được đo. Chọn góc **Tượng Lê Quý Đôn** hoặc **Tượng và cổng** trên web.
+
+**Các sảnh chưa hoàn thiện.** Đối chiếu lại ảnh cho thấy khối cong phía nam và các tầng trệt không thể áp dụng đồng loạt mô-đun lớp học/hành lang hẹp hiện tại. Cần thêm ảnh định vị để dựng lại hình khối chính xác. Việc thêm chi tiết nội thất không xác nhận độ chính xác của mặt bằng này.
 
 ## Chạy tại máy
 

@@ -9,7 +9,7 @@ def load(path):
 
 base=load(ROOT/'qa/baseline_campus.json')
 final=dict(base);owners={};overlaps=[];reports={}
-for name in ['library','classrooms','north','specialist']:
+for name in ['library','classrooms','north','specialist','statue']:
     patch=load(ROOT/'parts'/f'detail_{name}.json')
     for pos,state in patch.items():
         if pos in owners and final.get(pos,'air')!=state:overlaps.append([name,owners[pos],*pos,final.get(pos,'air'),state])
@@ -39,7 +39,8 @@ paths={
  'library':bfs((58,89,125,136),65,(59,135),[(x,z) for x in range(58,90) for z in (131,132)]+[(85,133)]),
  'science':bfs((23,47,125,136),65,(24,135),[(x,z) for x in range(31,38) for z in range(125,133)]+[(44,133)]),
  'computer':bfs((58,89,125,136),73,(59,135),[(x,z) for x in range(59,89) for z in (128,129)]+[(88,133)]),
- 'gym':bfs((47,78,34,85),66,(62,84),[(x,z) for x in range(66,70) for z in range(35,83)])}
+ 'gym':bfs((47,78,34,85),66,(62,84),[(x,z) for x in range(66,70) for z in range(35,83)]),
+ 'statue_perimeter':bfs((35,45,187,198),65,(44,197),[(x,z) for x in (36,44) for z in range(189,198)]+[(x,z) for x in range(36,45) for z in (189,197)])}
 
 for state in sorted(set(final.values())):
     assert (ROOT/'vendor/assets/minecraft/blockstates'/(state.split('[')[0]+'.json')).exists(),state
@@ -50,6 +51,8 @@ manifest={'version':'detail_v2','stats':stats,'palette_count':len(set(final.valu
  'baseline_sha256':hashlib.sha256((ROOT/'qa/baseline_campus.json').read_bytes()).hexdigest(),
  'campus_sha256':hashlib.sha256((ROOT/'campus.json').read_bytes()).hexdigest(),
  'interior_accuracy':'Proposed room interiors; campus massing retained from provisional v1',
+ 'architecture_review':{'statue':'White figure and dark pedestal based on 2012 school photograph; west side confirmed by user looking from inside toward street; exact offset and sculpture simplified.',
+  'lobbies':'Unresolved: southern curved shell and lobby dimensions require additional located views; existing classroom repetition is provisional.'},
  'in_game_validation':False}
 (ROOT/'qa/assembly.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(manifest,ensure_ascii=True))

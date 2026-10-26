@@ -2,7 +2,7 @@
   "version": "detail_v2",
   "stats": {
     "name": "LQD_DaNang_Detail_v2",
-    "blocks": 124218,
+    "blocks": 124250,
     "file": ".\\campus.json",
     "bounds": [
       [
@@ -19,7 +19,7 @@
       ]
     ]
   },
-  "palette_count": 78,
+  "palette_count": 86,
   "patches": {
     "library": {
       "patch_entries": 1040,
@@ -36,6 +36,10 @@
     "specialist": {
       "patch_entries": 2045,
       "removed_cells": 1148
+    },
+    "statue": {
+      "patch_entries": 81,
+      "removed_cells": 0
     }
   },
   "patch_conflicts": [],
@@ -62,11 +66,20 @@
       "two_block_body_reachable": 1328,
       "targets_checked": 192,
       "all_reached": true
+    },
+    "statue_perimeter": {
+      "two_block_body_reachable": 118,
+      "targets_checked": 36,
+      "all_reached": true
     }
   },
-  "changed_cells": 4927,
+  "changed_cells": 5003,
   "baseline_sha256": "3a68b671380824a75bb9d3d86f2038687e63a6a43fc31d18ee6238612dff1fee",
-  "campus_sha256": "43f557940738cb386bae8abaab072d1a9f0823837fcd6fa0911a5243328d836f",
+  "campus_sha256": "97f0aada6e5ea8bcb811272aee566e628d5cfe1f823f603ab5a039cedb414654",
   "interior_accuracy": "Proposed room interiors; campus massing retained from provisional v1",
+  "architecture_review": {
+    "statue": "White figure and dark pedestal based on 2012 school photograph; west side confirmed by user looking from inside toward street; exact offset and sculpture simplified.",
+    "lobbies": "Unresolved: southern curved shell and lobby dimensions require additional located views; existing classroom repetition is provisional."
+  },
   "in_game_validation": false
 }

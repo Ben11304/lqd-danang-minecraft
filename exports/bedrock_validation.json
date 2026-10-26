@@ -5,10 +5,10 @@
     21,
     0
   ],
-  "source_sha256": "43f557940738cb386bae8abaab072d1a9f0823837fcd6fa0911a5243328d836f",
-  "source_entries": 124218,
-  "source_palette_size": 78,
-  "source_blocks_read_back_and_compared": 124218,
+  "source_sha256": "97f0aada6e5ea8bcb811272aee566e628d5cfe1f823f603ab5a039cedb414654",
+  "source_entries": 124250,
+  "source_palette_size": 86,
+  "source_blocks_read_back_and_compared": 124250,
   "source_projection_mismatches": [],
   "chunks_read_back": 288,
   "foundation_samples": 1440,
@@ -59,6 +59,18 @@
       "bedrock": {
         "name": "minecraft:azalea",
         "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "birch_button[face=wall,facing=east,powered=false]",
+      "bedrock": {
+        "name": "minecraft:birch_button",
+        "properties": {
+          "button_pressed_bit": "0b",
+          "facing_direction": "5"
+        },
         "extra_blocks": []
       },
       "block_entity": null
@@ -194,6 +206,18 @@
       "block_entity": null
     },
     {
+      "java": "chiseled_quartz_block",
+      "bedrock": {
+        "name": "minecraft:quartz_block",
+        "properties": {
+          "chisel_type": "\"chiseled\"",
+          "pillar_axis": "\"y\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
       "java": "chiseled_stone_bricks",
       "bedrock": {
         "name": "minecraft:stonebrick",
@@ -210,6 +234,18 @@
         "name": "minecraft:dirt",
         "properties": {
           "dirt_type": "\"coarse\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "cut_sandstone_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:stone_block_slab4",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\"",
+          "stone_slab_type_4": "\"cut_sandstone\""
         },
         "extra_blocks": []
       },
@@ -509,9 +545,38 @@
       "block_entity": null
     },
     {
+      "java": "polished_blackstone",
+      "bedrock": {
+        "name": "minecraft:polished_blackstone",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "polished_blackstone_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:polished_blackstone_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
       "java": "polished_diorite",
       "bedrock": {
         "name": "minecraft:polished_diorite",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "poppy",
+      "bedrock": {
+        "name": "minecraft:poppy",
         "properties": {},
         "extra_blocks": []
       },
@@ -552,11 +617,34 @@
       "block_entity": null
     },
     {
+      "java": "quartz_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:quartz_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
       "java": "quartz_slab[type=top,waterlogged=false]",
       "bedrock": {
         "name": "minecraft:quartz_slab",
         "properties": {
           "minecraft:vertical_half": "\"top\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:quartz_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "1"
         },
         "extra_blocks": []
       },
@@ -858,11 +946,11 @@
     "Java-only block properties, including leaf distance and explicit pane/bars connections, map to Bedrock native semantics.",
     "Architecture dimensions and interiors retain the reconstruction uncertainties documented in the research and detail notes."
   ],
-  "elapsed_seconds": 3.52,
+  "elapsed_seconds": 3.73,
   "reverse_translation_validation": {
-    "source_coordinates_checked": 124218,
-    "exact_java_state_matches": 117584,
-    "equivalent_after_documented_property_normalization": 124218,
+    "source_coordinates_checked": 124250,
+    "exact_java_state_matches": 117602,
+    "equivalent_after_documented_property_normalization": 124250,
     "normalization_only_source_states": {
       "oak_leaves[persistent=true,distance=1,waterlogged=false]": 3835,
       "stone_brick_slab[type=bottom,waterlogged=false]": 336,
@@ -875,6 +963,10 @@
       "birch_slab[type=top,waterlogged=false]": 279,
       "spruce_slab[type=top,waterlogged=false]": 60,
       "spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 30,
+      "polished_blackstone_slab[type=bottom,waterlogged=false]": 6,
+      "quartz_slab[type=bottom,waterlogged=false]": 3,
+      "quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 4,
+      "cut_sandstone_slab[type=bottom,waterlogged=false]": 1,
       "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 56,
       "dark_oak_slab[type=bottom,waterlogged=false]": 38,
       "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 87,

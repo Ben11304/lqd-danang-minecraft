@@ -1,0 +1,96 @@
+{
+  "component": "compact_white_statue_west_yard",
+  "status": "Reversible voxel patch, historical photo and current user confirmation; not a surveyed replica.",
+  "historical_source": "https://nguoikemon.blogspot.com/2012/05/68-truong-toi-tu-mot-goc-nhin.html",
+  "historical_caption": "Tượng Lê Quý Đôn, phía tây sân trường",
+  "reference_image": "./qa/statue_research/blog2012_image_1.jpg",
+  "date_limit": "Blog published 9 May 2012, essay internally dated November 2004; photograph capture date unknown. Current user independently confirms west/right-of-gate location while inside looking outward.",
+  "placement": {
+    "bed_xz": [
+      37,
+      43,
+      190,
+      196
+    ],
+    "plinth_xz": [
+      39,
+      41,
+      192,
+      194
+    ],
+    "plinth_center": [
+      40.5,
+      66,
+      193.5
+    ],
+    "body_back_x": 39,
+    "front_knees_x": 41,
+    "face_direction": "east, toward campus",
+    "max_top_y": 70,
+    "max_height_above_ground": 5
+  },
+  "palette_rationale": {
+    "quartz": "White/light draped full figure with full chiseled-quartz head, seated silhouette.",
+    "cut_sandstone_slab": "Pale lap/book-like plane, exact held object uncertain.",
+    "polished_blackstone": "Dark rectangular masonry-looking plinth visible in photo.",
+    "grass_stone_poppy": "Small stone-edged planted bed and sparse red flowers, consistent with photographed setting.",
+    "birch_button": "Small thin pale ochre plaque stand-in on east side; no readable inscription or actual material claim."
+  },
+  "inferred": [
+    "Exact placement near x40,z193 is approximate, following user direction and root masterplan.",
+    "Seated figure and robe/book silhouette are simplified at one block per metre; posture reading only medium confidence from 500x375 historical photo.",
+    "Actual white material, exact hand pose, inscription and dimensions remain unknown.",
+    "No added facial markings, unsupported name text or AI reference imagery."
+  ],
+  "checks": [
+    "Current campus above-ground bed volume verified clear before patch generation.",
+    "Every block within x35..45,z187..198,y64..70; actual sculpture top y70, 5m above ground.",
+    "All block names exist in vanilla assets; stairs/slabs/button states explicit.",
+    "No original building shell, gate, roof, entrance centerline, or shared files edited."
+  ],
+  "cameras": [
+    {
+      "name": "close_statue_east",
+      "eye": [
+        47,
+        67.6,
+        188
+      ],
+      "target": [
+        40.5,
+        67,
+        193.5
+      ],
+      "inspect": "White head and torso above lap, east-facing seated robe, dark plinth and ochre plaque."
+    },
+    {
+      "name": "mid_west_entrance",
+      "eye": [
+        58,
+        68.5,
+        176
+      ],
+      "target": [
+        48,
+        66.5,
+        199
+      ],
+      "inspect": "Compact sculpture beside entrance area, no central gate obstruction."
+    },
+    {
+      "name": "front_seated_silhouette",
+      "eye": [
+        46,
+        67.5,
+        193.5
+      ],
+      "target": [
+        40,
+        67.5,
+        193.5
+      ],
+      "inspect": "Head-over-torso and projecting knees/robe; max overall height 4.5m."
+    }
+  ],
+  "qa_revision": "Only the two head/plaque cells changed after visual QA; statue footprint and pose preserved. Validation permits the old integrated statue values at those two cells."
+}

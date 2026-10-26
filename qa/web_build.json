@@ -1,9 +1,9 @@
 {
-  "campus_sha256": "43f557940738cb386bae8abaab072d1a9f0823837fcd6fa0911a5243328d836f",
-  "mesh_raw_bytes": 41005248,
-  "mesh_gzip_bytes": 3529905,
-  "mesh_sha256": "b9953e4fd50e0aa96113ebdb392fa2f9f0f44a515b4217bb9fcd9b842feda3c7",
+  "campus_sha256": "97f0aada6e5ea8bcb811272aee566e628d5cfe1f823f603ab5a039cedb414654",
+  "mesh_raw_bytes": 41031744,
+  "mesh_gzip_bytes": 3533768,
+  "mesh_sha256": "b919232a92f5b47717bf899d093e37b3f956932c82e7cb4622b4d8e7e4f4a756",
   "gzip_roundtrip": "passed",
-  "files": 70,
-  "no_runtime_or_client": true
+  "no_runtime_or_client": true,
+  "revision": "west gate statue; lobby shell corrections pending located reference images"
 }

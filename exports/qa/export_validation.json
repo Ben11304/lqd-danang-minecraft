@@ -1,11 +1,11 @@
 {
   "format": "Detail v2 Java 1.20.4 supplementary reference; mobile Bedrock is the primary target",
   "DataVersion": 3700,
-  "campus_sha256": "43f557940738cb386bae8abaab072d1a9f0823837fcd6fa0911a5243328d836f",
-  "source_entries": 124218,
+  "campus_sha256": "97f0aada6e5ea8bcb811272aee566e628d5cfe1f823f603ab5a039cedb414654",
+  "source_entries": 124250,
   "specification": "https://raw.githubusercontent.com/SpongePowered/Schematic-Specification/master/versions/schematic-2.md",
   "assets": {
-    "unique_states": 81,
+    "unique_states": 89,
     "official_assets_version": "1.20.4",
     "official_client_sha1_verified": "fd19469fed4a4b4c15b2d5133985f0e3e7816a8a",
     "official_version_json_DataVersion_verified": 3700,
@@ -36,6 +36,12 @@
       },
       {
         "state": "minecraft:birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:cut_sandstone_slab[type=bottom,waterlogged=false]",
         "property": "waterlogged",
         "accepted_value": "false",
         "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
@@ -131,7 +137,25 @@
         "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
       },
       {
+        "state": "minecraft:polished_blackstone_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:quartz_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
         "state": "minecraft:quartz_slab[type=top,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]",
         "property": "waterlogged",
         "accepted_value": "false",
         "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
@@ -231,7 +255,7 @@
   "source_snapshot_name": "LQD_DaNang_Detail_v2_complete_campus",
   "world": {
     "chunks_read_back": 288,
-    "source_blocks_compared": 124218,
+    "source_blocks_compared": 124250,
     "terrain_samples": 1440,
     "air_biome_sections_above_build_checked": 3744,
     "sections_per_chunk": 24,
@@ -297,20 +321,20 @@
         -32
       ],
       "volume": 3147825,
-      "non_air": 124218,
-      "palette_size": 78,
+      "non_air": 124250,
+      "palette_size": 86,
       "sign_entities": 3,
       "validation": {
         "file": "LQD_DaNang_Detail_v2_Complete_Campus.schem",
         "decoded_entries": 3147825,
-        "source_blocks_compared": 124218,
+        "source_blocks_compared": 124250,
         "nbt_readback": "passed",
         "varint_palette_order_and_offset": "passed"
       }
     }
   ],
   "world_zip_crc": "passed",
-  "elapsed_seconds": 5.56,
+  "elapsed_seconds": 5.53,
   "campus_unchanged_during_export": true,
   "outputs": [
     {
@@ -343,11 +367,11 @@
     },
     {
       "file": "exports\\LQD_DaNang_Detail_v2_Java_1_20_4.zip",
-      "bytes": 194525
+      "bytes": 194949
     },
     {
       "file": "exports\\LQD_DaNang_Detail_v2_Complete_Campus.schem",
-      "bytes": 25161
+      "bytes": 25360
     }
   ]
 }

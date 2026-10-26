@@ -1,0 +1,16 @@
+{
+  "source_sha256": "97f0aada6e5ea8bcb811272aee566e628d5cfe1f823f603ab5a039cedb414654",
+  "west_side_confirmed_by_user": "inside campus looking out: right",
+  "precise_placement": "approximate",
+  "sculpture": "simplified historical reference; 5m total scale estimate",
+  "checks": {
+    "close_and_gate_browser_views": "reviewed",
+    "portrait_390x844": "reviewed; full figure visible, camera stays inside fence",
+    "bedrock_blocks_read_back": 124250,
+    "source_mismatches": 0,
+    "statue_two_block_perimeter_targets": 36
+  },
+  "lobby_request": "both areas; unresolved shell topology, located close/wide references needed",
+  "in_game_validation": false,
+  "reference": "https://nguoikemon.blogspot.com/2012/05/68-truong-toi-tu-mot-goc-nhin.html"
+}
