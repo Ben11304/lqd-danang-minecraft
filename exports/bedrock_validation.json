@@ -1,0 +1,902 @@
+{
+  "format": "Minecraft Bedrock LevelDB world",
+  "target_version": [
+    1,
+    21,
+    0
+  ],
+  "source_sha256": "43f557940738cb386bae8abaab072d1a9f0823837fcd6fa0911a5243328d836f",
+  "source_entries": 124218,
+  "source_palette_size": 78,
+  "source_blocks_read_back_and_compared": 124218,
+  "source_projection_mismatches": [],
+  "chunks_read_back": 288,
+  "foundation_samples": 1440,
+  "door_halves_round_trip_exact": 0,
+  "signs": [
+    {
+      "position": [
+        91,
+        68,
+        206
+      ],
+      "front_back_unicode_text": true,
+      "waxed": true
+    },
+    {
+      "position": [
+        96,
+        68,
+        206
+      ],
+      "front_back_unicode_text": true,
+      "waxed": true
+    },
+    {
+      "position": [
+        101,
+        68,
+        206
+      ],
+      "front_back_unicode_text": true,
+      "waxed": true
+    }
+  ],
+  "gym_aisles_two_block_clearance": true,
+  "spawn_clear": true,
+  "palette_projection": [
+    {
+      "java": "andesite",
+      "bedrock": {
+        "name": "minecraft:andesite",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "azalea",
+      "bedrock": {
+        "name": "minecraft:azalea",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "birch_planks",
+      "bedrock": {
+        "name": "minecraft:birch_planks",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "birch_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:birch_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "birch_slab[type=top,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:birch_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"top\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "birch_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:birch_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "3"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "birch_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:birch_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "2"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:birch_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "1"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "black_concrete",
+      "bedrock": {
+        "name": "minecraft:black_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "blue_carpet",
+      "bedrock": {
+        "name": "minecraft:blue_carpet",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "blue_concrete",
+      "bedrock": {
+        "name": "minecraft:blue_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "blue_terracotta",
+      "bedrock": {
+        "name": "minecraft:blue_terracotta",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "bookshelf",
+      "bedrock": {
+        "name": "minecraft:bookshelf",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "bricks",
+      "bedrock": {
+        "name": "minecraft:brick_block",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "brown_terracotta",
+      "bedrock": {
+        "name": "minecraft:brown_terracotta",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "chiseled_stone_bricks",
+      "bedrock": {
+        "name": "minecraft:stonebrick",
+        "properties": {
+          "stone_brick_type": "\"chiseled\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "coarse_dirt",
+      "bedrock": {
+        "name": "minecraft:dirt",
+        "properties": {
+          "dirt_type": "\"coarse\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "cyan_carpet",
+      "bedrock": {
+        "name": "minecraft:cyan_carpet",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "cyan_concrete",
+      "bedrock": {
+        "name": "minecraft:cyan_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "cyan_terracotta",
+      "bedrock": {
+        "name": "minecraft:cyan_terracotta",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "dark_oak_planks",
+      "bedrock": {
+        "name": "minecraft:dark_oak_planks",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "dark_oak_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:dark_oak_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "flowering_azalea",
+      "bedrock": {
+        "name": "minecraft:flowering_azalea",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "grass_block[snowy=false]",
+      "bedrock": {
+        "name": "minecraft:grass_block",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "gray_concrete",
+      "bedrock": {
+        "name": "minecraft:gray_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "green_concrete",
+      "bedrock": {
+        "name": "minecraft:green_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:iron_bars",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]",
+      "bedrock": {
+        "name": "minecraft:iron_bars",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "iron_bars[east=true,north=false,south=false,west=true,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:iron_bars",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "iron_bars[east=true,north=true,south=true,waterlogged=false,west=true]",
+      "bedrock": {
+        "name": "minecraft:iron_bars",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "lectern[facing=south,has_book=false,powered=false]",
+      "bedrock": {
+        "name": "minecraft:lectern",
+        "properties": {
+          "minecraft:cardinal_direction": "\"south\"",
+          "powered_bit": "0b"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": "Lectern"
+    },
+    {
+      "java": "light_blue_carpet",
+      "bedrock": {
+        "name": "minecraft:light_blue_carpet",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "light_blue_concrete",
+      "bedrock": {
+        "name": "minecraft:light_blue_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "light_blue_terracotta",
+      "bedrock": {
+        "name": "minecraft:light_blue_terracotta",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "light_gray_concrete",
+      "bedrock": {
+        "name": "minecraft:light_gray_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "light_gray_stained_glass",
+      "bedrock": {
+        "name": "minecraft:light_gray_stained_glass",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "light_gray_terracotta",
+      "bedrock": {
+        "name": "minecraft:light_gray_terracotta",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "oak_leaves[persistent=true,distance=1,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:oak_leaves",
+        "properties": {
+          "persistent_bit": "1b",
+          "update_bit": "0b"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "oak_log[axis=y]",
+      "bedrock": {
+        "name": "minecraft:oak_log",
+        "properties": {
+          "pillar_axis": "\"y\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "oak_planks",
+      "bedrock": {
+        "name": "minecraft:oak_planks",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "oak_slab[type=top,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:oak_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"top\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:oak_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "3"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:oak_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "2"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "oak_wall_sign[facing=south,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:wall_sign",
+        "properties": {
+          "facing_direction": "3"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": "Sign"
+    },
+    {
+      "java": "orange_concrete",
+      "bedrock": {
+        "name": "minecraft:orange_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "polished_andesite",
+      "bedrock": {
+        "name": "minecraft:polished_andesite",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "polished_andesite_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:polished_andesite_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "1"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "polished_diorite",
+      "bedrock": {
+        "name": "minecraft:polished_diorite",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "potted_fern",
+      "bedrock": {
+        "name": "minecraft:flower_pot",
+        "properties": {
+          "update_bit": "0b"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": "FlowerPot"
+    },
+    {
+      "java": "prismarine",
+      "bedrock": {
+        "name": "minecraft:prismarine",
+        "properties": {
+          "prismarine_block_type": "\"default\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "quartz_block",
+      "bedrock": {
+        "name": "minecraft:quartz_block",
+        "properties": {
+          "chisel_type": "\"default\"",
+          "pillar_axis": "\"y\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "quartz_slab[type=top,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:quartz_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"top\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "red_carpet",
+      "bedrock": {
+        "name": "minecraft:red_carpet",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "red_concrete",
+      "bedrock": {
+        "name": "minecraft:red_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "red_terracotta",
+      "bedrock": {
+        "name": "minecraft:red_terracotta",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "sea_lantern",
+      "bedrock": {
+        "name": "minecraft:sea_lantern",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "smooth_quartz",
+      "bedrock": {
+        "name": "minecraft:quartz_block",
+        "properties": {
+          "chisel_type": "\"smooth\"",
+          "pillar_axis": "\"y\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "smooth_quartz_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:stone_block_slab4",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\"",
+          "stone_slab_type_4": "\"smooth_quartz\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "smooth_quartz_slab[type=top,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:stone_block_slab4",
+        "properties": {
+          "minecraft:vertical_half": "\"top\"",
+          "stone_slab_type_4": "\"smooth_quartz\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "smooth_sandstone",
+      "bedrock": {
+        "name": "minecraft:sandstone",
+        "properties": {
+          "sand_stone_type": "\"smooth\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "smooth_stone",
+      "bedrock": {
+        "name": "minecraft:smooth_stone",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "smooth_stone_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:smooth_stone_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "spruce_planks",
+      "bedrock": {
+        "name": "minecraft:spruce_planks",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "spruce_slab[type=top,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:spruce_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"top\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:spruce_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "0"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:spruce_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "3"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "spruce_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:spruce_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "2"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "spruce_trapdoor[facing=west,half=top,open=true,powered=false,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:spruce_trapdoor",
+        "properties": {
+          "direction": "1",
+          "open_bit": "1b",
+          "upside_down_bit": "1b"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "stone_brick_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:stone_brick_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:stone_brick_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "0"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:stone_brick_stairs",
+        "properties": {
+          "upside_down_bit": "0b",
+          "weirdo_direction": "2"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "stone_bricks",
+      "bedrock": {
+        "name": "minecraft:stonebrick",
+        "properties": {
+          "stone_brick_type": "\"default\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "terracotta",
+      "bedrock": {
+        "name": "minecraft:hardened_clay",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "water[level=0]",
+      "bedrock": {
+        "name": "minecraft:water",
+        "properties": {
+          "liquid_depth": "0"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "water_cauldron[level=2]",
+      "bedrock": {
+        "name": "minecraft:cauldron",
+        "properties": {
+          "cauldron_liquid": "\"water\"",
+          "fill_level": "4"
+        },
+        "extra_blocks": []
+      },
+      "block_entity": "Cauldron"
+    },
+    {
+      "java": "white_concrete",
+      "bedrock": {
+        "name": "minecraft:white_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "yellow_concrete",
+      "bedrock": {
+        "name": "minecraft:yellow_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "yellow_terracotta",
+      "bedrock": {
+        "name": "minecraft:yellow_terracotta",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    }
+  ],
+  "library_versions": {
+    "amulet-core": "1.9.50",
+    "amulet-leveldb": "1.0.7"
+  },
+  "sources": [
+    "https://github.com/Amulet-Team/Amulet-Core",
+    "https://pypi.org/project/amulet-core/1.9.50/",
+    "https://pypi.org/project/amulet-leveldb/1.0.7/",
+    "https://amulet-core.readthedocs.io/en/stable/api_reference/level.formats/leveldb_world.html",
+    "https://amulet-core.readthedocs.io/en/stable/api_reference/api/level/base_level/index.html",
+    "https://learn.microsoft.com/en-us/minecraft/creator/documents/createaworldtemplate",
+    "https://learn.microsoft.com/en-us/minecraft/creator/documents/bedrockeditor/editorworkflow?view=minecraft-bedrock-stable"
+  ],
+  "limitations": [
+    "Not opened in Minecraft; iPad/phone import and actual in-game appearance remain unverified.",
+    "Java-only block properties, including leaf distance and explicit pane/bars connections, map to Bedrock native semantics.",
+    "Architecture dimensions and interiors retain the reconstruction uncertainties documented in the research and detail notes."
+  ],
+  "elapsed_seconds": 3.52,
+  "reverse_translation_validation": {
+    "source_coordinates_checked": 124218,
+    "exact_java_state_matches": 117584,
+    "equivalent_after_documented_property_normalization": 124218,
+    "normalization_only_source_states": {
+      "oak_leaves[persistent=true,distance=1,waterlogged=false]": 3835,
+      "stone_brick_slab[type=bottom,waterlogged=false]": 336,
+      "iron_bars[east=true,north=true,south=true,waterlogged=false,west=true]": 874,
+      "smooth_quartz_slab[type=top,waterlogged=false]": 339,
+      "oak_slab[type=top,waterlogged=false]": 123,
+      "smooth_stone_slab[type=bottom,waterlogged=false]": 24,
+      "quartz_slab[type=top,waterlogged=false]": 8,
+      "birch_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 236,
+      "birch_slab[type=top,waterlogged=false]": 279,
+      "spruce_slab[type=top,waterlogged=false]": 60,
+      "spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 30,
+      "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 56,
+      "dark_oak_slab[type=bottom,waterlogged=false]": 38,
+      "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 87,
+      "birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 108,
+      "polished_andesite_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 18,
+      "iron_bars[east=true,north=false,south=false,west=true,waterlogged=false]": 6,
+      "stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 24,
+      "spruce_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 33,
+      "smooth_quartz_slab[type=bottom,waterlogged=false]": 8,
+      "birch_slab[type=bottom,waterlogged=false]": 31,
+      "oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 7,
+      "oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 24,
+      "birch_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 3,
+      "spruce_trapdoor[facing=west,half=top,open=true,powered=false,waterlogged=false]": 2,
+      "spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 18,
+      "oak_wall_sign[facing=south,waterlogged=false]": 3,
+      "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 24
+    },
+    "ignored_properties": {
+      "waterlogged=false": "Bedrock source fluid storage omits explicit false waterlogging.",
+      "leaf distance": "Bedrock retains persistent=true but does not store Java decay distance.",
+      "iron_bars and glass_pane north/east/south/west": "Bedrock computes neighbor connections instead of storing forced Java arms."
+    }
+  }
+}

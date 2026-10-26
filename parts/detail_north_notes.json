@@ -1,0 +1,56 @@
+{
+  "component": "north_hall_detail_patch_v2",
+  "status": "Generated and validated against assembled baseline; awaiting root render QA. Furniture and exact arrangements are inferred, not measured school interiors.",
+  "rooms": {
+    "gym": {"bounds_xz": [47,78,35,83], "floor_y":65, "detail_y": [66,75]},
+    "auditorium": {"bounds_xz": [47,78,13,32], "floor_y":65, "detail_y": [66,74]},
+    "south_door_surround": {"bounds_xz": [59,66,84,84], "detail_y": [66,70], "opening_x61_to64_y65_to68": "preserved"}
+  },
+  "implemented": [
+    "Three rows of light birch bleacher seats on supported tiers, with three doubled polished-stone stair aisles, rear railing gaps and terrace end rails.",
+    "Floor-standing basketball posts removed from court and south doorway approach; backboards retained with overhead suspension and contrasting aim areas.",
+    "East side team benches, compact scorer desk, closed storage cupboard interpretation, black scoreboard with yellow digit-like markers.",
+    "Mint/dark cyan lower gym wall band, white wall trim, additional shallow grey roof ties, paired suspended lantern fixtures.",
+    "Auditorium seating expanded to four organized rows with left/right groups and red central carpet; dark low wall dado, acoustic ribs, projection screen and curtain panels.",
+    "Representative stage lectern, panel table and seats, speaker columns, rear waiting benches and ceiling lighting ribs.",
+    "Central break in stage and backdrop keeps north exit usable; all other major doors and the required gym aisle remain clear."
+  ],
+  "material_rationale": {
+    "birch_wood": "Light tan seat surfaces approximate light wood auditorium seats and make bleacher rows readable.",
+    "spruce_dark_oak": "Warm dark timber for benches, dado, cupboard and stage furniture; contrasting low edges remain legible at eye level.",
+    "prismarine_and_cyan_terracotta": "Retain existing mint reference cue; add a subdued cyan base strip and white horizontal trim.",
+    "light_gray_concrete_and_iron_bars": "Simplified light steel trusses, suspension and silver railings shown in gym photos.",
+    "black_yellow_red_white_concrete": "Representative high-contrast scoreboard graphics; no claim of matching actual scoreboard design or scores.",
+    "sea_lantern": "Vanilla light sources provide working interior illumination; fixture counts and spacing are reconstructed."
+  },
+  "references": [
+    {"file":"browser_087.jpg", "observed":"Mint gym walls, light horizontal louver strips, brown sports floor, spectator terrace and silver railing."},
+    {"file":"browser_090.jpg", "observed":"Close railing structure and bright repeated horizontal louver rhythm beneath a pale steel roof."},
+    {"file":"ref_002.jpg", "observed":"Warm wood auditorium chairs, pale walls and ceiling with distributed small lights, darker lower wall trim."}
+  ],
+  "inferred": [
+    "All seat positions, row count, stair-aisle positions, fixture spacing, scoreboard/equipment design, team furniture and auditorium stage furniture.",
+    "Auditorium remains a representative interpretation in the north part of this roof block; its adjacency to the gym is not independently verified.",
+    "The stage center passage is a playability correction preserving the existing north exit, not a claim about a real stage arrangement.",
+    "No new field, pool, dormitory, external annex, roof or building footprint was created."
+  ],
+  "checks": {
+    "generation": "python parts/detail_north.py passed",
+    "patch_entries":1996,
+    "explicit_air_entries":502,
+    "bounds_xyz":[[47,78],[65,75],[13,84]],
+    "palette": "All block names exist in bundled vanilla blockstate assets; stairs/slabs/trapdoors/bars/lectern use explicit states.",
+    "reserved_gym_aisle": "Merged baseline + patch: every x66..69,z35..82,y66..67 cell is air.",
+    "south_door_approach": "Merged baseline + patch: every x61..64,z78..85,y66..67 cell is air.",
+    "roof": "All baseline hall blocks at y77 and higher unchanged.",
+    "facade_opening": "Patch does not alter x61..64,z84,y65..68.",
+    "scope": "No writes outside new detail_north module/json/notes. No actual in-game validation claimed."
+  },
+  "camera_suggestions": [
+    {"name":"gym_eye_level", "eye":[68,67.7,73], "target":[49,69,58], "inspect":"Seat tiers, stair-aisle gaps, silver railings, mint white wall rhythm."},
+    {"name":"gym_scoreboard", "eye":[66,67.7,59], "target":[77,72,59], "inspect":"Scoreboard digits, bench row and overhead fixtures."},
+    {"name":"gym_south_entrance", "eye":[62,67.7,82], "target":[62,70,68], "inspect":"Clear exit approach beneath suspended backboard, ceiling depth."},
+    {"name":"auditorium_eye_level", "eye":[63,67.7,31], "target":[57,69,16], "inspect":"Central aisle, light wood seats, lectern and screen."},
+    {"name":"auditorium_reverse", "eye":[63,67.7,19], "target":[64,68,30], "inspect":"Chair backs, wall panels, lighting and waiting benches."}
+  ]
+}

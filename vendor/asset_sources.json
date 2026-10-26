@@ -1,0 +1,22 @@
+{
+  "minecraft_version": "1.20.4",
+  "manifest": "https://piston-meta.mojang.com/v1/packages/ee2bc046cef978a91a7494e760a32d4f7f3e835c/1.20.4.json",
+  "client": {
+    "sha1": "fd19469fed4a4b4c15b2d5133985f0e3e7816a8a",
+    "size": 24445539,
+    "url": "https://piston-data.mojang.com/v1/objects/fd19469fed4a4b4c15b2d5133985f0e3e7816a8a/client.jar"
+  },
+  "three": {
+    "shasum": "61fe2907312e8604b1f64187f58e047503847413",
+    "tarball": "https://registry.npmjs.org/three/-/three-0.160.1.tgz",
+    "fileCount": 954,
+    "integrity": "sha512-Bgl2wPJypDOZ1stAxwfWAcJ0WQf7QzlptsxkjYiURPz+n5k4RBDLsq+6f9Y75TYxn6aHLcWz+JNmwTOXWrQTBQ==",
+    "signatures": [
+      {
+        "sig": "MEUCIEC3v+hIQYTv4nXErUn1mgFDoJMqq8etoX/t8coz/w+lAiEA9/x/Vndomd3HoHavghBBjMq5oFIcw1GJg5XQV2DgsLI=",
+        "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+      }
+    ],
+    "unpackedSize": 31556156
+  }
+}

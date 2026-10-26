@@ -1,0 +1,353 @@
+{
+  "format": "Detail v2 Java 1.20.4 supplementary reference; mobile Bedrock is the primary target",
+  "DataVersion": 3700,
+  "campus_sha256": "43f557940738cb386bae8abaab072d1a9f0823837fcd6fa0911a5243328d836f",
+  "source_entries": 124218,
+  "specification": "https://raw.githubusercontent.com/SpongePowered/Schematic-Specification/master/versions/schematic-2.md",
+  "assets": {
+    "unique_states": 81,
+    "official_assets_version": "1.20.4",
+    "official_client_sha1_verified": "fd19469fed4a4b4c15b2d5133985f0e3e7816a8a",
+    "official_version_json_DataVersion_verified": 3700,
+    "model_invisible_property_checks": [
+      {
+        "state": "minecraft:birch_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:birch_slab[type=top,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:birch_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:birch_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:dark_oak_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:iron_bars[east=true,north=true,south=true,waterlogged=false,west=true]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:lectern[facing=south,has_book=false,powered=false]",
+        "property": "has_book",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:lectern[facing=south,has_book=false,powered=false]",
+        "property": "powered",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:oak_leaves[distance=1,persistent=true,waterlogged=false]",
+        "property": "distance",
+        "accepted_value": "1",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:oak_leaves[distance=1,persistent=true,waterlogged=false]",
+        "property": "persistent",
+        "accepted_value": "true",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:oak_leaves[distance=1,persistent=true,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:oak_slab[type=top,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:oak_wall_sign[facing=south,waterlogged=false]",
+        "property": "facing",
+        "accepted_value": "south",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:oak_wall_sign[facing=south,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:polished_andesite_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:quartz_slab[type=top,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:smooth_quartz_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:smooth_quartz_slab[type=top,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:smooth_stone_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:spruce_slab[type=top,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:spruce_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:spruce_trapdoor[facing=west,half=top,open=true,powered=false,waterlogged=false]",
+        "property": "powered",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:spruce_trapdoor[facing=west,half=top,open=true,powered=false,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:stone_brick_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:water[level=0]",
+        "property": "level",
+        "accepted_value": "0",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      }
+    ],
+    "validation_scope": "Official client models validate names/rendered values; explicit block-specific domains validate omitted properties. No Java server registry or game launch was used.",
+    "hidden_property_policy": {
+      "waterlogged": "true|false on stairs/slabs/leaves/wall signs/trapdoors/panes/fences/walls/iron bars/lanterns/chains only",
+      "lectern.powered": "false only",
+      "lectern.has_book": "false only",
+      "trapdoors.powered": "true|false",
+      "leaves.persistent": "true|false",
+      "leaves.distance": "1..7",
+      "water.level": "0..15"
+    }
+  },
+  "in_game_validation": false,
+  "schematic_policy": "Only the fully merged campus snapshot is exported. Raw detail patches and v1 component schematics are excluded.",
+  "source_snapshot_name": "LQD_DaNang_Detail_v2_complete_campus",
+  "world": {
+    "chunks_read_back": 288,
+    "source_blocks_compared": 124218,
+    "terrain_samples": 1440,
+    "air_biome_sections_above_build_checked": 3744,
+    "sections_per_chunk": 24,
+    "regions": [
+      {
+        "file": "r.-1.-1.mca",
+        "chunks": 6,
+        "bytes": 32768,
+        "allocation_non_overlapping": true
+      },
+      {
+        "file": "r.-1.0.mca",
+        "chunks": 48,
+        "bytes": 204800,
+        "allocation_non_overlapping": true
+      },
+      {
+        "file": "r.0.-1.mca",
+        "chunks": 26,
+        "bytes": 114688,
+        "allocation_non_overlapping": true
+      },
+      {
+        "file": "r.0.0.mca",
+        "chunks": 208,
+        "bytes": 860160,
+        "allocation_non_overlapping": true
+      }
+    ],
+    "region_bounds_and_sector_allocations": "passed",
+    "source_block_states": "all matched",
+    "heightmaps": "all 4 maps per chunk matched decoded block-state predicates",
+    "flat_generator_layers": 129,
+    "spawn_xyz": [
+      65,
+      65,
+      219
+    ],
+    "player_credentials": "none",
+    "sign_entities_validated": 3,
+    "block_bounds_xz": [
+      [
+        -48,
+        207
+      ],
+      [
+        -32,
+        255
+      ]
+    ]
+  },
+  "schematics": [
+    {
+      "path": ".\\exports\\LQD_DaNang_Detail_v2_Complete_Campus.schem",
+      "dimensions_xyz": [
+        235,
+        47,
+        285
+      ],
+      "offset_xyz": [
+        -42,
+        63,
+        -32
+      ],
+      "volume": 3147825,
+      "non_air": 124218,
+      "palette_size": 78,
+      "sign_entities": 3,
+      "validation": {
+        "file": "LQD_DaNang_Detail_v2_Complete_Campus.schem",
+        "decoded_entries": 3147825,
+        "source_blocks_compared": 124218,
+        "nbt_readback": "passed",
+        "varint_palette_order_and_offset": "passed"
+      }
+    }
+  ],
+  "world_zip_crc": "passed",
+  "elapsed_seconds": 5.56,
+  "campus_unchanged_during_export": true,
+  "outputs": [
+    {
+      "file": "exports\\LQD_DaNang_Detail_v2_Java_1_20_4\\level.dat",
+      "bytes": 804
+    },
+    {
+      "file": "exports\\LQD_DaNang_Detail_v2_Java_1_20_4\\REFERENCE_README.txt",
+      "bytes": 1163
+    },
+    {
+      "file": "exports\\LQD_DaNang_Detail_v2_Java_1_20_4\\region\\r.-1.-1.mca",
+      "bytes": 32768
+    },
+    {
+      "file": "exports\\LQD_DaNang_Detail_v2_Java_1_20_4\\region\\r.-1.0.mca",
+      "bytes": 204800
+    },
+    {
+      "file": "exports\\LQD_DaNang_Detail_v2_Java_1_20_4\\region\\r.0.-1.mca",
+      "bytes": 114688
+    },
+    {
+      "file": "exports\\LQD_DaNang_Detail_v2_Java_1_20_4\\region\\r.0.0.mca",
+      "bytes": 860160
+    },
+    {
+      "file": "exports\\README_Detail_v2_Java_Reference.txt",
+      "bytes": 1163
+    },
+    {
+      "file": "exports\\LQD_DaNang_Detail_v2_Java_1_20_4.zip",
+      "bytes": 194525
+    },
+    {
+      "file": "exports\\LQD_DaNang_Detail_v2_Complete_Campus.schem",
+      "bytes": 25161
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.deps/
+.bedrock_deps/
+vendor/assets/
+vendor/*.jar
+exports/*/
+!exports/qa/
+qa/bedrock_probe/
+.DS_Store

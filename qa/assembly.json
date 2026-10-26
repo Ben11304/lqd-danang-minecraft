@@ -1,0 +1,72 @@
+{
+  "version": "detail_v2",
+  "stats": {
+    "name": "LQD_DaNang_Detail_v2",
+    "blocks": 124218,
+    "file": ".\\campus.json",
+    "bounds": [
+      [
+        -42,
+        192
+      ],
+      [
+        63,
+        109
+      ],
+      [
+        -32,
+        252
+      ]
+    ]
+  },
+  "palette_count": 78,
+  "patches": {
+    "library": {
+      "patch_entries": 1040,
+      "removed_cells": 623
+    },
+    "classrooms": {
+      "patch_entries": 5848,
+      "removed_cells": 3528
+    },
+    "north": {
+      "patch_entries": 1996,
+      "removed_cells": 502
+    },
+    "specialist": {
+      "patch_entries": 2045,
+      "removed_cells": 1148
+    }
+  },
+  "patch_conflicts": [],
+  "v1_roofs_preserved": true,
+  "v1_gate_preserved": true,
+  "entrance_clear": true,
+  "circulation": {
+    "library": {
+      "two_block_body_reachable": 264,
+      "targets_checked": 65,
+      "all_reached": true
+    },
+    "science": {
+      "two_block_body_reachable": 224,
+      "targets_checked": 57,
+      "all_reached": true
+    },
+    "computer": {
+      "two_block_body_reachable": 280,
+      "targets_checked": 61,
+      "all_reached": true
+    },
+    "gym": {
+      "two_block_body_reachable": 1328,
+      "targets_checked": 192,
+      "all_reached": true
+    }
+  },
+  "changed_cells": 4927,
+  "baseline_sha256": "3a68b671380824a75bb9d3d86f2038687e63a6a43fc31d18ee6238612dff1fee",
+  "campus_sha256": "43f557940738cb386bae8abaab072d1a9f0823837fcd6fa0911a5243328d836f",
+  "interior_accuracy": "Proposed room interiors; campus massing retained from provisional v1",
+  "in_game_validation": false
+}

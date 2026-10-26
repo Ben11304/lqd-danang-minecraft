@@ -1,0 +1,153 @@
+{
+  "component": "south",
+  "status": "Implemented and validated independently; assembled visual QA by root still needed.",
+  "block_count_including_explicit_air": 14462,
+  "bounds": [
+    [
+      21,
+      133
+    ],
+    [
+      64,
+      77
+    ],
+    [
+      149,
+      206
+    ]
+  ],
+  "reference_files": [
+    "ref_017.jpg",
+    "browser_034.jpg",
+    "browser_036.jpg",
+    "ref_020.jpg",
+    "map_satellite_detail_google.jpg",
+    "ref_008.jpg"
+  ],
+  "observed": [
+    "Asymmetric twin cyan quarter arches with taller west span and tall terracotta central pier.",
+    "Terracotta school name panel to the right/east of gate, dark metal gate.",
+    "Pale cream exterior with white columns, three-storey horizontal rhythms, broad windows and lightly coloured flat roofs.",
+    "Entrance courtyard has red/muted yellow paving squares; courtyard landscaping belongs to root."
+  ],
+  "inferred": [
+    "Exact coordinates, heights and bays follow shared campus alignment at approximate 1 block per metre.",
+    "Internal classroom partitions, two sample classrooms and west stair route are playable guesses, not surveyed interiors.",
+    "Small text on the entrance plaque cannot be represented accurately at metre grid; root may add Minecraft sign entity.",
+    "West return and crescent intersection is a simplified interpretation of satellite roof pattern."
+  ],
+  "geometry_checks": [
+    "All assigned x/z bounds respected; overall y64..77.",
+    "Three floor wall bands y65..67,69..71,73..75 plus slabs y64,68,72,76.",
+    "Ground entrance path x64..69,z176..201 and y65..66 is clear.",
+    "Crescent centre/courtyard is hollow; band radii23..31.",
+    "Broad exterior glass totals 660 blocks.",
+    "Doorway openings exist on all 3 floors; west corridor clear at representative x45,z158.",
+    "East endpoint at x126,z161 is open on all three floors for shared connector."
+  ],
+  "camera_suggestions": [
+    {
+      "distance": "close gate",
+      "position": [
+        70,
+        70,
+        222
+      ],
+      "target": [
+        75,
+        71,
+        204
+      ]
+    },
+    {
+      "distance": "close corridor",
+      "position": [
+        55,
+        71,
+        169
+      ],
+      "target": [
+        55,
+        70,
+        156
+      ]
+    },
+    {
+      "distance": "mid courtyard",
+      "position": [
+        77,
+        80,
+        211
+      ],
+      "target": [
+        105,
+        70,
+        176
+      ]
+    },
+    {
+      "distance": "far south overview",
+      "position": [
+        12,
+        129,
+        247
+      ],
+      "target": [
+        90,
+        69,
+        165
+      ]
+    },
+    {
+      "distance": "top layout",
+      "position": [
+        84,
+        175,
+        180
+      ],
+      "target": [
+        84,
+        64,
+        180
+      ]
+    }
+  ],
+  "palette_counts": {
+    "air": 570,
+    "green_concrete": 90,
+    "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 87,
+    "light_blue_concrete": 165,
+    "light_gray_concrete": 1342,
+    "light_gray_stained_glass": 1011,
+    "oak_slab[type=bottom,waterlogged=false]": 12,
+    "oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 12,
+    "quartz_block": 284,
+    "smooth_sandstone": 3111,
+    "smooth_stone": 5684,
+    "smooth_stone_slab[type=bottom,waterlogged=false]": 24,
+    "stone_bricks": 73,
+    "terracotta": 369,
+    "white_concrete": 1617,
+    "yellow_terracotta": 11
+  },
+  "visual_correction_pass": {
+    "compared": [
+      "qa/gate_before.jpg",
+      "research/images/ref_008.jpg",
+      "research/images/ref_017.jpg"
+    ],
+    "fixes": [
+      "Replaced all 165 dark cyan concrete arch blocks with light_blue_concrete to match bright sky-blue reference; preserved white underside and terracotta pier.",
+      "Added broad 3x2 corridor-side classroom glazing to every west return bay, with white vertical pier frames, on all three storeys.",
+      "Added two-block-high corridor-side glazing along southern crescent; preserves door gaps and open corridors."
+    ],
+    "checks": [
+      "165 light blue arch blocks; no cyan_concrete remains.",
+      "Each west return sample front window is exactly 3 blocks wide and 2 high.",
+      "Existing outer/rear windows are 4 blocks wide and 2 high.",
+      "Assigned dimensions and 3 floor wall bands unchanged."
+    ],
+    "glass_blocks": 1011,
+    "limit": "Corrected source geometry and palette; root must reload assembled preview for final visual comparison. Rail cubes in before screenshot are renderer artifact, not modified here."
+  }
+}

@@ -1,0 +1,41 @@
+LÊ QUÝ ĐÔN ĐÀ NẴNG — DETAIL V2
+
+Giữ bố cục v1, thêm nội thất đề xuất: thư viện,30 lớp mẫu,phòng máy16 trạm,
+phòng thí nghiệm, khán đài và hội trường. Chưa phải nội thất thật đã khảo sát.
+
+ĐIỆN THOẠI VÀ IPAD
+Định dạng đích là Minecraft Bedrock .mcworld. Nếu có file .mcworld trong
+exports, chuyển file sang thiết bị, mở bằng Minecraft và chờ nhập world.
+File Java ZIP không thể chỉ đổi đuôi thành .mcworld. Báo cáo Bedrock nằm ở
+exports/bedrock_validation.json; chưa có kiểm thử nhập và chạy trong game.
+
+JAVA PHỤ THAM CHIẾU
+Giải nén LQD_DaNang_Detail_v2_Java_1_20_4.zip và chép thư mục chứa level.dat
+vào saves của profile Java 1.20.4. World dùng Creative, spawn x65 y65 z219.
+Schematic toàn trường là bản ghép hoàn chỉnh, chứa không khí trong hộp bao.
+
+XEM TRƯỚC
+qa/detail_review.html xem trực tiếp được ảnh và hồ sơ. Trình xem3D cần HTTP:
+python -m http.server 8767 --bind 127.0.0.1
+Mở http://127.0.0.1:8767/preview/detail.html
+Chọn phòng trong danh sách; kéo để xoay,cuộn để phóng,Shift+kéo dịch,H ẩn bảng.
+Ảnh preview không phải ảnh chụp trong Minecraft.
+
+VỊ TRÍ CÁC PHÒNG ĐỀ XUẤT (tọa độ Minecraft)
+Thư viện: x58..89,z125..132,tầng trệt sàn64; cửa59..60 và85..86,z133.
+Phòng thí nghiệm: x23..47,z125..132,tầng trệt; cửa24..25 và44..45,z133.
+Phòng máy: x58..89,z125..132,tầng3 sàn72; cửa59..60 và88..89,z133.
+Lớp mẫu: x30..98,z150..155,cả3tầng; đi bằng hành lang z157..159.
+Nhà thi đấu: x46..79,z34..84,sàn65,cửa nam x61..64,z84.
+
+DỰNG LẠI
+Giữ baseline v1 ở qa/baseline_campus.json. Chạy các parts/detail_*.py rồi
+assemble_details.py; build patch có air để xóa vật cũ trong phòng.
+Không paste raw patch độc lập rồi bỏ qua air. make_detailed_preview.py tạo
+geometry/texture từ model vanilla chính thức; export_world.py xuất Java;
+export_bedrock.py (nếu kèm) xuất Bedrock. Đọc docstring và report từng bước.
+Gói không kèm Minecraft client hoặc các thư viện cài sẵn. get_assets.py lấy
+asset chính thức; thư viện Python cơ bản Pillow,numpy,nbtlib; Bedrock dùng
+Amulet và native LevelDB (xem hướng dẫn xuất cùng mã nguồn nếu có).
+
+Không sửa bản v1. Mọi thay đổi chi tiết được lưu ở workspace v2 riêng.

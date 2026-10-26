@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.bin -text
+*.gz -text
+*.jpg -text
+*.png -text
+*.mcworld -text
+*.zip -text
+*.schem -text

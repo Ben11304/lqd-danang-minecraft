@@ -1,0 +1,118 @@
+{
+  "component": "proposed_library_fit_out",
+  "status": "Proposed interior, not a documented copy of the real school library.",
+  "room_bounds_xyz": [
+    [
+      58,
+      89
+    ],
+    [
+      64,
+      67
+    ],
+    [
+      125,
+      132
+    ]
+  ],
+  "ceiling_light_y": 68,
+  "room_area_square_blocks": 256,
+  "design": {
+    "bookshelves": "19 low window-side bookshelf blocks plus four 3m bookcase fins, two tiers high (24 bookshelf blocks).",
+    "reading": "Three 3m reading tables with four chairs each; 12 reading seats total.",
+    "reception": "3m birch counter, one chair, one empty lectern with no block-entity book content.",
+    "materials": "Birch floor and shelf caps keep the palette light; oak table/chair wood supplies contrast; bookshelf textures add restrained color and light-blue carpet marks proposed quiet study areas.",
+    "lighting": "Eight flush sea lanterns replace local ceiling cells and preserve full clear room height."
+  },
+  "palette": [
+    "air",
+    "birch_planks",
+    "birch_slab[type=bottom,waterlogged=false]",
+    "birch_slab[type=top,waterlogged=false]",
+    "bookshelf",
+    "lectern[facing=south,has_book=false,powered=false]",
+    "light_blue_carpet",
+    "oak_slab[type=top,waterlogged=false]",
+    "oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+    "oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",
+    "sea_lantern",
+    "smooth_sandstone",
+    "smooth_stone"
+  ],
+  "block_counts": {
+    "air": 623,
+    "birch_planks": 192,
+    "birch_slab[type=bottom,waterlogged=false]": 31,
+    "birch_slab[type=top,waterlogged=false]": 3,
+    "bookshelf": 43,
+    "lectern[facing=south,has_book=false,powered=false]": 1,
+    "light_blue_carpet": 17,
+    "oak_slab[type=top,waterlogged=false]": 9,
+    "oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 7,
+    "oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 6,
+    "sea_lantern": 8,
+    "smooth_sandstone": 36,
+    "smooth_stone": 64
+  },
+  "removed_existing_solid_cells": 98,
+  "circulation_checks": {
+    "baseline_loaded": true,
+    "reserved_spine": "x58..89,z131..132: all 64 floor positions have air at y65/66/67.",
+    "designated_doorways": "x59..60 and85..86,z133 have air at y65/66.",
+    "BFS_body_clearance": "Two air blocks at y65/66; carpets conservatively excluded from strict BFS.",
+    "BFS_reachable_cells": 208,
+    "checked_targets": 76,
+    "result": "All spine, doorway and reading/shelf-side aisle targets reachable from gallery (59,134).",
+    "source_facade_and_structure": "z124 untouched; z133 modified only at the 8 allowed doorway cells; no y69+ edits; gallery pier route untouched.",
+    "material_names": "All palette block names exist in official vanilla1.20.4 blockstate assets."
+  },
+  "cameras": [
+    {
+      "id": "library_wide",
+      "eye": [
+        60,
+        66.7,
+        131
+      ],
+      "target": [
+        79,
+        66.1,
+        127
+      ],
+      "purpose": "Overall proposed library zoning, bookshelf rhythm, wood palette and reading tables."
+    },
+    {
+      "id": "library_reading_close",
+      "eye": [
+        75,
+        66.65,
+        130
+      ],
+      "target": [
+        75,
+        66.0,
+        127
+      ],
+      "purpose": "Table/chair proportions, bookcase color and carpet detail."
+    },
+    {
+      "id": "library_entry",
+      "eye": [
+        85.5,
+        66.7,
+        135
+      ],
+      "target": [
+        78,
+        66.2,
+        128
+      ],
+      "purpose": "Clear 2m entrance and relationship to existing gallery."
+    }
+  ],
+  "limits": [
+    "Interior layout and room function are proposed and not established from source photos.",
+    "Furniture uses voxel representations; vanilla stairs do not provide a sitting interaction.",
+    "No game runtime validation; root will render merged close/mid views and export."
+  ]
+}

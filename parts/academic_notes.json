@@ -1,0 +1,52 @@
+{
+  "component": "east_academic_and_connecting_wing",
+  "status": "Generated and geometry/palette checks passed; assembled multi-distance visual QA is owned by root.",
+  "bounds_xyz": [[20,137],[64,78],[47,138]],
+  "stored_entries": 19613,
+  "observed_traits": [
+    "Satellite shows the east-facing crescent as a narrow gray roof band enclosing open planted courts; it is not a solid disc.",
+    "browser_035/036/037 and maps_courtyard_2020 show predominantly light cream/white walls, strong pale columns, repeated window bays and open galleries with gray horizontal metalwork.",
+    "browser_039 shows light walls, large white-framed windows and flat parapet roof edges.",
+    "ref_012 and ref_015 establish gray floors, thin gray rails, pale columns and long open corridors.",
+    "ref_009 documents a newer white classroom wing with open lower level; its exact footprint is not independently established and its stilt arrangement was not copied onto every old classroom."
+  ],
+  "implemented": [
+    "Three-storey hollow annular academic band centre x76,z107, radii52..62 and angles -73..30 degrees.",
+    "Continuous inner gallery separated from classroom shell; railings remain visually open, door voids interrupt the classroom wall.",
+    "Straight wing x20..117,z124..137 has north classrooms and south gallery, with representative desks and a small internal stair.",
+    "Approved narrow connector x118..126,z128..133 joins the straight gallery to the crescent.",
+    "South portal x127..132,z136..138 remains open to root-owned longitudinal link.",
+    "Flat light-gray roofs, shallow parapets and pale floor bands, no invented red pitched roofs or large staircase tower."
+  ],
+  "inferred_not_surveyed": [
+    "Exact metre scale, radii and footprint rectification follow the shared provisional masterplan.",
+    "Three floors, four-block floor spacing, roof height y77 and regular seven-metre bay spacing are reconstruction choices.",
+    "Exact classroom partitions, representative desk positions, door openings and stair locations are inferred for walkability.",
+    "Outer classroom-wall windows are repeated from photographic architectural language; individual openings cannot all be matched to a geolocated image.",
+    "Aged staining, thin window frames and multiple thin metal rails are simplified at the one-block grid."
+  ],
+  "checks": {
+    "generation": "python parts/academic.py passed",
+    "courtyard": "Assertion confirms no non-air blocks inside radius51 for z<124 and y65..76.",
+    "height": "Bounds check y64..78 passed.",
+    "palette": "12 standard modern Minecraft palette states, including explicit stair/slab/iron-bars states; no invalid brick_block.",
+    "structural": "Four complete annular floor slabs at64/68/72/76; central corridor and bridge remain hollow between columns."
+  },
+  "close_visual_audit": {
+    "image": "qa/courtyard_before.jpg",
+    "references": ["browser_035.jpg","browser_037.jpg","ref_012.jpg","ref_015.jpg"],
+    "observed_match": "Three visible levels, regular pale piers, recessed open galleries, warm cream classroom wall, gray floor and flat roof match the photographic architectural language. Door/window rhythm is representative rather than individually measured.",
+    "correction": "The original full-block exposed floor fascia was visually too heavy versus the thin photographed concrete edge. Converted only the intermediate gallery edge between piers at y68/72 to top-half smooth quartz slabs. Floor top elevations, full piers and interior slabs are unchanged.",
+    "palette_limit": "Sandstone reads warmer/yellower than weathered off-white in browser_035/037, but photos vary with shadow and age; retained the restrained cream/white contrast instead of inventing an exact sampled paint color.",
+    "rail_limit": "ref_012 has solid lower parapet while ref_015 has open metal rail. Open rail retained. Root is correcting dense cube representation of iron bars in preview; actual bar geometry is outside this component audit.",
+    "remaining_limit": "One-metre bays cannot reproduce thin window frames, louvers or weathering. Assembled exterior visual review is still required after slab/bar preview correction."
+  },
+  "suggested_cameras": [
+    {"distance":"far","eye":[75,125,80],"target":[116,70,102],"inspect":"Crescent silhouette, gray roof, void and connecting-wing placement."},
+    {"distance":"mid","eye":[102,76,98],"target":[126,70,102],"inspect":"Cream-to-white balance, 3 levels, pier/window rhythm, gallery recesses."},
+    {"distance":"close","eye":[121,70,95],"target":[116,70,82],"inspect":"Walkable gallery width, gray handrail, floor steps, classroom access."},
+    {"distance":"close","eye":[105,70,135],"target":[122,70,131],"inspect":"Straight-to-curved connector openings and roof join."}
+  ],
+  "reference_files": ["map_satellite_detail_google.jpg","browser_035.jpg","browser_036.jpg","browser_037.jpg","browser_039.jpg","ref_009.jpg","ref_012.jpg","ref_015.jpg","maps_courtyard_2020.jpg"],
+  "primary_article": "https://nhandan.vn/thay-ao-moi-cho-truong-pho-thong-trung-hoc-chuyen-le-quy-don-da-nang-post902618.html"
+}

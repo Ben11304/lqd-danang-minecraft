@@ -1,0 +1,27 @@
+{
+  "status": "provisional evidence-based reconstruction; not a measured replica",
+  "references": {
+    "map_satellite_google.jpg": "Elongated northwest sports rectangle; north-central elongated light roof; dormitory pin in north. Roof date unknown.",
+    "browser_087.jpg": "Gym pale mint walls, high white horizontal louver openings, wooden/brown sports floor, side bleachers and silver railings. Low-resolution Facebook image; dimensions unverified.",
+    "browser_090.jpg": "Close view confirms horizontal ventilation slots, pale aqua wall framing, white/steel roof truss and silver rails.",
+    "pool_baodanang.jpg": "Turquoise pool, brick red deck, white columns and light steel roof. White high-rise with turquoise facade strips visible behind. Image date uncertain: URL 2016, article 2026.",
+    "ref_002.jpg": "Auditorium white/cream ceiling and walls, brown lower trim and light wood seats. Position within north hall is inferred."
+  },
+  "inferred": [
+    "Whole dormitory placement x111..136,z4..23 is approximate, all four facades are provisional repeated modules; height 11 storeys uses historical report and 4-block floor choice.",
+    "Pool location x129..145,z28..48 and basin dimensions/lanes are inferred; shortened from contract maximum z65 to avoid east academic arc.",
+    "North hall footprint comes from provisional satellite tracing; pitched/shallow light roof simplification and all elevation heights are reconstructed.",
+    "Auditorium occupies interpreted north end of hall; evidence does not establish auditorium and gym share this footprint.",
+    "Sports rectangle use and field line design are representative; satellite does not verify exact court markings.",
+    "Dormitory rooms and stairs are representative; no verified room or floor plan was available."
+  ],
+  "bounds": {"sports_field": [5,40,20,94], "hall": [46,79,12,84], "dormitory": [111,136,4,23], "covered_pool": [129,145,28,48]},
+  "palette_rationale": {"hall": "Cream sandstone exterior, white columns, light grey roof; mint prismarine interior cue and white ventilation slots.", "dormitory": "White concrete and turquoise vertical stripes; neutral dark windows; exact repetition provisional.", "pool": "Blue bottom and real source water, brick red deck, white columns, light grey steel-like roof."},
+  "camera_suggestions": {
+    "close_gym": {"position": [72,69,73], "target": [48,71,56], "check": "White louver rhythm, mint interior trim, railings, wood court floor."},
+    "close_pool": {"position": [130,67,46], "target": [139,66,33], "check": "Blue water, red brick deck, light steel canopy and white supports."},
+    "mid_north": {"position": [88,88,100], "target": [69,73,49], "check": "Hall proportions and roof sections relative to field."},
+    "far_north": {"position": [24,125,-85], "target": [91,78,47], "check": "Dormitory dominance and north facility layout; compare against satellite with uncertain location flagged."},
+    "top_plan": {"position": [75,210,49], "target": [75,64,49], "check": "Separate footprints and clear gap to east classroom arc."}
+  }
+}

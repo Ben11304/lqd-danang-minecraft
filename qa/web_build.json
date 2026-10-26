@@ -1,0 +1,9 @@
+{
+  "campus_sha256": "43f557940738cb386bae8abaab072d1a9f0823837fcd6fa0911a5243328d836f",
+  "mesh_raw_bytes": 41005248,
+  "mesh_gzip_bytes": 3529905,
+  "mesh_sha256": "b9953e4fd50e0aa96113ebdb392fa2f9f0f44a515b4217bb9fcd9b842feda3c7",
+  "gzip_roundtrip": "passed",
+  "files": 70,
+  "no_runtime_or_client": true
+}

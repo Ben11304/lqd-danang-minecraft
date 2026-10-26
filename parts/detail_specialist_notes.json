@@ -1,0 +1,71 @@
+{
+  "status": "Proposed interiors inside existing building; not verified room functions",
+  "science": {
+    "bounds": [
+      23,
+      47,
+      125,
+      132
+    ],
+    "floor": 64,
+    "workstations": 4,
+    "sinks": 4,
+    "doors": [
+      [
+        24,
+        133
+      ],
+      [
+        44,
+        133
+      ]
+    ]
+  },
+  "computer": {
+    "bounds": [
+      58,
+      89,
+      125,
+      132
+    ],
+    "floor": 72,
+    "stations": 16,
+    "doors": [
+      [
+        59,
+        133
+      ],
+      [
+        88,
+        133
+      ]
+    ]
+  },
+  "circulation": "Science center aisle x31..37 and z131..132; computer center aisle z128..129 plus x59..60 and88; gallery z134..135",
+  "cameras": {
+    "science": {
+      "eye": [
+        33.5,
+        66.62,
+        131.5
+      ],
+      "target": [
+        25,
+        66.4,
+        126
+      ]
+    },
+    "computer": {
+      "eye": [
+        60.5,
+        74.62,
+        129
+      ],
+      "target": [
+        79,
+        74.3,
+        126.5
+      ]
+    }
+  }
+}
