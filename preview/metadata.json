@@ -1,7 +1,7 @@
 {
-  "blocks": 162592,
-  "faces": 183056,
-  "vertices": 1098336,
+  "blocks": 162827,
+  "faces": 184324,
+  "vertices": 1105944,
   "stride": 8,
   "endianness": "little",
   "palette": [
@@ -71,10 +71,10 @@
     "yellow_terracotta"
   ],
   "source": "campus.json; exact elements and UVs from official Java1.20.4 client assets",
-  "source_sha256": "19a1f10431c0e0b841f7941d5ae05f9db67b839d9e46ea36da9d0b2e3ba7c3e4",
+  "source_sha256": "16884507ff35e054c16b7911981caabbbf7a74ed266a3187980a1b0a3723e900",
   "source_unchanged_during_render": true,
   "renderer_sha256": "6f8648735a309b6dba035b1e7779b25b550077d75cf063873c1a8da624c29d37",
-  "mesh_sha256": "002aeafd2dcc27eb564a69e66693206f4ea9c1d90013923552059bdbb4c7373d",
+  "mesh_sha256": "797d073de770660b5f8f26e644e5ccbfe2e983e3ce2ed540a6beaa518da900ab",
   "atlas_sha256": "a796f4239ef069a551d681d2e89b6b78cc1de211843b78ac3b7d2475990d89f1",
   "asset_set_sha256": "cf2c9c2bd120b6ddf7e4aa90763d776cb04012b0063bbd447a8fb888f63769a1",
   "atlas": {
@@ -693,12 +693,12 @@
   "meshGroups": [
     {
       "start": 0,
-      "count": 1041588,
+      "count": 1049196,
       "materialIndex": 0,
       "name": "opaque_and_alpha_cutout"
     },
     {
-      "start": 1041588,
+      "start": 1049196,
       "count": 56748,
       "materialIndex": 1,
       "name": "transparent_glass"
@@ -871,22 +871,22 @@
   },
   "faces_by_state": {
     "dirt": 956,
-    "grass_block[snowy=false]": 35572,
-    "gray_concrete": 6118,
+    "grass_block[snowy=false]": 35464,
+    "gray_concrete": 6464,
     "white_concrete": 10963,
-    "smooth_stone": 42204,
-    "smooth_sandstone": 13841,
+    "smooth_stone": 42341,
+    "smooth_sandstone": 13923,
     "stone_bricks": 1636,
     "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]": 13488,
     "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 8308,
-    "andesite": 2791,
+    "andesite": 2752,
     "oak_leaves[distance=1,persistent=true,waterlogged=false]": 3870,
     "coarse_dirt": 2260,
     "smooth_quartz_slab[type=bottom,waterlogged=false]": 2185,
     "oak_log[axis=y]": 754,
     "light_gray_stained_glass": 9458,
     "iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]": 2152,
-    "light_gray_concrete": 7172,
+    "light_gray_concrete": 7238,
     "quartz_block": 2468,
     "birch_planks": 699,
     "bookshelf": 216,
@@ -919,7 +919,7 @@
     "prismarine": 213,
     "purple_terracotta": 770,
     "oak_planks": 1136,
-    "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 480,
+    "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 1264,
     "birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 654,
     "polished_andesite_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 104,
     "light_blue_concrete": 258,

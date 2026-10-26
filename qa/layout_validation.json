@@ -1,5 +1,5 @@
 {
-  "source_sha256": "19a1f10431c0e0b841f7941d5ae05f9db67b839d9e46ea36da9d0b2e3ba7c3e4",
+  "source_sha256": "16884507ff35e054c16b7911981caabbbf7a74ed266a3187980a1b0a3723e900",
   "ground_targets_reached": [
     "south_lobby",
     "oval_lobby",
@@ -10,14 +10,16 @@
     "north_hall",
     "north_field",
     "tower_entry",
-    "annex_entry"
+    "annex_entry",
+    "north_connector"
   ],
-  "ground_reachable_cells": 25447,
-  "route_body_points": 1276,
+  "ground_reachable_cells": 25399,
+  "route_body_points": 1385,
   "roof_projection_cells": {
     "north": 3370,
     "academic": 2913,
-    "south": 1987
+    "south": 1987,
+    "connectors": 154
   },
   "southern_oval_has_solid_roof": true,
   "in_game_validation": false,

@@ -1,8 +1,8 @@
 {
   "format": "Layout v3 Java 1.20.4 supplementary reference; mobile Bedrock is the primary target",
   "DataVersion": 3700,
-  "campus_sha256": "19a1f10431c0e0b841f7941d5ae05f9db67b839d9e46ea36da9d0b2e3ba7c3e4",
-  "source_entries": 162592,
+  "campus_sha256": "16884507ff35e054c16b7911981caabbbf7a74ed266a3187980a1b0a3723e900",
+  "source_entries": 162827,
   "specification": "https://raw.githubusercontent.com/SpongePowered/Schematic-Specification/master/versions/schematic-2.md",
   "assets": {
     "unique_states": 66,
@@ -219,7 +219,7 @@
   "source_snapshot_name": "LQD_DaNang_Layout_v3_complete_campus",
   "world": {
     "chunks_read_back": 288,
-    "source_blocks_compared": 162592,
+    "source_blocks_compared": 162827,
     "terrain_samples": 1440,
     "air_biome_sections_above_build_checked": 3744,
     "sections_per_chunk": 24,
@@ -285,25 +285,25 @@
         -30
       ],
       "volume": 2642387,
-      "non_air": 162592,
+      "non_air": 162827,
       "palette_size": 64,
       "sign_entities": 3,
       "validation": {
         "file": "LQD_DaNang_Layout_v3_Complete_Campus.schem",
         "decoded_entries": 2642387,
-        "source_blocks_compared": 162592,
+        "source_blocks_compared": 162827,
         "nbt_readback": "passed",
         "varint_palette_order_and_offset": "passed"
       }
     }
   ],
   "world_zip_crc": "passed",
-  "elapsed_seconds": 4.83,
+  "elapsed_seconds": 5.69,
   "campus_unchanged_during_export": true,
   "outputs": [
     {
       "file": "exports\\LQD_DaNang_Layout_v3_Java_1_20_4\\level.dat",
-      "bytes": 805
+      "bytes": 802
     },
     {
       "file": "exports\\LQD_DaNang_Layout_v3_Java_1_20_4\\REFERENCE_README.txt",
@@ -331,11 +331,11 @@
     },
     {
       "file": "exports\\LQD_DaNang_Layout_v3_Java_1_20_4.zip",
-      "bytes": 180094
+      "bytes": 180593
     },
     {
       "file": "exports\\LQD_DaNang_Layout_v3_Complete_Campus.schem",
-      "bytes": 21879
+      "bytes": 22033
     }
   ]
 }

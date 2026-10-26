@@ -1,0 +1,44 @@
+{
+  "source_image": "references/satellite_north.png",
+  "supporting_crop": "references/canteen_corridor_crop.png",
+  "source_pixel_polygon": [
+    [
+      595,
+      423
+    ],
+    [
+      615,
+      422
+    ],
+    [
+      625,
+      521
+    ],
+    [
+      606,
+      526
+    ]
+  ],
+  "world_xz_polygon": [
+    [
+      66.76974974721941,
+      87.17670701243084
+    ],
+    [
+      72.28961577350859,
+      87.27112948313804
+    ],
+    [
+      73.1835465116279,
+      114.88738030095757
+    ],
+    [
+      67.86372093023255,
+      115.91983584131326
+    ]
+  ],
+  "purpose": "Visible missing narrow connector roof only; function unknown.",
+  "uncertainty_m": 2.5,
+  "height_evidence": "Satellite roof footprint does not establish height or storeys. One ground-level open walkway and canopy are provisional.",
+  "source_snapshot_sha256": "19a1f10431c0e0b841f7941d5ae05f9db67b839d9e46ea36da9d0b2e3ba7c3e4"
+}

@@ -1,0 +1,78 @@
+{
+  "revision": "3.1",
+  "date": "2026-10-26",
+  "status": "Partial correction. Independent research did not establish exact canteen and lobby C coordinates.",
+  "source_sha256": "16884507ff35e054c16b7911981caabbbf7a74ed266a3187980a1b0a3723e900",
+  "implemented": {
+    "feature": "Narrow covered connection south of the sports complex",
+    "evidence": "Google Maps satellite roof trace; references/connector_trace.json",
+    "length_m_approx": 28,
+    "roof_projection_blocks": 154,
+    "assumptions": ["One storey", "Roof height", "Pale piers at approximately 6 m intervals", "Low metal rails", "Exact materials"],
+    "function_label": "Unassigned; not identified as canteen or lobby C"
+  },
+  "sources": [
+    {
+      "title": "Google Maps: THPT chuyen Le Quy Don, Da Nang",
+      "url": "https://www.google.com/maps?cid=681546677781845227",
+      "finding": "A narrow roof connection between the sports complex and the central rounded junction was omitted from v3. The visible pale rectangle east of the curved wing remains unclassified.",
+      "limit": "Satellite appearance establishes neither room function nor building height. Approximate trace uncertainty is 2–3 m; imagery date was not established."
+    },
+    {
+      "title": "School notice 328, 26 August 2026",
+      "url": "https://lqddn.edu.vn/tin-tuc/thong-bao-ve-lua-chon-don-vi-tu-van-to-chuc-dau-gia",
+      "finding": "Canteen leased floor area is 150 square metres.",
+      "limit": "The six-page attachment contains no canteen location, dimensioned footprint or site plan. Leased area is not roof area."
+    },
+    {
+      "title": "See Tinh mailbox at lobby C, 18 February 2023",
+      "url": "https://tamviet.tienphong.vn/mua-tim-bay-teen-da-nang-mo-hom-thu-cupid-teen-sai-gon-quay-phim-thanh-xuan-post1510950.tpo",
+      "finding": "Explicit lobby C identification, with a tall cream wall and timber/glass display furniture.",
+      "limit": "The wall-facing photographs do not locate the lobby on the satellite footprint."
+    },
+    {
+      "title": "Alumni reception album, October 2026",
+      "url": "https://www.facebook.com/lqddn/posts/1103992365724364/",
+      "finding": "The post identifies the reception as lobby A. Photographs show cream columns, a stair, display glazing and the school scale model.",
+      "limit": "This is evidence about A, not proof of C."
+    },
+    {
+      "title": "School 40-year yearbook, public file linked by alumni page",
+      "url": "https://drive.google.com/file/d/1TXEm1fgCggApbRagWQ6FrjlikIiKA2iY/view",
+      "finding": "141 PDF pages containing paired printed pages. Selected contents, history, facilities, physical-education and reminiscence sections were visually reviewed (33 PDF pages). PDF page 16 / printed pages 29–30 show a recent front facade with tall glazing, pale piers and a central passage. Printed pages 177–178 mention A, B and the canteen separately.",
+      "limit": "No exact canteen or C location was established in the reviewed pages. Almost all pages are raster scans; a failed text search does not mean a term is absent. This was not a full visual review of the book."
+    },
+    {
+      "title": "January 2024 cleaning plan, third-party copy",
+      "url": "https://fr.scribd.com/document/937260106/6-Ke-Hoach-06-Ch%E1%BA%A5m-V%E1%BB%87-Sinh-Thang-01-2024",
+      "finding": "Visible text names lobbies B/C and the area in front of the canteen. An attached diagram is announced.",
+      "limit": "The actual diagram was not accessible in the public viewer. Grouped cleaning assignments do not establish spatial adjacency."
+    },
+    {
+      "title": "Student exploration video, 2023",
+      "url": "https://www.youtube.com/watch?v=DkiPwpmCnGY&t=1381",
+      "finding": "The 23:01–26:04 exploration chapter shows stairs and a curved glazed gallery.",
+      "limit": "No visible C label or continuous route sufficient to geolocate lobby C was established. Other student videos were sampled, not watched exhaustively."
+    }
+  ],
+  "excluded": [
+    "Canteen media belonging to schools of the same name in Quang Tri and Quy Nhon/Gia Lai",
+    "Unrelated Da Nang university video",
+    "Treating 150 square metres as proof that a similarly sized roof is the canteen",
+    "Treating a canteen and the dormitory dining hall as the same place"
+  ],
+  "remaining": [
+    "Exact canteen footprint, entrances and connections",
+    "Exact lobby C position, volume and relation to the sports complex",
+    "Classification of the pale rectangle east of the curved wing"
+  ],
+  "validation": {
+    "bedrock_blocks_read_back": 162827,
+    "chunks_read_back": 288,
+    "projection_mismatches": 0,
+    "ground_destinations_reached": 11,
+    "route_points": 1385,
+    "visual_views_checked": ["connector", "connector_context", "top", "north", "mobile_overview"],
+    "tested_in_minecraft": false
+  }
+}

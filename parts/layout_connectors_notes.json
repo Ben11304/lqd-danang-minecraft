@@ -1,0 +1,188 @@
+{
+  "component": "Narrow missing roof connector south of sports complex",
+  "checks": {
+    "block_entries": 604,
+    "solid_blocks": 394,
+    "bounds_xyz": [
+      [
+        67,
+        72
+      ],
+      [
+        64,
+        69
+      ],
+      [
+        87,
+        115
+      ]
+    ],
+    "roof_projection_cells": 154,
+    "two_wide_three_high_centre_clear": true,
+    "open_end_rows": true,
+    "centre_path_by_z": {
+      "87": [
+        69,
+        70
+      ],
+      "88": [
+        69,
+        70
+      ],
+      "89": [
+        69,
+        70
+      ],
+      "90": [
+        69,
+        70
+      ],
+      "91": [
+        69,
+        70
+      ],
+      "92": [
+        69,
+        70
+      ],
+      "93": [
+        69,
+        70
+      ],
+      "94": [
+        69,
+        70
+      ],
+      "95": [
+        69,
+        70
+      ],
+      "96": [
+        69,
+        70
+      ],
+      "97": [
+        69,
+        70
+      ],
+      "98": [
+        69,
+        70
+      ],
+      "99": [
+        69,
+        70
+      ],
+      "100": [
+        69,
+        70
+      ],
+      "101": [
+        69,
+        70
+      ],
+      "102": [
+        69,
+        70
+      ],
+      "103": [
+        69,
+        70
+      ],
+      "104": [
+        69,
+        70
+      ],
+      "105": [
+        69,
+        70
+      ],
+      "106": [
+        70,
+        71
+      ],
+      "107": [
+        70,
+        71
+      ],
+      "108": [
+        70,
+        71
+      ],
+      "109": [
+        70,
+        71
+      ],
+      "110": [
+        70,
+        71
+      ],
+      "111": [
+        70,
+        71
+      ],
+      "112": [
+        70,
+        71
+      ],
+      "113": [
+        70,
+        71
+      ],
+      "114": [
+        70,
+        71
+      ],
+      "115": [
+        68,
+        69
+      ]
+    },
+    "palette_counts": {
+      "smooth_stone": 154,
+      "gray_concrete": 154,
+      "air": 210,
+      "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 40,
+      "smooth_sandstone": 24,
+      "light_gray_concrete": 22
+    }
+  },
+  "evidence": [
+    "references/satellite_north.png",
+    "references/canteen_corridor_crop.png",
+    "private-reference/LQD_DaNang_Minecraft_Research/images/ref_015.jpg"
+  ],
+  "interpretation": "One-storey ground walkway with pale piers, low metal railing, dark canopy. It follows the satellite polygon. ref015 supports open-sided gallery typology only; its exact correspondence is not geolocated.",
+  "inferred": [
+    "Roof y69 and floor64; actual height/storey count not measured.",
+    "Pier spacing6m, rail height1m and exact materials simplified.",
+    "Not labelled canteen or sanh C; no east pale rectangle added."
+  ],
+  "integration": "Apply component after north/academic so explicit air preserves the two-wide centre and open end joins; no source modules modified.",
+  "cameras": {
+    "eye_level": {
+      "eye": [
+        70,
+        66.7,
+        103
+      ],
+      "target": [
+        69.5,
+        66.7,
+        89
+      ]
+    },
+    "mid": {
+      "eye": [
+        86,
+        78,
+        107
+      ],
+      "target": [
+        70,
+        67,
+        100
+      ]
+    }
+  }
+}

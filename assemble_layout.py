@@ -20,7 +20,7 @@ def assemble():
     old=ROOT/'parts/gate_reference.json'
     assert old.exists(),'The gate reference must be present before assembly.'
     previous=load(old)
-    components={name:load(ROOT/'parts'/f'layout_{name}.json') for name in ('north','academic','south')}
+    components={name:load(ROOT/'parts'/f'layout_{name}.json') for name in ('north','academic','south','connectors')}
     b=Builder('LQD_DaNang_Layout_v3')
     b.fill(-30,63,-30,178,63,238,'dirt')
     b.fill(-30,64,-30,178,64,238,'grass_block[snowy=false]')

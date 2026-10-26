@@ -5,10 +5,10 @@
     21,
     0
   ],
-  "source_sha256": "19a1f10431c0e0b841f7941d5ae05f9db67b839d9e46ea36da9d0b2e3ba7c3e4",
-  "source_entries": 162592,
+  "source_sha256": "16884507ff35e054c16b7911981caabbbf7a74ed266a3187980a1b0a3723e900",
+  "source_entries": 162827,
   "source_palette_size": 64,
-  "source_blocks_read_back_and_compared": 162592,
+  "source_blocks_read_back_and_compared": 162827,
   "source_projection_mismatches": [],
   "chunks_read_back": 288,
   "foundation_samples": 1440,
@@ -42,7 +42,7 @@
       "waxed": true
     }
   ],
-  "layout_route_body_cells_checked": 2552,
+  "layout_route_body_cells_checked": 2770,
   "layout_routes_clear": true,
   "spawn_clear": true,
   "palette_projection": [
@@ -734,11 +734,11 @@
     "Java-only block properties, including leaf distance and explicit pane/bars connections, map to Bedrock native semantics.",
     "Architecture dimensions and interiors retain the reconstruction uncertainties documented in the research and detail notes."
   ],
-  "elapsed_seconds": 3.71,
+  "elapsed_seconds": 5.96,
   "reverse_translation_validation": {
-    "source_coordinates_checked": 162592,
-    "exact_java_state_matches": 157715,
-    "equivalent_after_documented_property_normalization": 162592,
+    "source_coordinates_checked": 162827,
+    "exact_java_state_matches": 157910,
+    "equivalent_after_documented_property_normalization": 162827,
     "normalization_only_source_states": {
       "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]": 684,
       "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 421,
@@ -758,7 +758,7 @@
       "quartz_slab[type=bottom,waterlogged=false]": 3,
       "quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 4,
       "cut_sandstone_slab[type=bottom,waterlogged=false]": 1,
-      "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 24,
+      "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 64,
       "birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 75,
       "polished_andesite_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 12,
       "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 24,

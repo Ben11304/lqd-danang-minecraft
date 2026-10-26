@@ -319,7 +319,8 @@
       "severity": "visual_export_regression",
       "issue": "V3 computer room again contains16 isolated black_stained_glass_pane cells with forced east/west arms.",
       "evidence": "parts/layout_academic.json contains16 such cells; Bedrock computes pane connections from neighbours, as established in v2 readback.",
-      "action": "Before final mobile export, use the same black_concrete screen material already chosen for v2 or otherwise verify a supported native pane arrangement. No audit edit applied."
+      "action": "No further change required.",
+      "status": "RESOLVED in final assembled palette; panes replaced with black_concrete by academic agent"
     },
     {
       "severity": "documented_uncertainty",
@@ -389,5 +390,12 @@
     "parts/layout_south.json",
     "assemble_layout.py"
   ],
-  "mutations": "This review JSON only. No geometry, assembly, website, export or public repository modified."
+  "mutations": "This review JSON only. No geometry, assembly, website, export or public repository modified.",
+  "followup_resolution": {
+    "source_sha256": "19a1f10431c0e0b841f7941d5ae05f9db67b839d9e46ea36da9d0b2e3ba7c3e4",
+    "forced_black_pane_present": false,
+    "black_concrete_present": true,
+    "root_reported_global_circulation": "10 targets including library/oval/north hall/tower/annex reached from gate;1276 route points",
+    "root_reported_bedrock_readback": "162592 source blocks compared,0 mismatch"
+  }
 }

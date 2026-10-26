@@ -1,4 +1,4 @@
-MẶT BẰNGV3 THEO GOOGLE MAPS
+MẶT BẰNG V3.1 THEO GOOGLE MAPS
 Mở preview/detail.html qua máy chủ HTTP hoặc trang GitHub Pages.
 Điện thoại/iPad: tải exports/LQD_DaNang_Layout_Bedrock_v3.mcworld và mở bằng Minecraft.
 Số tầng, cột và nội thất còn ước dựng. Chưa kiểm tra trực tiếp trong game.

@@ -14,7 +14,8 @@ while q:
         if 5<=p[0]<=143 and 6<=p[1]<=204 and p not in parent and open2(*p):parent[p]=(x,z);q.append(p)
 targets={'south_lobby':(72,171),'oval_lobby':(112,177),'oval_connection':(98,164),
  'upper_junction':(72,126),'library':(54,128),'east_gallery':(109,130),
- 'north_hall':(68,44),'north_field':(31,61),'tower_entry':(129,46),'annex_entry':(127,61)}
+ 'north_hall':(68,44),'north_field':(31,61),'tower_entry':(129,46),'annex_entry':(127,61),
+ 'north_connector':(70,103)}
 routes=[]
 for label,target in targets.items():
     assert target in parent,(label,target,'unreachable from entrance',cells.get((target[0],65,target[1])))
@@ -24,11 +25,11 @@ for label,target in targets.items():
 route_data={'source_sha256':digest,'start_xyz':[65,65,204],'ground_reachable_cells':len(parent),'routes':routes}
 (ROOT/'qa/layout_routes.json').write_text(json.dumps(route_data,separators=(',',':')),encoding='utf-8')
 
-colors={'north':'#a7bec6','academic':'#7997ae','south':'#587a96'}
+colors={'north':'#a7bec6','academic':'#7997ae','south':'#587a96','connectors':'#b38451'}
 paths=[];masks={}
 for name,color in colors.items():
     d=json.loads((ROOT/'parts'/f'layout_{name}.json').read_text(encoding='utf-8'))
-    mask={(x,z) for x,y,z,i in d['blocks'] if y>=72 and d['palette'][i]!='air'}
+    mask={(x,z) for x,y,z,i in d['blocks'] if y>=(69 if name=='connectors' else 72) and d['palette'][i]!='air'}
     masks[name]=mask
     rows=collections.defaultdict(list)
     for x,z in mask:rows[z].append(x)
@@ -54,6 +55,8 @@ for name in ('north','academic','south'):
         points=spec.get('world_vertices',spec.get('world',spec.get('world_polygon',spec.get('world_xz'))))
         if points:ref.append((name,points))
 geo=json.loads((ROOT/'references/georeference.json').read_text())
+connector=json.loads((ROOT/'references/connector_trace.json').read_text())
+ref.append(('connectors',connector['world_xz_polygon']))
 origin=geo['north_control_origin_pixel'];ax=geo['x_axis_pixel_per_m'];az=geo['z_axis_pixel_per_m']
 boards=[]
 for frame,dy in [('north',0),('south',354)]:
