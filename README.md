@@ -20,6 +20,8 @@ Chiều cao, cột, cầu thang, số tầng và nội thất chưa được kh�
 
 ## Xem và chơi
 
+Tuyến đang đối chiếu với yêu cầu sảnh C–căn tin: [từ dãy học](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=connector_from_academic&v=32route), [chiều ngược lại](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=connector_from_north&v=32route), [mặt bằng hai đầu](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=connector_top&v=32route). Đây là các góc kiểm tra đoạn nối hiện có, chưa xác nhận tên hai đầu; lượt này không đổi hình học. [Kiểm tra đường đi trong model](qa/connector_route_audit.json).
+
 Web: kéo để xoay, cuộn/chụm để phóng, Shift+kéo/hai ngón để dịch. Chọn góc nhìn ở danh sách dưới màn hình. Điện thoại/iPad: tải `.mcworld`, mở bằng Minecraft Bedrock để nhập. Target Bedrock 1.21.0; có Java 1.20.4 và schematic trong `exports/`.
 
 Ảnh web là trình xem voxel. Đã đọc lại 164.413 block trong 288 chunk; 0 block sai so với nguồn. Đường đi từ cổng tới 18 điểm thông suốt, kiểm tra 2269 điểm trên tuyến. Chưa mở thử trực tiếp trong Minecraft.
