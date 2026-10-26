@@ -1,0 +1,56 @@
+{
+  "version": "layout_v3.2",
+  "source_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
+  "researched_on": "2026-10-26",
+  "request": "Correct the gardens by lobbies A/B and the parking layout.",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps?cid=681546677781845227",
+      "used_for": "Campus roof positions, courtyard boundaries, canopy bands and circular garden feature. Imagery acquisition date unknown."
+    },
+    {
+      "url": "https://drive.google.com/file/d/19ASqF0LWPNKoxvaHOJ5ktPoeFQvqbRJ4/view",
+      "used_for": "Public photograph labelled lobby B: stone path, vine-wrapped supports, low parapet and window facade. Helps identify west courtyard; does not establish exact pergola grid."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Le_Quy_Don_High_School_Campus,_Da_Nang,_Vietnam.jpg",
+      "used_for": "2008 courtyard photograph: circular fountain and sinuous lily basins. Historic reference, not proof of present-day planting."
+    },
+    {
+      "url": "https://drive.google.com/file/d/1TXEm1fgCggApbRagWQ6FrjlikIiKA2iY/view",
+      "used_for": "40-year school yearbook: printed105–106 and127–128 repeat fountain/lily-bed morphology."
+    }
+  ],
+  "built": [
+    {
+      "component": "garden_b",
+      "description": "West courtyard between cross wings: winding stone path, two canopy bands and a small representative vine pergola.",
+      "evidence": "references/garden_b_trace.json"
+    },
+    {
+      "component": "garden_a",
+      "description": "Southern inner courtyard: circular fountain at the satellite feature, curved low basins and stone paths. Public name remains geographic; lobby A identification unconfirmed.",
+      "evidence": "references/garden_a_trace.json"
+    },
+    {
+      "component": "parking",
+      "description": "Satellite-traced auxiliary roof footprints. Parking use, entrances and stalls are unconfirmed; no vehicles or parking signs invented.",
+      "evidence": "references/parking_trace.json"
+    }
+  ],
+  "limits": [
+    "Manual georeference uncertainty approximately2–3m, plus tree-cover and tall-roof parallax.",
+    "Exact garden paths under canopy, tree species and pergola span are interpreted.",
+    "Historic lily-pool details do not establish current water level or plants.",
+    "Parking boundaries and auxiliary roof uses remain unresolved.",
+    "Lobby A identity of the south garden, canteen and lobby C locations remain unresolved.",
+    "No in-game session was run; web images are voxel previews."
+  ],
+  "validation": {
+    "landscape_structural_component_overlaps": 0,
+    "same_source_required_for_web_java_and_bedrock": true,
+    "ground_route_report": "qa/layout_validation.json",
+    "bedrock_readback": "exports/bedrock_validation.json"
+  },
+  "historical_followup": "references/canteen_lobby_followup.json describes v3.1, retaining its own historical source SHA."
+}

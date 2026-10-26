@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parent
 digest=hashlib.sha256((ROOT/'campus.json').read_bytes()).hexdigest()
 assert json.loads((ROOT/'preview/metadata.json').read_text())['source_sha256']==digest
 views={
- 'overview':dict(label='Toàn cảnh · mặt bằng v3.1',p=[245,175,310],t=[74,7,108],fov=48,note='Bổ sung lối nối khu bắc theo Google Maps. Vị trí căn tin và sảnh C chưa được xác minh đầy đủ.'),
+ 'overview':dict(label='Toàn cảnh · mặt bằng v3.2',p=[245,175,310],t=[74,7,108],fov=48,note='Cập nhật hai vườn trong và các mái phụ quan sát trên Google Maps. Chi tiết dưới tán cây và công năng bãi xe còn cần đối chiếu.'),
  'top':dict(label='Mặt bằng · đối chiếu Google Maps',p=[74,345,104],t=[74,0,104],fov=48,note='Khối oval đặc, hai dãy ngang, trục nối và dãy cong theo ảnh vệ tinh. Sai số đường mái khoảng 2–3 m.'),
  'gate':dict(label='Cổng · nhìn vào khu phía nam',p=[71,7,225],t=[74,5,163],fov=64,note='Khối oval khoảng31m ở phía đông, dãy ngang và sân trước được bố trí lại theo bản đồ.'),
  'lobby_south':dict(label='Khu phía nam · sảnh dãy ngang',p=[73,2.62,183],t=[72,3,160],fov=65,note='Lối xuyên trục giữa và tầng trệt mở; chi tiết cột, cửa và nội thất là phương án ước dựng.'),
@@ -21,6 +21,13 @@ views={
 views['top']['mobile']=dict(p=[74,330,104],t=[74,0,104],fov=65)
 views['connector']=dict(label='Lối nối nhà thi đấu · bổ sung từ ảnh vệ tinh',p=[70,2.7,103],t=[69.5,2.7,89],fov=65,note='Dải mái hẹp nối nhà thi đấu với nút giao giữa trường. Chiều cao, cột và lan can còn ước dựng; chưa gán tên căn tin hoặc sảnh C.')
 views['connector_context']=dict(label='Khu nối phía bắc · toàn cảnh',p=[87,32,123],t=[73,5,94],fov=64,note='Đã bổ sung đoạn nối dài khoảng 28 m bị thiếu ở bản v3. Công năng các phòng quanh khu này đang được đối chiếu với ảnh mặt đất.')
+views['garden_south']=dict(label='Vườn trong phía nam · đài tròn và bồn cong',p=[79,3,147],t=[90,2,144],fov=72,note='Vị trí đài tròn đối chiếu ảnh vệ tinh; hồ súng và đường đá tham khảo ảnh sân trường. Đường bồn bị tán che còn ước dựng; chưa chốt tên sảnh A.')
+views['garden_south_context']=dict(label='Vườn trong phía nam · nhìn từ trên',p=[89,37,151],t=[89,0,143],fov=64,note='Giữ khoảng vườn giữa hai dãy ngang và dãy cong. Đài nước có tượng cá heo giản lược, khác với tượng Lê Quý Đôn ở sân trước.')
+views['garden_b']=dict(label='Vườn cạnh sảnh B · lối đá và giàn cây',p=[42,2.7,140],t=[59,4,140],fov=70,note='Ảnh có tên sảnh B và tương quan dãy nhà hỗ trợ vị trí sân phía tây. Giàn cây, lối đá và bồn được dựng lại; nhịp giàn và phần dưới tán còn ước lượng.')
+views['garden_b_context']=dict(label='Vườn cạnh sảnh B · nhìn từ trên',p=[44,52,148],t=[44,0,142],fov=66,note='Khoảng sân dài giữa hai dãy ngang, phía tây trục nối. Ranh vườn theo ảnh vệ tinh; đường đi và giàn dây leo dựa thêm ảnh mặt đất.')
+views['parking']=dict(label='Dãy mái phụ phía đông · công năng chưa chốt',p=[131,2.7,180],t=[139,2.5,167],fov=68,note='Mái dài sát phía đông khối oval được bổ sung theo ảnh vệ tinh. Chưa xác minh đây là bãi xe; chiều cao và cột còn ước dựng.')
+views['parking_context']=dict(label='Mái phụ phía đông · tương quan với khối oval',p=[164,35,201],t=[137,4,168],fov=62,note='Bổ sung phần mái thấp bị thiếu, giữ khoảng đi dọc bên trong hàng rào. Vị trí đỗ xe và lối vào bãi chưa được xác nhận.')
+views['parking_northwest']=dict(label='Các mái phụ phía tây bắc',p=[-22,60,112],t=[27,3,50],fov=64,note='Bổ sung mái ngang phía bắc và mái dài sát rào phía tây theo ảnh vệ tinh. Công năng bãi xe và chiều cao chưa được xác minh bằng ảnh mặt đất.')
 views['overview']['mobile']=dict(p=[300,300,390],t=[74,7,108],fov=60)
 extra=ROOT/'qa/interior_views.json'
 if extra.exists():views.update(json.loads(extra.read_text(encoding='utf-8')))
@@ -33,7 +40,7 @@ apply="""function applyView(id){const base=views[id]||views.overview;const v=cam
 picker.onchange"""
 page=re.sub(r'function applyView\(id\)\{.*?\n?picker\.onchange',lambda m:apply,page,count=1,flags=re.S)
 page=page.replace('Lê Quý Đôn · Chi tiết &amp; tượng','Lê Quý Đôn · Mặt bằng v3')
-page=page.replace('Lê Quý Đôn · Mặt bằng v3</h1>','Lê Quý Đôn · Mặt bằng v3.1</h1>')
+page=re.sub(r'Lê Quý Đôn · Mặt bằng v3(?:\.\d+)?</h1>','Lê Quý Đôn · Mặt bằng v3.2</h1>',page)
 page=page.replace('Nội thất đề xuất · giữ bố cục v1 · vật liệu vanilla.','Mặt bằng theo Google Maps · độ cao và nội thất ước dựng.')
 page=page.replace('LQD_DaNang_Detail_Bedrock_v2.mcworld','LQD_DaNang_Layout_Bedrock_v3.mcworld')
 page=re.sub(r'LQD_DaNang_Layout_Bedrock_v3\.mcworld(?:\?v=[a-f0-9]+)?','LQD_DaNang_Layout_Bedrock_v3.mcworld?v='+digest[:12],page)
@@ -46,5 +53,5 @@ path.write_text(page,encoding='utf-8')
 raw=(ROOT/'preview/mesh.bin').read_bytes();packed=gzip.compress(raw,compresslevel=6,mtime=0)
 (ROOT/'preview/mesh.bin.gz').write_bytes(packed)
 assert gzip.decompress(packed)==raw
-(ROOT/'qa/web_build.json').write_text(json.dumps({'version':'layout_v3.1','campus_sha256':digest,'mesh_raw_bytes':len(raw),'mesh_gzip_bytes':len(packed),'gzip_roundtrip':'passed'},indent=2),encoding='utf-8')
+(ROOT/'qa/web_build.json').write_text(json.dumps({'version':'layout_v3.2','campus_sha256':digest,'mesh_raw_bytes':len(raw),'mesh_gzip_bytes':len(packed),'gzip_roundtrip':'passed'},indent=2),encoding='utf-8')
 print(json.dumps({'views':list(views),'source_sha256':digest,'gzip_bytes':len(packed)}))

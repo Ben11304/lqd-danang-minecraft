@@ -1,31 +1,31 @@
-# Lê Quý Đôn Đà Nẵng · Minecraft · Mặt bằng v3.1
+# Lê Quý Đôn Đà Nẵng · Minecraft · v3.2
 
-**[Xem3D](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=overview&v=31)** · **[Xem từ trên xuống](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=top&v=31)** · **[Tải Bedrock cho điện thoại/iPad](https://ben11304.github.io/lqd-danang-minecraft/exports/LQD_DaNang_Layout_Bedrock_v3.mcworld)**
+**[Xem vườn cạnh sảnh B](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=garden_b&v=32)** · **[Mặt bằng](https://ben11304.github.io/lqd-danang-minecraft/preview/detail.html?view=top&v=32)** · **[Tải Bedrock cho điện thoại/iPad](https://ben11304.github.io/lqd-danang-minecraft/exports/LQD_DaNang_Layout_Bedrock_v3.mcworld?v=783a05b9d5d3)**
 
-**Cập nhật v3.1:** thêm dải mái nối phía nam khu nhà thi đấu dài khoảng 28 m, theo đa giác truy trên Google Maps. Chiều cao, nhịp cột và lan can là ước dựng. **Vị trí chính xác của căn tin và sảnh C vẫn chưa được xác minh; bản này chưa hoàn tất hai khu đó.** [Nhật ký bằng chứng](references/canteen_lobby_followup.json).
+V3.2 thay cây mẫu ở hai vườn trong bằng bố cục tham chiếu: sân phía tây giữa hai dãy ngang có đường đá, tán cây và giàn dây leo; vườn trong phía nam có đài tròn, bồn cong và hồ súng. Ảnh có tên sảnh B hỗ trợ vị trí sân phía tây; tên sảnh A chưa được xác minh cho vườn phía nam. Tán cây che khuất một phần nên đường bồn, nhịp giàn và cây vẫn là ước dựng.
 
-![Lối nối bổ sung](qa/v3_connector_context.png)
+Bổ sung mái thấp dài phía đông khối oval và hai mái ở mép bắc/tây sân phía tây bắc theo dấu mái vệ tinh. **Chưa đủ bằng chứng xác nhận đây là bãi giữ xe, cũng chưa chốt ranh toàn bộ bãi xe.** Không thêm xe, vạch đỗ hoặc cổng phụ từ suy đoán. Căn tin và sảnh C vẫn chưa hoàn tất việc xác định vị trí.
 
-![Mặt bằng mới](qa/v3_top.png)
+![Vườn cạnh sảnh B](qa/v3_garden_b.png)
 
-V3 dựng lại bố cục theo [Google Maps tại đúng trường,01 Vũ Văn Dũng](https://www.google.com/maps?cid=681546677781845227). Mái oval phía nam là khối đặc khoảng31×30m; hai dãy ngang tách biệt, nối bằng trục nhỏ khoảng6m; dải cong phía đông sâu khoảng16–18m. Sân thể thao, năm phần mái nối phía bắc, tháp đông bắc và nhà phụ được đặt lại theo các đa giác truy trên ảnh vệ tinh. Không giữ hình khối nửa vòng rỗng của v1/v2.
+![Vườn trong phía nam](qa/v3_garden_south_context.png)
 
-## Mức độ xác nhận
+## Bằng chứng và giới hạn
 
-- **Mặt bằng:** trace thủ công từ ảnh vệ tinh Google Maps truy cập26/10/2026, đăng ký theo giao đường và các phép đo browser. Sai số ước khoảng2–3m; mái nhô, bóng cây và độ lệch mái cao tầng có thể tạo sai số lớn hơn. Năm ghi công2026 không phải ngày chụp vệ tinh.
-- **Chiều cao, cột, cầu thang và chức năng phòng:** còn là diễn giải, không phải hồ sơ đo đạc. Tên sảnh A/B/C chưa được gán tùy tiện. Thư viện52block kệ/12ghế đọc, phòng máy16trạm,21phòng học mẫu và khu gym là nội thất đề xuất.
-- **Tượng:** bản block giản lược từ [ảnh2012](https://nguoikemon.blogspot.com/2012/05/68-truong-toi-tu-mot-goc-nhin.html), phía tây do người dùng xác nhận: bên phải khi đứng trong trường nhìn ra đường. Khoảng cách/kích thước còn ước lượng.
+Mái nhà và ranh sân truy thủ công từ [Google Maps tại trường, 01 Vũ Văn Dũng](https://www.google.com/maps?cid=681546677781845227), truy cập 26/10/2026, sai số dự kiến 2–3 m. Năm ghi công không phải ngày chụp vệ tinh. Vườn được đối chiếu với [ảnh công khai mang tên sảnh B](https://drive.google.com/file/d/19ASqF0LWPNKoxvaHOJ5ktPoeFQvqbRJ4/view), [ảnh sân trường năm 2008](https://commons.wikimedia.org/wiki/File:Le_Quy_Don_High_School_Campus,_Da_Nang,_Vietnam.jpg) và [kỷ yếu 40 năm](https://drive.google.com/file/d/1TXEm1fgCggApbRagWQ6FrjlikIiKA2iY/view). Chi tiết lịch sử không được xem là xác nhận hiện trạng hôm nay.
+
+[Nhật ký v3.2](references/landscape_revision.json) và các file `references/*_trace.json` phân biệt dấu vết nhìn thấy với phần ước dựng. Ảnh nguồn Google, ảnh gốc điện thoại và PDF giữ trong workspace tham chiếu riêng; repo chỉ đăng dữ liệu hình học và ảnh model. Báo cáo căn tin/sảnh C là lịch sử v3.1 với mã nguồn của bản đó.
+
+Chiều cao, cột, cầu thang, số tầng và nội thất chưa được khảo sát. Thư viện, phòng máy, lớp học và gym là phương án trải nghiệm Minecraft. Tượng Lê Quý Đôn ở phía tây cổng, bên phải khi đứng trong trường nhìn ra đường, theo người dùng xác nhận; khoảng cách và hình tượng còn giản lược.
 
 ## Xem và chơi
 
-Web: kéo để xoay, cuộn/chụm để phóng, Shift+kéo/hai ngón để dịch. Chọn sảnh/phòng ở danh sách dưới màn hình. Điện thoại/iPad: tải `.mcworld`, mở bằng Minecraft Bedrock để nhập. Export target Bedrock1.21.0. Có Java1.20.4 và schematic phụ trong `exports/`.
+Web: kéo để xoay, cuộn/chụm để phóng, Shift+kéo/hai ngón để dịch. Chọn góc nhìn ở danh sách dưới màn hình. Điện thoại/iPad: tải `.mcworld`, mở bằng Minecraft Bedrock để nhập. Target Bedrock 1.21.0; có Java 1.20.4 và schematic trong `exports/`.
 
-Ảnh web là trình xem voxel, chưa phải ảnh trong Minecraft. Đã đọc lại toàn bộ162.827 block và288 chunk của world; kiểm tra đường đi tới11 điểm công cộng,1385 điểm trên tuyến. **Chưa thử mở trực tiếp trong game.**
+Ảnh web là trình xem voxel. Đã đọc lại 164.413 block trong 288 chunk; 0 block sai so với nguồn. Đường đi từ cổng tới 18 điểm thông suốt, kiểm tra 2269 điểm trên tuyến. Chưa mở thử trực tiếp trong Minecraft.
 
-## Nguồn và dựng lại
+## Dựng lại
 
-`references/georeference.json` và `references/*_trace.json` lưu mốc cùng đa giác đã truy trước khi dựng. `qa/layout_plan.svg` là mặt bằng mái của model; ảnh Google được giữ ở workspace tham chiếu riêng, không đưa vào repo. `references/layout_plan_review.json` là lượt kiểm tra bố cục độc lập.
+Chạy `python -m http.server 8769 --bind 127.0.0.1` tại repo để xem. Tạo các module `parts/layout_*.json`, chạy `assemble_layout.py`, `validate_layout.py`, `make_detailed_preview.py`, `configure_layout_viewer.py`, rồi hai exporter. Gate và tượng có nguồn riêng. Các file `parts/detail_*` và export v2 được giữ làm lịch sử; không áp patch nội thất tọa độ v2 lên v3.
 
-Chạy `python -m http.server 8769 --bind 127.0.0.1` tại repo để xem cục bộ. Để dựng lại: tạo 4 module `parts/layout_*.json`, chạy `assemble_layout.py`, `validate_layout.py`, `make_detailed_preview.py`, `configure_layout_viewer.py`, rồi các exporter. Gate và tượng có nguồn riêng; **không áp patch nội thất cũ ở tọa độ v2 lên v3**. Các file `parts/detail_*` và các export v2 được giữ làm lịch sử, không phải đầu vào lớp nhà v3.
-
-Runtime Python và client Minecraft cần chuẩn bị riêng; `get_assets.py` tải asset từ nguồn chính thức. Repo không kèm client jar hoặc các thư viện đã cài. Exporter Bedrock dùng Amulet Core1.9.50 và amulet-leveldb1.0.7 cho CPython3.12 Windows; runtime đặt trong `.bedrock_deps`. Asset model/texture vanilla1.20.4 thuộc Mojang/Microsoft; Three.js0.160.1 theo MIT kèm trong `vendor/`. Dự án không phải sản phẩm chính thức của Minecraft hoặc nhà trường.
+Runtime và asset Minecraft cần chuẩn bị riêng. `get_assets.py` lấy asset chính thức; repo không kèm client jar hoặc thư viện đã cài. Bedrock exporter dùng Amulet Core 1.9.50, amulet-leveldb 1.0.7, CPython 3.12 Windows trong `.bedrock_deps`. Asset vanilla 1.20.4 thuộc Mojang/Microsoft; Three.js 0.160.1 theo MIT. Dự án không phải sản phẩm chính thức của Minecraft hoặc nhà trường.

@@ -1,0 +1,215 @@
+{
+  "task": "Parking and auxiliary roof evidence trace",
+  "source": "GoogleMaps campus CID681546677781845227, screenshots retrieved2026-10-26; capturedateunknown",
+  "georeference": "references/georeference.json",
+  "ground_block_y": 64,
+  "polygons": [
+    {
+      "id": "east_long_auxiliary_canopy",
+      "source_frame": "south",
+      "source_image": "references/satellite_south.png",
+      "source_pixel_polygon": [
+        [
+          855,
+          292
+        ],
+        [
+          882,
+          289
+        ],
+        [
+          892,
+          393
+        ],
+        [
+          865,
+          398
+        ]
+      ],
+      "world_xz_polygon": [
+        [
+          134.1021,
+          153.7941
+        ],
+        [
+          141.5849,
+          153.4644
+        ],
+        [
+          142.385,
+          182.466
+        ],
+        [
+          134.8648,
+          183.3499
+        ]
+      ],
+      "raster_bounds_xz": [
+        [
+          134,
+          141
+        ],
+        [
+          153,
+          182
+        ]
+      ],
+      "raster_area_m2": 219,
+      "geometry_confidence": "High for presence of roof; medium for edges within2.5m manual tolerance.",
+      "function_confidence": "Unverified; no vehicles or school parking label identified in saved ground photographs.",
+      "build_decision": "BUILD_GENERIC_CANOPY",
+      "height_storeys": "Provisional one open level; roof69, ground64. Not measured from satellite."
+    },
+    {
+      "id": "northwest_auxiliary_roof",
+      "source_frame": "north",
+      "source_image": "references/satellite_north.png",
+      "source_pixel_polygon": [
+        [
+          383.7843,
+          188.5
+        ],
+        [
+          497.909,
+          177.5
+        ],
+        [
+          500.912,
+          205
+        ],
+        [
+          385.786,
+          212.5
+        ]
+      ],
+      "world_xz_polygon": [
+        [
+          13.0715,
+          18.2791
+        ],
+        [
+          44.6684,
+          17.3511
+        ],
+        [
+          44.9786,
+          25.0265
+        ],
+        [
+          13.1719,
+          24.9661
+        ]
+      ],
+      "raster_bounds_xz": [
+        [
+          13,
+          44
+        ],
+        [
+          17,
+          24
+        ]
+      ],
+      "raster_area_m2": 229,
+      "geometry_confidence": "High for presence of roof; medium for edges within2.5m manual tolerance.",
+      "function_confidence": "Unverified; no vehicles or school parking label identified in saved ground photographs.",
+      "build_decision": "BUILD_GENERIC_CANOPY",
+      "height_storeys": "Provisional one open level; roof69, ground64. Not measured from satellite.",
+      "source_native_image": "references/satellite_northwest_native.png",
+      "source_native_pixel_polygon": [
+        [
+          517,
+          365
+        ],
+        [
+          745,
+          343
+        ],
+        [
+          751,
+          398
+        ],
+        [
+          521,
+          413
+        ]
+      ],
+      "native_registration": "references/northwest_native_registration.json",
+      "edge_limit": "Quad approximates the long white lower/front roof; small north-edge notches simplified; gray masses behind excluded."
+    },
+    {
+      "id": "west_long_auxiliary_canopy",
+      "source_frame": "north",
+      "source_image": "references/satellite_north.png",
+      "source_pixel_polygon": [
+        [
+          366,
+          227
+        ],
+        [
+          378,
+          226
+        ],
+        [
+          393,
+          460
+        ],
+        [
+          381,
+          461
+        ]
+      ],
+      "world_xz_polygon": [
+        [
+          7.4578,
+          28.6162
+        ],
+        [
+          10.7772,
+          28.562
+        ],
+        [
+          10.5146,
+          93.6764
+        ],
+        [
+          7.1952,
+          93.7306
+        ]
+      ],
+      "raster_bounds_xz": [
+        [
+          7,
+          10
+        ],
+        [
+          29,
+          93
+        ]
+      ],
+      "raster_area_m2": 260,
+      "geometry_confidence": "High for presence of roof; medium for edges within2.5m manual tolerance.",
+      "function_confidence": "Unverified; no vehicles or school parking label identified in saved ground photographs.",
+      "build_decision": "BUILD_GENERIC_CANOPY",
+      "height_storeys": "Provisional one open level; roof69, ground64. Not measured from satellite.",
+      "source_native_image": "references/satellite_northwest_native.png",
+      "edge_limit": "North/middle visible in native zoom; southern continuation traced on original north frame because native screenshot cuts it off."
+    }
+  ],
+  "parking_specific_confirmation": false,
+  "entry_and_aisle": "Satellite shows interior circulation west of eastroof and north/south open ends. No dedicated parking gate or parking-bay markings could be read. Existing mapped eastpath may pass under an open canopy, so preserve2block clearance.",
+  "photo_review": [
+    "research/reference_board.jpg",
+    "research/contact_1.jpg",
+    "research/contact_2.jpg",
+    "research/images/ref_020.jpg",
+    "research/images/ref_009.jpg"
+  ],
+  "photo_cautions": [
+    "ref020 overhead court facesmain gate anddoesnotshoweastcanopy; do notuseit toconfirmgarage.",
+    "browser033 street Psign belongs streetcontext outside school anddoesnotlocalizeon-campusparking.",
+    "2026KhánhHòa phase2reports and VungTau KTXparking FAQs aredifferent schools andexcluded."
+  ],
+  "primary_text": "YearbookPDF84/printed166 recalls rainy-day sheltered parking but provides no coordinates or shape.",
+  "interpretation": "Three open low steel-supported auxiliary canopies reconstruct observed roof shapes. Roof height and supports are provisional. None is verified as the school parking lot; NWbrown area and white edgeobjects remain unclassified."
+}

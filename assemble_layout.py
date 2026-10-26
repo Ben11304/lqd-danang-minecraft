@@ -20,7 +20,8 @@ def assemble():
     old=ROOT/'parts/gate_reference.json'
     assert old.exists(),'The gate reference must be present before assembly.'
     previous=load(old)
-    components={name:load(ROOT/'parts'/f'layout_{name}.json') for name in ('north','academic','south','connectors')}
+    component_names=('north','academic','south','connectors','parking','garden_a','garden_b')
+    components={name:load(ROOT/'parts'/f'layout_{name}.json') for name in component_names}
     b=Builder('LQD_DaNang_Layout_v3')
     b.fill(-30,63,-30,178,63,238,'dirt')
     b.fill(-30,64,-30,178,64,238,'grass_block[snowy=false]')
@@ -94,7 +95,7 @@ def assemble():
     for s in set(b.blocks.values()):assert (ROOT/'vendor/assets/minecraft/blockstates'/f'{s.split("[")[0]}.json').exists(),s
     stats=b.save('campus.json')
     digest=hashlib.sha256((ROOT/'campus.json').read_bytes()).hexdigest()
-    report={'version':'layout_v3','stats':stats,'campus_sha256':digest,'component_blocks':{k:len(v) for k,v in components.items()},
+    report={'version':'layout_v3.2','stats':stats,'campus_sha256':digest,'component_blocks':{k:len(v) for k,v in components.items()},
       'georeference':'references/georeference.json','trees':trees,'junction_overlaps':overlaps,
       'uncertainty':'Manually traced satellite roof masks, approx2.5m; heights/interiors not surveyed.',
       'v1_footprints_preserved':False,'in_game_validation':False}

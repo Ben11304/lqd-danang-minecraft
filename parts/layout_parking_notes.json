@@ -1,0 +1,173 @@
+{
+  "component": "Three observed auxiliary roofs; parking use not independently verified",
+  "checks": {
+    "entries": 3654,
+    "solid_blocks": 1650,
+    "roof_cells_total": 708,
+    "canopies": {
+      "east_long_auxiliary_canopy": {
+        "roof_cells": 219,
+        "body_cells_reached": 209,
+        "validation_target_xyz": [
+          137,
+          65,
+          170
+        ],
+        "bounds_xz": [
+          [
+            134,
+            141
+          ],
+          [
+            153,
+            182
+          ]
+        ],
+        "two_wide_on_normal_width_rows": true,
+        "one_cell_roof_tip_rows": [
+          153
+        ]
+      },
+      "northwest_auxiliary_roof": {
+        "roof_cells": 229,
+        "body_cells_reached": 219,
+        "validation_target_xyz": [
+          29,
+          65,
+          21
+        ],
+        "bounds_xz": [
+          [
+            13,
+            44
+          ],
+          [
+            17,
+            24
+          ]
+        ],
+        "two_wide_on_normal_width_rows": true,
+        "one_cell_roof_tip_rows": []
+      },
+      "west_long_auxiliary_canopy": {
+        "roof_cells": 260,
+        "body_cells_reached": 240,
+        "validation_target_xyz": [
+          9,
+          65,
+          61
+        ],
+        "bounds_xz": [
+          [
+            7,
+            10
+          ],
+          [
+            29,
+            93
+          ]
+        ],
+        "two_wide_on_normal_width_rows": true,
+        "one_cell_roof_tip_rows": []
+      }
+    },
+    "bounds_xyz": [
+      [
+        7,
+        141
+      ],
+      [
+        64,
+        69
+      ],
+      [
+        17,
+        182
+      ]
+    ],
+    "palette_counts": {
+      "andesite": 708,
+      "air": 2004,
+      "red_terracotta": 181,
+      "terracotta": 38,
+      "iron_bars[east=false,north=false,south=false,west=false,waterlogged=false]": 120,
+      "light_gray_concrete": 190,
+      "white_concrete": 413
+    }
+  },
+  "source_trace": "references/parking_trace.json",
+  "source_images": [
+    "references/satellite_south.png",
+    "references/satellite_north.png",
+    "references/satellite_northwest_native.png"
+  ],
+  "native_registration": "references/northwest_native_registration.json",
+  "observed": [
+    "Eastern reddish long roof beside oval.",
+    "Northwest white roof along northern edge of brown rectangle.",
+    "Narrow pale roof along western perimeter of brown rectangle."
+  ],
+  "inferred": [
+    "Ground64,roof69 and low open steel supports are provisional; actual heights and unseen walls not measured.",
+    "Support/seam spacing6m and andesite paving simplified.",
+    "No cars,bicycles,parking paint,signage,dedicated gate or small white object identity invented."
+  ],
+  "northwest_brown_area": "Function,sport lines and bench interpretation remain inferred; not changed by this component.",
+  "unbuilt": "Small repeated pale edgeobjects are unclassified and not added as roofs,benches or vehicles.",
+  "integration": "Add full component projection to occupied before tree planting. Explicit air only inside new roofmasks65..67. North hall,field,tower,academic and south generator files unchanged.",
+  "root_bfs_targets": [
+    [
+      137,
+      65,
+      170
+    ],
+    [
+      29,
+      65,
+      21
+    ],
+    [
+      9,
+      65,
+      61
+    ]
+  ],
+  "cameras": {
+    "east": {
+      "eye": [
+        131,
+        66.7,
+        180
+      ],
+      "target": [
+        139,
+        66.5,
+        167
+      ]
+    },
+    "northwest": {
+      "eye": [
+        47,
+        76,
+        38
+      ],
+      "target": [
+        27,
+        67,
+        20
+      ]
+    },
+    "west": {
+      "eye": [
+        20,
+        67,
+        65
+      ],
+      "target": [
+        9,
+        67,
+        61
+      ]
+    }
+  }
+}

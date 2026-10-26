@@ -1,11 +1,11 @@
 {
   "format": "Layout v3 Java 1.20.4 supplementary reference; mobile Bedrock is the primary target",
   "DataVersion": 3700,
-  "campus_sha256": "16884507ff35e054c16b7911981caabbbf7a74ed266a3187980a1b0a3723e900",
-  "source_entries": 162827,
+  "campus_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
+  "source_entries": 164413,
   "specification": "https://raw.githubusercontent.com/SpongePowered/Schematic-Specification/master/versions/schematic-2.md",
   "assets": {
-    "unique_states": 66,
+    "unique_states": 76,
     "official_assets_version": "1.20.4",
     "official_client_sha1_verified": "fd19469fed4a4b4c15b2d5133985f0e3e7816a8a",
     "official_version_json_DataVersion_verified": 3700,
@@ -41,7 +41,19 @@
         "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
       },
       {
+        "state": "minecraft:brick_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
         "state": "minecraft:cut_sandstone_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:iron_bars[east=false,north=false,south=false,waterlogged=false,west=false]",
         "property": "waterlogged",
         "accepted_value": "false",
         "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
@@ -179,6 +191,12 @@
         "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
       },
       {
+        "state": "minecraft:smooth_sandstone_slab[type=bottom,waterlogged=false]",
+        "property": "waterlogged",
+        "accepted_value": "false",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
         "state": "minecraft:spruce_slab[type=top,waterlogged=false]",
         "property": "waterlogged",
         "accepted_value": "false",
@@ -201,6 +219,12 @@
         "property": "waterlogged",
         "accepted_value": "false",
         "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
+      },
+      {
+        "state": "minecraft:water[level=0]",
+        "property": "level",
+        "accepted_value": "0",
+        "check": "block-specific vanilla property allowlist and boolean/range validation; absent from model variants"
       }
     ],
     "validation_scope": "Official client models validate names/rendered values; explicit block-specific domains validate omitted properties. No Java server registry or game launch was used.",
@@ -219,7 +243,7 @@
   "source_snapshot_name": "LQD_DaNang_Layout_v3_complete_campus",
   "world": {
     "chunks_read_back": 288,
-    "source_blocks_compared": 162827,
+    "source_blocks_compared": 164413,
     "terrain_samples": 1440,
     "air_biome_sections_above_build_checked": 3744,
     "sections_per_chunk": 24,
@@ -285,25 +309,25 @@
         -30
       ],
       "volume": 2642387,
-      "non_air": 162827,
-      "palette_size": 64,
+      "non_air": 164413,
+      "palette_size": 75,
       "sign_entities": 3,
       "validation": {
         "file": "LQD_DaNang_Layout_v3_Complete_Campus.schem",
         "decoded_entries": 2642387,
-        "source_blocks_compared": 162827,
+        "source_blocks_compared": 164413,
         "nbt_readback": "passed",
         "varint_palette_order_and_offset": "passed"
       }
     }
   ],
   "world_zip_crc": "passed",
-  "elapsed_seconds": 5.69,
+  "elapsed_seconds": 5.54,
   "campus_unchanged_during_export": true,
   "outputs": [
     {
       "file": "exports\\LQD_DaNang_Layout_v3_Java_1_20_4\\level.dat",
-      "bytes": 802
+      "bytes": 804
     },
     {
       "file": "exports\\LQD_DaNang_Layout_v3_Java_1_20_4\\REFERENCE_README.txt",
@@ -331,11 +355,11 @@
     },
     {
       "file": "exports\\LQD_DaNang_Layout_v3_Java_1_20_4.zip",
-      "bytes": 180593
+      "bytes": 185502
     },
     {
       "file": "exports\\LQD_DaNang_Layout_v3_Complete_Campus.schem",
-      "bytes": 22033
+      "bytes": 23284
     }
   ]
 }

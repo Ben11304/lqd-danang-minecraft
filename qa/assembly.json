@@ -1,8 +1,8 @@
 {
-  "version": "layout_v3",
+  "version": "layout_v3.2",
   "stats": {
     "name": "LQD_DaNang_Layout_v3",
-    "blocks": 162827,
+    "blocks": 164413,
     "file": ".\\campus.json",
     "bounds": [
       [
@@ -19,12 +19,15 @@
       ]
     ]
   },
-  "campus_sha256": "16884507ff35e054c16b7911981caabbbf7a74ed266a3187980a1b0a3723e900",
+  "campus_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
   "component_blocks": {
     "north": 25278,
     "academic": 23588,
     "south": 23453,
-    "connectors": 604
+    "connectors": 604,
+    "parking": 3654,
+    "garden_a": 7254,
+    "garden_b": 10283
   },
   "georeference": "references/georeference.json",
   "trees": [
@@ -69,28 +72,8 @@
       139
     ],
     [
-      28,
-      142
-    ],
-    [
-      43,
-      142
-    ],
-    [
-      57,
-      143
-    ],
-    [
       91,
       109
-    ],
-    [
-      89,
-      140
-    ],
-    [
-      100,
-      141
     ],
     [
       15,
@@ -131,14 +114,6 @@
     [
       123,
       185
-    ],
-    [
-      132,
-      175
-    ],
-    [
-      132,
-      158
     ],
     [
       135,

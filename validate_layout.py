@@ -5,7 +5,10 @@ ROOT=Path(__file__).resolve().parent
 data=json.loads((ROOT/'campus.json').read_text(encoding='utf-8'))
 cells={(x,y,z):data['palette'][i] for x,y,z,i in data['blocks']}
 digest=hashlib.sha256((ROOT/'campus.json').read_bytes()).hexdigest()
-def open2(x,z,y=65):return all(cells.get((x,y+d,z),'air')=='air' for d in (0,1))
+def open2(x,z,y=65):
+    # Paths must have solid support; ponds are not dry walking routes.
+    floor=cells.get((x,y-1,z),'air')
+    return floor!='air' and not floor.startswith(('water','lava')) and all(cells.get((x,y+d,z),'air')=='air' for d in (0,1))
 start=(65,204);q=collections.deque([start]);parent={start:None}
 assert open2(*start)
 while q:
@@ -15,7 +18,9 @@ while q:
 targets={'south_lobby':(72,171),'oval_lobby':(112,177),'oval_connection':(98,164),
  'upper_junction':(72,126),'library':(54,128),'east_gallery':(109,130),
  'north_hall':(68,44),'north_field':(31,61),'tower_entry':(129,46),'annex_entry':(127,61),
- 'north_connector':(70,103)}
+ 'north_connector':(70,103),'east_canopy':(137,170),'northwest_canopy':(25,20),'west_canopy':(9,50),
+ 'south_garden_west':(79,145),'south_garden_east':(103,145),
+ 'west_garden_path':(42,140),'west_garden_entry':(66,147)}
 routes=[]
 for label,target in targets.items():
     assert target in parent,(label,target,'unreachable from entrance',cells.get((target[0],65,target[1])))
@@ -25,11 +30,11 @@ for label,target in targets.items():
 route_data={'source_sha256':digest,'start_xyz':[65,65,204],'ground_reachable_cells':len(parent),'routes':routes}
 (ROOT/'qa/layout_routes.json').write_text(json.dumps(route_data,separators=(',',':')),encoding='utf-8')
 
-colors={'north':'#a7bec6','academic':'#7997ae','south':'#587a96','connectors':'#b38451'}
+colors={'north':'#a7bec6','academic':'#7997ae','south':'#587a96','connectors':'#b38451','parking':'#a66d61'}
 paths=[];masks={}
 for name,color in colors.items():
     d=json.loads((ROOT/'parts'/f'layout_{name}.json').read_text(encoding='utf-8'))
-    mask={(x,z) for x,y,z,i in d['blocks'] if y>=(69 if name=='connectors' else 72) and d['palette'][i]!='air'}
+    mask={(x,z) for x,y,z,i in d['blocks'] if y>=(69 if name in ('connectors','parking') else 72) and d['palette'][i]!='air'}
     masks[name]=mask
     rows=collections.defaultdict(list)
     for x,z in mask:rows[z].append(x)
@@ -40,7 +45,19 @@ for name,color in colors.items():
             if x!=last+1:fragments.append(f'M{a} {z}h{last-a+1}v1h{-last+a-1}z');a=x
             last=x
     paths.append(f'<path d="{"".join(fragments)}" fill="{color}"/>')
-svg='''<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 -18 172 244" role="img" aria-label="Mặt bằng mái v3 theo Google Maps"><rect x="-12" y="-18" width="172" height="244" fill="#f3f5ef"/><g stroke="#c1c8c6" stroke-width="7"><path d="M0 -5V213M148 -5V213M-4 0H152M-4 208H152"/></g><rect x="6" y="7" width="136" height="192" fill="#e0e9d5" stroke="#66816d" stroke-width=".6"/><rect x="12" y="26" width="39" height="70" fill="#bdac8b"/>'''+''.join(paths)+'''<path d="M64 173H80V199H64Z" fill="#c38572"/><path d="M56 199H86" stroke="#4d9eb5" stroke-width="2"/><rect x="35" y="184" width="7" height="7" fill="#696763"/><g font-family="sans-serif" text-anchor="middle" fill="#213f49" font-size="3.7"><text x="31" y="64">Sân thể thao</text><text x="68" y="47">Dãy mái bắc</text><text x="125" y="35">Tháp</text><text x="134" y="66">Nhà phụ</text><text x="43" y="126">Dãy ngang trên</text><text x="111" y="100">Dãy cong</text><text x="44" y="160">Dãy ngang dưới</text><text x="112" y="166">Khối oval đặc</text><text x="72" y="190">Sân trước</text><text x="72" y="218">Vũ Văn Dũng · Cổng chính</text><text x="74" y="-8">MẶT BẰNG V3 · DẤU MÁI</text></g><g stroke="#405a60" stroke-width=".5" fill="none"><path d="M10 217H30M10 215V219M30 215V219"/></g><text x="20" y="224" text-anchor="middle" font-family="sans-serif" font-size="3.4" fill="#405a60">20 m (xấp xỉ)</text></svg>'''
+for name in ('garden_a','garden_b'):
+    garden=json.loads((ROOT/'parts'/f'layout_{name}.json').read_text(encoding='utf-8'))
+    top={}
+    for x,y,z,i in garden['blocks']:
+        material=garden['palette'][i]
+        if material=='air':continue
+        if (x,z) not in top or y>top[x,z][0]:top[x,z]=(y,material)
+    groups=collections.defaultdict(list)
+    for (x,z),(y,material) in top.items():
+        color='#5b9361' if 'leaves' in material or 'vine' in material else '#96b87a' if 'grass' in material or 'flower' in material else '#559db6' if 'water' in material else '#a78b6c' if 'log' in material else '#c5bbaa' if 'sandstone' in material else '#b4b8ae'
+        groups[color].append(f'M{x} {z}h1v1h-1z')
+    for color,fragments in groups.items():paths.append(f'<path d="{"".join(fragments)}" fill="{color}"/>')
+svg='''<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 -18 172 244" role="img" aria-label="Mặt bằng mái và vườn v3.2 theo Google Maps"><rect x="-12" y="-18" width="172" height="244" fill="#f3f5ef"/><g stroke="#c1c8c6" stroke-width="7"><path d="M0 -5V213M148 -5V213M-4 0H152M-4 208H152"/></g><rect x="6" y="7" width="136" height="192" fill="#e0e9d5" stroke="#66816d" stroke-width=".6"/><rect x="12" y="26" width="39" height="70" fill="#bdac8b"/>'''+''.join(paths)+'''<path d="M64 173H80V199H64Z" fill="#c38572"/><path d="M56 199H86" stroke="#4d9eb5" stroke-width="2"/><rect x="35" y="184" width="7" height="7" fill="#696763"/><g font-family="sans-serif" text-anchor="middle" fill="#213f49" font-size="3.7"><text x="31" y="64">Sân phía tây bắc</text><text x="68" y="47">Dãy mái bắc</text><text x="125" y="35">Tháp</text><text x="134" y="66">Nhà phụ</text><text x="43" y="126">Dãy ngang trên</text><text x="111" y="100">Dãy cong</text><text x="44" y="160">Dãy ngang dưới</text><text x="112" y="166">Khối oval đặc</text><text x="72" y="190">Sân trước</text><text x="72" y="218">Vũ Văn Dũng · Cổng chính</text><text x="74" y="-8">MẶT BẰNG V3.2 · MÁI VÀ VƯỜN</text></g><g stroke="#405a60" stroke-width=".5" fill="none"><path d="M10 217H30M10 215V219M30 215V219"/></g><text x="20" y="224" text-anchor="middle" font-family="sans-serif" font-size="3.4" fill="#405a60">20 m (xấp xỉ)</text></svg>'''
 (ROOT/'qa/layout_plan.svg').write_text(svg,encoding='utf-8')
 
 # Private side-by-side source overlay, retaining Google's screenshot attribution.
@@ -57,6 +74,8 @@ for name in ('north','academic','south'):
 geo=json.loads((ROOT/'references/georeference.json').read_text())
 connector=json.loads((ROOT/'references/connector_trace.json').read_text())
 ref.append(('connectors',connector['world_xz_polygon']))
+parking=json.loads((ROOT/'references/parking_trace.json').read_text())
+ref.extend(('parking',p['world_xz_polygon']) for p in parking['polygons'] if p.get('build_decision')=='BUILD_GENERIC_CANOPY')
 origin=geo['north_control_origin_pixel'];ax=geo['x_axis_pixel_per_m'];az=geo['z_axis_pixel_per_m']
 boards=[]
 for frame,dy in [('north',0),('south',354)]:

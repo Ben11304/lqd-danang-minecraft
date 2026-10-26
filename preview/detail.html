@@ -1,7 +1,7 @@
 <!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trường Lê Quý Đôn Đà Nẵng · Minecraft 3D</title><meta name="description" content="Khám phá bản dựng Minecraft 3D trường THPT chuyên Lê Quý Đôn Đà Nẵng. Xem thư viện, lớp học và tải map Bedrock cho điện thoại/iPad."><meta property="og:title" content="Lê Quý Đôn Đà Nẵng · Minecraft 3D"><meta property="og:image" content="https://ben11304.github.io/lqd-danang-minecraft/qa/v3_overview.png">
 <style>*{box-sizing:border-box}body{margin:0;background:#d5e3e8;color:#193e3a;font:14px/1.5 system-ui,sans-serif}#view{position:fixed;inset:0}canvas{display:block;touch-action:none}header{position:fixed;top:14px;left:14px;background:#fffE;border-radius:12px;padding:12px 16px;max-width:370px;pointer-events:none}h1{font-size:19px;margin:0 0 5px}p{margin:5px 0}.small{font-size:12px;color:#516965}nav{position:fixed;bottom:14px;left:14px;right:14px;max-width:1000px;background:#fffE;border-radius:12px;padding:12px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}select,button{font:inherit;padding:9px 12px;background:white;color:#194b45;border:1px solid #aac4bc;border-radius:7px}select{max-width:100%;flex:1}a{color:#176e62}body.clean header,body.clean nav{display:none}#caption{font-weight:600}@media(max-width:640px){header{max-width:calc(100% - 28px);padding:9px 12px}header p.small:nth-of-type(4){display:none}header h1{font-size:17px}nav{padding:9px;gap:7px}nav select{flex-basis:100%;min-width:0}nav button,nav a{font-size:13px}nav a{padding:6px}#loading{font-size:11px}}a.download{background:#195c50;color:white;text-decoration:none;border-radius:7px;padding:8px 12px}#restore{display:none;position:fixed;right:14px;top:14px;z-index:3;background:#fffE}body.clean #restore{display:block}</style>
-<button id="restore" aria-label="Hiện bảng điều khiển">☰ Hiện bảng</button><div id="view"></div><header><h1>Lê Quý Đôn · Mặt bằng v3.1</h1><p id="caption">Đang nạp…</p><p class="small">Mặt bằng theo Google Maps · độ cao và nội thất ước dựng.</p><p class="small">Đây là trình xem voxel, chưa phải ảnh chụp trong Minecraft.</p><p class="small">Kéo để xoay · Chụm hai ngón hoặc cuộn để phóng · Hai ngón hoặc Shift+kéo để dịch · H ẩn bảng.</p><p id="loading" class="small"></p></header>
-<nav><select id="view-picker" aria-label="Góc nhìn"></select><button id="prev">←</button><button id="next">→</button><button id="hide">Ẩn bảng · H</button><a class="download" href="../exports/LQD_DaNang_Layout_Bedrock_v3.mcworld?v=16884507ff35" download>Tải map Bedrock</a><a href="../qa/detail_review.html">Ảnh &amp; chi tiết</a><a href="https://github.com/Ben11304/lqd-danang-minecraft" target="_blank" rel="noopener">GitHub</a><a href="https://www.google.com/maps?cid=681546677781845227" target="_blank" rel="noopener">Google Maps</a></nav>
+<button id="restore" aria-label="Hiện bảng điều khiển">☰ Hiện bảng</button><div id="view"></div><header><h1>Lê Quý Đôn · Mặt bằng v3.2</h1><p id="caption">Đang nạp…</p><p class="small">Mặt bằng theo Google Maps · độ cao và nội thất ước dựng.</p><p class="small">Đây là trình xem voxel, chưa phải ảnh chụp trong Minecraft.</p><p class="small">Kéo để xoay · Chụm hai ngón hoặc cuộn để phóng · Hai ngón hoặc Shift+kéo để dịch · H ẩn bảng.</p><p id="loading" class="small"></p></header>
+<nav><select id="view-picker" aria-label="Góc nhìn"></select><button id="prev">←</button><button id="next">→</button><button id="hide">Ẩn bảng · H</button><a class="download" href="../exports/LQD_DaNang_Layout_Bedrock_v3.mcworld?v=783a05b9d5d3" download>Tải map Bedrock</a><a href="../qa/detail_review.html">Ảnh &amp; chi tiết</a><a href="https://github.com/Ben11304/lqd-danang-minecraft" target="_blank" rel="noopener">GitHub</a><a href="https://www.google.com/maps?cid=681546677781845227" target="_blank" rel="noopener">Google Maps</a></nav>
 <script type="module">
 import * as THREE from '../vendor/three.module.js';
 const params=new URLSearchParams(location.search);if(params.has('clean'))document.body.classList.add('clean');
@@ -11,7 +11,7 @@ const scene=new THREE.Scene();scene.fog=new THREE.Fog(0xcbdce5,800,1400);scene.a
 const camera=new THREE.PerspectiveCamera(60,w()/innerHeight,.08,1600),target=new THREE.Vector3();let radius=30,theta=0,phi=1.4;
 const views={
  "overview": {
-  "label": "Toàn cảnh · mặt bằng v3.1",
+  "label": "Toàn cảnh · mặt bằng v3.2",
   "p": [
    245,
    175,
@@ -23,7 +23,7 @@ const views={
    108
   ],
   "fov": 48,
-  "note": "Bổ sung lối nối khu bắc theo Google Maps. Vị trí căn tin và sảnh C chưa được xác minh đầy đủ.",
+  "note": "Cập nhật hai vườn trong và các mái phụ quan sát trên Google Maps. Chi tiết dưới tán cây và công năng bãi xe còn cần đối chiếu.",
   "mobile": {
    "p": [
     300,
@@ -262,6 +262,111 @@ const views={
   "fov": 64,
   "note": "Đã bổ sung đoạn nối dài khoảng 28 m bị thiếu ở bản v3. Công năng các phòng quanh khu này đang được đối chiếu với ảnh mặt đất."
  },
+ "garden_south": {
+  "label": "Vườn trong phía nam · đài tròn và bồn cong",
+  "p": [
+   79,
+   3,
+   147
+  ],
+  "t": [
+   90,
+   2,
+   144
+  ],
+  "fov": 72,
+  "note": "Vị trí đài tròn đối chiếu ảnh vệ tinh; hồ súng và đường đá tham khảo ảnh sân trường. Đường bồn bị tán che còn ước dựng; chưa chốt tên sảnh A."
+ },
+ "garden_south_context": {
+  "label": "Vườn trong phía nam · nhìn từ trên",
+  "p": [
+   89,
+   37,
+   151
+  ],
+  "t": [
+   89,
+   0,
+   143
+  ],
+  "fov": 64,
+  "note": "Giữ khoảng vườn giữa hai dãy ngang và dãy cong. Đài nước có tượng cá heo giản lược, khác với tượng Lê Quý Đôn ở sân trước."
+ },
+ "garden_b": {
+  "label": "Vườn cạnh sảnh B · lối đá và giàn cây",
+  "p": [
+   42,
+   2.7,
+   140
+  ],
+  "t": [
+   59,
+   4,
+   140
+  ],
+  "fov": 70,
+  "note": "Ảnh có tên sảnh B và tương quan dãy nhà hỗ trợ vị trí sân phía tây. Giàn cây, lối đá và bồn được dựng lại; nhịp giàn và phần dưới tán còn ước lượng."
+ },
+ "garden_b_context": {
+  "label": "Vườn cạnh sảnh B · nhìn từ trên",
+  "p": [
+   44,
+   52,
+   148
+  ],
+  "t": [
+   44,
+   0,
+   142
+  ],
+  "fov": 66,
+  "note": "Khoảng sân dài giữa hai dãy ngang, phía tây trục nối. Ranh vườn theo ảnh vệ tinh; đường đi và giàn dây leo dựa thêm ảnh mặt đất."
+ },
+ "parking": {
+  "label": "Dãy mái phụ phía đông · công năng chưa chốt",
+  "p": [
+   131,
+   2.7,
+   180
+  ],
+  "t": [
+   139,
+   2.5,
+   167
+  ],
+  "fov": 68,
+  "note": "Mái dài sát phía đông khối oval được bổ sung theo ảnh vệ tinh. Chưa xác minh đây là bãi xe; chiều cao và cột còn ước dựng."
+ },
+ "parking_context": {
+  "label": "Mái phụ phía đông · tương quan với khối oval",
+  "p": [
+   164,
+   35,
+   201
+  ],
+  "t": [
+   137,
+   4,
+   168
+  ],
+  "fov": 62,
+  "note": "Bổ sung phần mái thấp bị thiếu, giữ khoảng đi dọc bên trong hàng rào. Vị trí đỗ xe và lối vào bãi chưa được xác nhận."
+ },
+ "parking_northwest": {
+  "label": "Các mái phụ phía tây bắc",
+  "p": [
+   -22,
+   60,
+   112
+  ],
+  "t": [
+   27,
+   3,
+   50
+  ],
+  "fov": 64,
+  "note": "Bổ sung mái ngang phía bắc và mái dài sát rào phía tây theo ảnh vệ tinh. Công năng bãi xe và chiều cao chưa được xác minh bằng ảnh mặt đất."
+ },
  "library": {
   "label": "Thư viện · bố trí đề xuất",
   "p": [
@@ -328,15 +433,15 @@ function render(){renderer.render(scene,camera)}
 function applyView(id){const base=views[id]||views.overview;const v=camera.aspect<.8&&base.mobile?{...base,...base.mobile}:base;target.fromArray(v.t);camera.position.fromArray(v.p);camera.fov=v.fov||60;if(camera.aspect<.8&&!base.mobile&&['overview','top','gate','north','tower'].includes(id)){camera.fov=65;camera.position.sub(target).multiplyScalar(1.8).add(target)}camera.updateProjectionMatrix();const d=camera.position.clone().sub(target);radius=d.length();theta=Math.atan2(d.x,d.z);phi=Math.acos(d.y/radius);camera.lookAt(target);picker.value=id;document.querySelector('#caption').textContent=v.label;document.querySelector('header p.small').textContent=v.note;document.body.dataset.camera=id;render()}
 picker.onchange=()=>applyView(picker.value);for(const [id,step]of [['prev',-1],['next',1]])document.querySelector('#'+id).onclick=()=>applyView(names[(names.indexOf(picker.value)+step+names.length)%names.length]);
 async function loadMesh(){
- if('DecompressionStream' in window){try{const r=await fetch('./mesh.bin.gz?v=16884507ff35');if(!r.ok)throw new Error('mesh '+r.status);if((r.headers.get('content-encoding')||'').includes('gzip'))return await r.arrayBuffer();const stream=r.body.pipeThrough(new DecompressionStream('gzip'));return await new Response(stream).arrayBuffer()}catch(error){console.warn('Compressed model unavailable; loading the raw model.')}}
- const r=await fetch('./mesh.bin?v=16884507ff35');if(!r.ok)throw new Error('mesh '+r.status);return await r.arrayBuffer();
+ if('DecompressionStream' in window){try{const r=await fetch('./mesh.bin.gz?v=783a05b9d5d3');if(!r.ok)throw new Error('mesh '+r.status);if((r.headers.get('content-encoding')||'').includes('gzip'))return await r.arrayBuffer();const stream=r.body.pipeThrough(new DecompressionStream('gzip'));return await new Response(stream).arrayBuffer()}catch(error){console.warn('Compressed model unavailable; loading the raw model.')}}
+ const r=await fetch('./mesh.bin?v=783a05b9d5d3');if(!r.ok)throw new Error('mesh '+r.status);return await r.arrayBuffer();
 }
 window.addEventListener('unhandledrejection',()=>{document.querySelector('#loading').textContent='Chưa tải được mô hình. Bạn thử tải lại trang hoặc mở phần Ảnh & chi tiết.';document.body.dataset.error='true'});
-const [meta,meshBuffer]=await Promise.all([fetch('./metadata.json?v=16884507ff35').then(r=>{if(!r.ok)throw new Error('metadata '+r.status);return r.json()}),loadMesh()]);const floats=new Float32Array(meshBuffer);const stride=meta.stride_floats||8;const geom=new THREE.BufferGeometry(),inter=new THREE.InterleavedBuffer(floats,stride);geom.setAttribute('position',new THREE.InterleavedBufferAttribute(inter,3,0));geom.setAttribute('normal',new THREE.InterleavedBufferAttribute(inter,3,3));geom.setAttribute('uv',new THREE.InterleavedBufferAttribute(inter,2,6));if(stride>=11)geom.setAttribute('color',new THREE.InterleavedBufferAttribute(inter,3,8));geom.computeBoundingSphere();
-const atlas=await new THREE.TextureLoader().loadAsync('./atlas.png?v=16884507ff35');atlas.magFilter=THREE.NearestFilter;atlas.minFilter=THREE.NearestMipmapLinearFilter;atlas.generateMipmaps=true;atlas.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());atlas.colorSpace=THREE.SRGBColorSpace;
+const [meta,meshBuffer]=await Promise.all([fetch('./metadata.json?v=783a05b9d5d3').then(r=>{if(!r.ok)throw new Error('metadata '+r.status);return r.json()}),loadMesh()]);const floats=new Float32Array(meshBuffer);const stride=meta.stride_floats||8;const geom=new THREE.BufferGeometry(),inter=new THREE.InterleavedBuffer(floats,stride);geom.setAttribute('position',new THREE.InterleavedBufferAttribute(inter,3,0));geom.setAttribute('normal',new THREE.InterleavedBufferAttribute(inter,3,3));geom.setAttribute('uv',new THREE.InterleavedBufferAttribute(inter,2,6));if(stride>=11)geom.setAttribute('color',new THREE.InterleavedBufferAttribute(inter,3,8));geom.computeBoundingSphere();
+const atlas=await new THREE.TextureLoader().loadAsync('./atlas.png?v=783a05b9d5d3');atlas.magFilter=THREE.NearestFilter;atlas.minFilter=THREE.NearestMipmapLinearFilter;atlas.generateMipmaps=true;atlas.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());atlas.colorSpace=THREE.SRGBColorSpace;
 const opaque=new THREE.MeshLambertMaterial({map:atlas,alphaTest:.35,side:THREE.DoubleSide,vertexColors:stride>=11});const glass=new THREE.MeshLambertMaterial({map:atlas,transparent:true,alphaTest:.02,depthWrite:false,side:THREE.DoubleSide,vertexColors:stride>=11});
 let mats=opaque;if(meta.meshGroups?.length){for(const g of meta.meshGroups)geom.addGroup(g.start,g.count,g.materialIndex??(g.material==='transparent'?1:0));mats=[opaque,glass]}scene.add(new THREE.Mesh(geom,mats));
-const signs=await(await fetch('../sign_texts.json?v=16884507ff35')).json();for(const sign of signs){const c=document.createElement('canvas');c.width=512;c.height=320;const ctx=c.getContext('2d');ctx.fillStyle='#201f18';ctx.textAlign='center';ctx.font='bold 46px sans-serif';sign.lines.forEach((line,i)=>ctx.fillText(line,256,62+i*68,480));const tex=new THREE.CanvasTexture(c);tex.colorSpace=THREE.SRGBColorSpace;const m=new THREE.Mesh(new THREE.PlaneGeometry(.82,.58),new THREE.MeshBasicMaterial({map:tex,transparent:true,side:THREE.DoubleSide}));m.position.set(sign.pos[0]+.5,sign.pos[1]-64+.5,sign.pos[2]+.125);scene.add(m)}
+const signs=await(await fetch('../sign_texts.json?v=783a05b9d5d3')).json();for(const sign of signs){const c=document.createElement('canvas');c.width=512;c.height=320;const ctx=c.getContext('2d');ctx.fillStyle='#201f18';ctx.textAlign='center';ctx.font='bold 46px sans-serif';sign.lines.forEach((line,i)=>ctx.fillText(line,256,62+i*68,480));const tex=new THREE.CanvasTexture(c);tex.colorSpace=THREE.SRGBColorSpace;const m=new THREE.Mesh(new THREE.PlaneGeometry(.82,.58),new THREE.MeshBasicMaterial({map:tex,transparent:true,side:THREE.DoubleSide}));m.position.set(sign.pos[0]+.5,sign.pos[1]-64+.5,sign.pos[2]+.125);scene.add(m)}
 document.querySelector('#loading').textContent=`${meta.blocks.toLocaleString('vi')} block · ${meta.palette.length} trạng thái vật liệu`;
 function update(){camera.position.set(target.x+radius*Math.sin(phi)*Math.sin(theta),target.y+radius*Math.cos(phi),target.z+radius*Math.sin(phi)*Math.cos(theta));camera.lookAt(target);render()}
 const pointers=new Map();let gesture=null;

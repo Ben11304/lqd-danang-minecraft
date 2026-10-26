@@ -5,10 +5,10 @@
     21,
     0
   ],
-  "source_sha256": "16884507ff35e054c16b7911981caabbbf7a74ed266a3187980a1b0a3723e900",
-  "source_entries": 162827,
-  "source_palette_size": 64,
-  "source_blocks_read_back_and_compared": 162827,
+  "source_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
+  "source_entries": 164413,
+  "source_palette_size": 75,
+  "source_blocks_read_back_and_compared": 164413,
   "source_projection_mismatches": [],
   "chunks_read_back": 288,
   "foundation_samples": 1440,
@@ -42,7 +42,7 @@
       "waxed": true
     }
   ],
-  "layout_route_body_cells_checked": 2770,
+  "layout_route_body_cells_checked": 4538,
   "layout_routes_clear": true,
   "spawn_clear": true,
   "palette_projection": [
@@ -50,6 +50,15 @@
       "java": "andesite",
       "bedrock": {
         "name": "minecraft:andesite",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "azalea",
+      "bedrock": {
+        "name": "minecraft:azalea",
         "properties": {},
         "extra_blocks": []
       },
@@ -153,6 +162,17 @@
       "block_entity": null
     },
     {
+      "java": "brick_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:brick_slab",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
       "java": "bricks",
       "bedrock": {
         "name": "minecraft:brick_block",
@@ -180,6 +200,15 @@
         "properties": {
           "dirt_type": "\"coarse\""
         },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "cobblestone",
+      "bedrock": {
+        "name": "minecraft:cobblestone",
+        "properties": {},
         "extra_blocks": []
       },
       "block_entity": null
@@ -226,6 +255,24 @@
       "block_entity": null
     },
     {
+      "java": "fern",
+      "bedrock": {
+        "name": "minecraft:fern",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "flowering_azalea",
+      "bedrock": {
+        "name": "minecraft:flowering_azalea",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
       "java": "grass_block[snowy=false]",
       "bedrock": {
         "name": "minecraft:grass_block",
@@ -247,6 +294,15 @@
       "java": "green_concrete",
       "bedrock": {
         "name": "minecraft:green_concrete",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "iron_bars[east=false,north=false,south=false,west=false,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:iron_bars",
         "properties": {},
         "extra_blocks": []
       },
@@ -335,6 +391,15 @@
       "java": "light_gray_stained_glass",
       "bedrock": {
         "name": "minecraft:light_gray_stained_glass",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "lily_pad",
+      "bedrock": {
+        "name": "minecraft:waterlily",
         "properties": {},
         "extra_blocks": []
       },
@@ -578,6 +643,15 @@
       "block_entity": null
     },
     {
+      "java": "short_grass",
+      "bedrock": {
+        "name": "minecraft:short_grass",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
       "java": "smooth_quartz",
       "bedrock": {
         "name": "minecraft:quartz_block",
@@ -607,6 +681,18 @@
         "name": "minecraft:sandstone",
         "properties": {
           "sand_stone_type": "\"smooth\""
+        },
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "smooth_sandstone_slab[type=bottom,waterlogged=false]",
+      "bedrock": {
+        "name": "minecraft:stone_block_slab2",
+        "properties": {
+          "minecraft:vertical_half": "\"bottom\"",
+          "stone_slab_type_2": "\"smooth_sandstone\""
         },
         "extra_blocks": []
       },
@@ -657,6 +743,15 @@
       "block_entity": null
     },
     {
+      "java": "stone",
+      "bedrock": {
+        "name": "minecraft:stone",
+        "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
       "java": "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
       "bedrock": {
         "name": "minecraft:stone_brick_stairs",
@@ -684,6 +779,17 @@
       "bedrock": {
         "name": "minecraft:hardened_clay",
         "properties": {},
+        "extra_blocks": []
+      },
+      "block_entity": null
+    },
+    {
+      "java": "water[level=0]",
+      "bedrock": {
+        "name": "minecraft:water",
+        "properties": {
+          "liquid_depth": "0"
+        },
         "extra_blocks": []
       },
       "block_entity": null
@@ -734,16 +840,17 @@
     "Java-only block properties, including leaf distance and explicit pane/bars connections, map to Bedrock native semantics.",
     "Architecture dimensions and interiors retain the reconstruction uncertainties documented in the research and detail notes."
   ],
-  "elapsed_seconds": 5.96,
+  "elapsed_seconds": 4.03,
   "reverse_translation_validation": {
-    "source_coordinates_checked": 162827,
-    "exact_java_state_matches": 157910,
-    "equivalent_after_documented_property_normalization": 162827,
+    "source_coordinates_checked": 164413,
+    "exact_java_state_matches": 158932,
+    "equivalent_after_documented_property_normalization": 164413,
     "normalization_only_source_states": {
       "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]": 684,
+      "iron_bars[east=false,north=false,south=false,west=false,waterlogged=false]": 120,
       "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 421,
-      "oak_leaves[distance=1,persistent=true,waterlogged=false]": 2130,
-      "smooth_quartz_slab[type=bottom,waterlogged=false]": 437,
+      "oak_leaves[distance=1,persistent=true,waterlogged=false]": 2480,
+      "smooth_quartz_slab[type=bottom,waterlogged=false]": 441,
       "iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]": 450,
       "birch_slab[type=bottom,waterlogged=false]": 36,
       "birch_slab[type=top,waterlogged=false]": 187,
@@ -756,15 +863,17 @@
       "spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 23,
       "polished_blackstone_slab[type=bottom,waterlogged=false]": 6,
       "quartz_slab[type=bottom,waterlogged=false]": 3,
-      "quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 4,
+      "quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 5,
       "cut_sandstone_slab[type=bottom,waterlogged=false]": 1,
       "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]": 64,
       "birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 75,
       "polished_andesite_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 12,
       "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 24,
+      "smooth_sandstone_slab[type=bottom,waterlogged=false]": 79,
       "spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 12,
+      "brick_slab[type=bottom,waterlogged=false]": 9,
+      "quartz_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 9,
       "oak_wall_sign[facing=south,waterlogged=false]": 3,
-      "quartz_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 8,
       "polished_andesite_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 80,
       "birch_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 3
     },

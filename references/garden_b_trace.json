@@ -1,0 +1,427 @@
+{
+  "component": "garden_b_west_inner_court_v3",
+  "researched_on": "2026-10-26",
+  "location": {
+    "description": "Rectangular courtyard WEST of the thin north/south spine, between the two transverse academic wings.",
+    "bounds_approx_world_xz": [
+      [
+        19,
+        68
+      ],
+      [
+        134,
+        152
+      ]
+    ],
+    "confidence": "moderate: labelled B photo location check supports this courtyard, but source geolocation horizontal uncertainty is about18m; exact camera spot is not fixed.",
+    "naming": "Component file keeps assigned garden_b identifier; public camera should use geographical description until A/B limits are established."
+  },
+  "source_frame": "references/satellite_north.png",
+  "south_to_north_offset_y": 354,
+  "georeference": "references/georeference.json",
+  "trace_uncertainty_m": 2.5,
+  "polygons": {
+    "courtyard_envelope": {
+      "original_pixels_north_frame": [
+        [
+          444,
+          603
+        ],
+        [
+          565,
+          594
+        ],
+        [
+          576,
+          603
+        ],
+        [
+          606,
+          605
+        ],
+        [
+          614,
+          647
+        ],
+        [
+          600,
+          656
+        ],
+        [
+          450,
+          665
+        ],
+        [
+          436,
+          648
+        ]
+      ],
+      "world_xz": [
+        [
+          21.861,
+          134.246
+        ],
+        [
+          55.311,
+          133.999
+        ],
+        [
+          58.168,
+          136.697
+        ],
+        [
+          66.382,
+          137.809
+        ],
+        [
+          67.795,
+          149.595
+        ],
+        [
+          63.775,
+          151.828
+        ],
+        [
+          22.348,
+          151.536
+        ],
+        [
+          18.816,
+          146.565
+        ]
+      ],
+      "status": "canopy envelope, not individual trunks or exact bed edging"
+    },
+    "north_canopy_band": {
+      "original_pixels_north_frame": [
+        [
+          448,
+          606
+        ],
+        [
+          530,
+          598
+        ],
+        [
+          565,
+          599
+        ],
+        [
+          579,
+          612
+        ],
+        [
+          554,
+          620
+        ],
+        [
+          476,
+          628
+        ],
+        [
+          444,
+          623
+        ]
+      ],
+      "world_xz": [
+        [
+          22.905,
+          135.151
+        ],
+        [
+          45.609,
+          134.458
+        ],
+        [
+          55.217,
+          135.385
+        ],
+        [
+          58.824,
+          139.247
+        ],
+        [
+          51.798,
+          140.999
+        ],
+        [
+          30.194,
+          141.767
+        ],
+        [
+          21.486,
+          139.787
+        ]
+      ],
+      "status": "canopy envelope, not individual trunks or exact bed edging"
+    },
+    "south_canopy_band": {
+      "original_pixels_north_frame": [
+        [
+          455,
+          641
+        ],
+        [
+          505,
+          629
+        ],
+        [
+          546,
+          628
+        ],
+        [
+          574,
+          642
+        ],
+        [
+          575,
+          655
+        ],
+        [
+          452,
+          663
+        ],
+        [
+          444,
+          651
+        ]
+      ],
+      "world_xz": [
+        [
+          24.174,
+          144.979
+        ],
+        [
+          38.151,
+          142.583
+        ],
+        [
+          49.447,
+          143.067
+        ],
+        [
+          56.887,
+          147.466
+        ],
+        [
+          56.918,
+          151.087
+        ],
+        [
+          22.936,
+          151.019
+        ],
+        [
+          20.96,
+          147.545
+        ]
+      ],
+      "status": "canopy envelope, not individual trunks or exact bed edging"
+    }
+  },
+  "polylines": {
+    "path_observed_fragments": {
+      "original_pixels_north_frame": [
+        [
+          436,
+          637
+        ],
+        [
+          466,
+          632
+        ],
+        [
+          494,
+          630
+        ],
+        [
+          526,
+          625
+        ],
+        [
+          550,
+          623
+        ],
+        [
+          570,
+          627
+        ],
+        [
+          586,
+          634
+        ],
+        [
+          607,
+          645
+        ]
+      ],
+      "world_xz": [
+        [
+          19.023,
+          143.518
+        ],
+        [
+          27.368,
+          142.689
+        ],
+        [
+          35.107,
+          142.655
+        ],
+        [
+          44.003,
+          141.864
+        ],
+        [
+          50.641,
+          141.756
+        ],
+        [
+          56.068,
+          143.236
+        ],
+        [
+          60.337,
+          145.473
+        ],
+        [
+          65.907,
+          148.91
+        ]
+      ],
+      "status": "visible light gaps / walking fragments joined across canopy; hidden bends are inferred"
+    },
+    "east_connection": {
+      "original_pixels_north_frame": [
+        [
+          607,
+          645
+        ],
+        [
+          617,
+          641
+        ]
+      ],
+      "world_xz": [
+        [
+          65.907,
+          148.91
+        ],
+        [
+          68.733,
+          147.988
+        ]
+      ],
+      "status": "visible light gaps / walking fragments joined across canopy; hidden bends are inferred"
+    }
+  },
+  "primary_photo": {
+    "path": "references/lobby_source_0.jpg",
+    "url": "https://drive.google.com/file/d/19ASqF0LWPNKoxvaHOJ5ktPoeFQvqbRJ4/view",
+    "original_filename": "12D1 sảnh B còn 1 túi rác.HEIC",
+    "provenance": "Public photo-evidence folder linked from teacher/staff youth branch cleaning plan06 dated2024-01-25; photo2024-01-27.",
+    "observed": [
+      "Stone footpath with uneven slate-like pieces and narrow reddish edging",
+      "Lush low planting and square supports densely wrapped in climbing vines",
+      "Opposite cream wall has metal-framed/grilled rectangular windows",
+      "Foreground low cream concrete parapet, one gray pipe rail, terrazzo bench and gray floor tiles"
+    ],
+    "position_check": "Checked original photograph location against live Google Maps satellite; supports the west courtyard near the spine, at stated18m uncertainty. Personal/device metadata is deliberately omitted."
+  },
+  "comparison_photos": [
+    {
+      "path": "private-reference/LQD_DaNang_Minecraft_Research/images/browser_037.jpg",
+      "use": "Architectural example of square concrete pergola, winding stone path and planting; exact relationship to B photo is NOT established. Not used as an independent site locator."
+    },
+    {
+      "path": "private-reference/LQD_DaNang_Minecraft_Research/images/ref_016.jpg",
+      "date": "2008-08-25",
+      "use": "Historic curving pond/fountain garden. Different distinctive features; excluded from this component and handled separately by the south garden agent."
+    },
+    {
+      "path": "private-reference/LQD_DaNang_Minecraft_Research/images/ref_012.jpg",
+      "date": "2025-08-22",
+      "use": "Supports pale gallery/parapet and rail materials; not used to label this garden or copy an entire garden plan."
+    }
+  ],
+  "construction_decisions": {
+    "observed": "Court bounds between traced roofs, dense twin canopy bands and central light walking gaps.",
+    "interpreted": "Individual tree trunks/species/heights; exact path bends under trees; sparse underplanting.",
+    "pergola": "Only a modest representative cluster x52..64,z138..143, beams69; type supported by B photo but exact grid/footprint is provisional.",
+    "not_added": [
+      "No fountain, lily pond, invented dolphin sculpture, or full rectangular paved plaza.",
+      "No trees or clearing operations inside structural footprints."
+    ]
+  },
+  "qa": {
+    "court_cells": 791,
+    "route_cells": 111,
+    "route_single_component": true,
+    "two_block_head_clear": true,
+    "structural_footprint_overlaps": 0,
+    "palette_counts": {
+      "air": 8423,
+      "andesite": 20,
+      "smooth_sandstone": 58,
+      "grass_block[snowy=false]": 667,
+      "oak_leaves[distance=1,persistent=true,waterlogged=false]": 871,
+      "azalea": 15,
+      "cobblestone": 91,
+      "short_grass": 42,
+      "coarse_dirt": 13,
+      "oak_log[axis=y]": 54,
+      "fern": 29
+    },
+    "ground_bfs_destinations": [
+      [
+        63,
+        65,
+        147
+      ],
+      [
+        25,
+        65,
+        143
+      ]
+    ],
+    "cameras": {
+      "east_edge": {
+        "eye": [
+          63,
+          66.7,
+          147
+        ],
+        "target": [
+          43,
+          66.4,
+          141
+        ]
+      },
+      "mid_path": {
+        "eye": [
+          42,
+          66.7,
+          140
+        ],
+        "target": [
+          59,
+          68,
+          140
+        ]
+      },
+      "overhead": {
+        "eye": [
+          44,
+          104,
+          149
+        ],
+        "target": [
+          44,
+          64,
+          142
+        ]
+      }
+    }
+  },
+  "mutations": "Only this trace JSON and parts/layout_garden_b.py/.json. Assembly/buildings/public repo not edited."
+}

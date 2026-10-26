@@ -1,11 +1,12 @@
 {
-  "blocks": 162827,
-  "faces": 184324,
-  "vertices": 1105944,
+  "blocks": 164413,
+  "faces": 189482,
+  "vertices": 1136892,
   "stride": 8,
   "endianness": "little",
   "palette": [
     "andesite",
+    "azalea",
     "birch_button[face=wall,facing=east,powered=false]",
     "birch_planks",
     "birch_slab[type=bottom,waterlogged=false]",
@@ -15,16 +16,21 @@
     "birch_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]",
     "black_concrete",
     "bookshelf",
+    "brick_slab[type=bottom,waterlogged=false]",
     "bricks",
     "chiseled_quartz_block",
     "coarse_dirt",
+    "cobblestone",
     "cut_sandstone_slab[type=bottom,waterlogged=false]",
     "cyan_concrete",
     "cyan_terracotta",
     "dirt",
+    "fern",
+    "flowering_azalea",
     "grass_block[snowy=false]",
     "gray_concrete",
     "green_concrete",
+    "iron_bars[east=false,north=false,south=false,west=false,waterlogged=false]",
     "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]",
     "iron_bars[east=false,north=true,south=true,west=false,waterlogged=false]",
     "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]",
@@ -34,6 +40,7 @@
     "light_blue_concrete",
     "light_gray_concrete",
     "light_gray_stained_glass",
+    "lily_pad",
     "oak_leaves[distance=1,persistent=true,waterlogged=false]",
     "oak_log[axis=y]",
     "oak_planks",
@@ -56,27 +63,31 @@
     "quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]",
     "red_terracotta",
     "sea_lantern",
+    "short_grass",
     "smooth_quartz",
     "smooth_quartz_slab[type=bottom,waterlogged=false]",
     "smooth_sandstone",
+    "smooth_sandstone_slab[type=bottom,waterlogged=false]",
     "smooth_stone",
     "spruce_slab[type=top,waterlogged=false]",
     "spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
     "spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]",
+    "stone",
     "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
     "stone_bricks",
     "terracotta",
+    "water[level=0]",
     "white_concrete",
     "yellow_concrete",
     "yellow_terracotta"
   ],
   "source": "campus.json; exact elements and UVs from official Java1.20.4 client assets",
-  "source_sha256": "16884507ff35e054c16b7911981caabbbf7a74ed266a3187980a1b0a3723e900",
+  "source_sha256": "783a05b9d5d3899a531e8a802b9bb87fbf4c70e756851dac2520f9522168dc09",
   "source_unchanged_during_render": true,
   "renderer_sha256": "6f8648735a309b6dba035b1e7779b25b550077d75cf063873c1a8da624c29d37",
-  "mesh_sha256": "797d073de770660b5f8f26e644e5ccbfe2e983e3ce2ed540a6beaa518da900ab",
-  "atlas_sha256": "a796f4239ef069a551d681d2e89b6b78cc1de211843b78ac3b7d2475990d89f1",
-  "asset_set_sha256": "cf2c9c2bd120b6ddf7e4aa90763d776cb04012b0063bbd447a8fb888f63769a1",
+  "mesh_sha256": "4b190eb5b0c871c4bc249fca6c295d3b6886af2ee9690d05ec17aec2f88f2e63",
+  "atlas_sha256": "0e8ed2f9b1661cefaf10b605dd1e9c852572da45c8d5c03acd1a65a38f53809d",
+  "asset_set_sha256": "66c3a5404f8f17c04d04e399019748cd39819af18a78d5616af3fe71bc1abccd",
   "atlas": {
     "width": 512,
     "height": 512,
@@ -102,9 +113,9 @@
       },
       {
         "index": 1,
-        "texture": "block/birch_planks",
+        "texture": "block/azalea_plant",
         "tint": null,
-        "sha256": "cdbfdcd32d0241c5c6c0179e323cc1a3198b5a86a2936f0553850ffbb9666797",
+        "sha256": "9b9f6aa9210c7b47275698fee8ba2bd5d7e8b309ab685f97ecfde4a832836dea",
         "content_pixel_rect": [
           80,
           16,
@@ -114,9 +125,9 @@
       },
       {
         "index": 2,
-        "texture": "block/black_concrete",
+        "texture": "block/azalea_side",
         "tint": null,
-        "sha256": "0d2f1cf4f6b7f1abada383bb2dbeb4bf274628a65793b2d388805dd8a5c1b0cb",
+        "sha256": "479e13e478b18735b0f2622b498d2390ec012a3efdae5ead5cfae4bd29bcc38d",
         "content_pixel_rect": [
           144,
           16,
@@ -126,9 +137,9 @@
       },
       {
         "index": 3,
-        "texture": "block/bookshelf",
+        "texture": "block/azalea_top",
         "tint": null,
-        "sha256": "a1c9dd1cdd60c60dbd285645af578e4e3f473704489ccab6d329071842f70197",
+        "sha256": "e41d6a29fe0f65a19cb3fcbfd248526bde1c04abdb4ae163621f064c1c44e395",
         "content_pixel_rect": [
           208,
           16,
@@ -138,9 +149,9 @@
       },
       {
         "index": 4,
-        "texture": "block/bricks",
+        "texture": "block/birch_planks",
         "tint": null,
-        "sha256": "33f9411f1cb233a2020df0cf3fda32c0f67a4b0fac3751bde2ba6f2fee81b169",
+        "sha256": "cdbfdcd32d0241c5c6c0179e323cc1a3198b5a86a2936f0553850ffbb9666797",
         "content_pixel_rect": [
           272,
           16,
@@ -150,9 +161,9 @@
       },
       {
         "index": 5,
-        "texture": "block/chiseled_quartz_block",
+        "texture": "block/black_concrete",
         "tint": null,
-        "sha256": "40767ed458089f10c46c7fff891e74afa5860201f6b9f3f264b1d697add48fe5",
+        "sha256": "0d2f1cf4f6b7f1abada383bb2dbeb4bf274628a65793b2d388805dd8a5c1b0cb",
         "content_pixel_rect": [
           336,
           16,
@@ -162,9 +173,9 @@
       },
       {
         "index": 6,
-        "texture": "block/chiseled_quartz_block_top",
+        "texture": "block/bookshelf",
         "tint": null,
-        "sha256": "f04fa86e81ac39c4f25474315c2ef446c36602ff6d901d29bf12c312f137fea0",
+        "sha256": "a1c9dd1cdd60c60dbd285645af578e4e3f473704489ccab6d329071842f70197",
         "content_pixel_rect": [
           400,
           16,
@@ -174,9 +185,9 @@
       },
       {
         "index": 7,
-        "texture": "block/coarse_dirt",
+        "texture": "block/bricks",
         "tint": null,
-        "sha256": "00f317cb04d7484982d4288c4f4ff5ab5c9f881e6940bbac05a84a02b09cb640",
+        "sha256": "33f9411f1cb233a2020df0cf3fda32c0f67a4b0fac3751bde2ba6f2fee81b169",
         "content_pixel_rect": [
           464,
           16,
@@ -186,9 +197,9 @@
       },
       {
         "index": 8,
-        "texture": "block/cut_sandstone",
+        "texture": "block/chiseled_quartz_block",
         "tint": null,
-        "sha256": "3deb1313da4ee31db72e5f29ebaa352d8f6ad77fbd5567bf539a35cc4d6f366e",
+        "sha256": "40767ed458089f10c46c7fff891e74afa5860201f6b9f3f264b1d697add48fe5",
         "content_pixel_rect": [
           16,
           80,
@@ -198,9 +209,9 @@
       },
       {
         "index": 9,
-        "texture": "block/cyan_concrete",
+        "texture": "block/chiseled_quartz_block_top",
         "tint": null,
-        "sha256": "137591d295aa6c13558621c8fa24053420b89a2c65477c5daff3f8c0d9518c49",
+        "sha256": "f04fa86e81ac39c4f25474315c2ef446c36602ff6d901d29bf12c312f137fea0",
         "content_pixel_rect": [
           80,
           80,
@@ -210,9 +221,9 @@
       },
       {
         "index": 10,
-        "texture": "block/cyan_terracotta",
+        "texture": "block/coarse_dirt",
         "tint": null,
-        "sha256": "0a5b6294554ab6152626f48aa9ac35d0a6239302f3e8f5199f90c103393df7d2",
+        "sha256": "00f317cb04d7484982d4288c4f4ff5ab5c9f881e6940bbac05a84a02b09cb640",
         "content_pixel_rect": [
           144,
           80,
@@ -222,9 +233,9 @@
       },
       {
         "index": 11,
-        "texture": "block/dirt",
+        "texture": "block/cobblestone",
         "tint": null,
-        "sha256": "1f0f0e619e7dfe683ea45b9254859f14b0ed5f1debdb242ea878828575be5bf0",
+        "sha256": "bcda95fdf5afa91747657aa198fc0b69ebf44141de30a718075f74045e9a5def",
         "content_pixel_rect": [
           208,
           80,
@@ -234,9 +245,9 @@
       },
       {
         "index": 12,
-        "texture": "block/grass_block_side",
+        "texture": "block/cut_sandstone",
         "tint": null,
-        "sha256": "ab572ac7ebd373abdeb961de1f3cba0afcd91e1acb700745ece4f719790bae3d",
+        "sha256": "3deb1313da4ee31db72e5f29ebaa352d8f6ad77fbd5567bf539a35cc4d6f366e",
         "content_pixel_rect": [
           272,
           80,
@@ -246,9 +257,9 @@
       },
       {
         "index": 13,
-        "texture": "block/grass_block_side_overlay",
-        "tint": "91bd59",
-        "sha256": "43d98318407d9d122b83468cf183d18722e548c2144f9c2ffe2021b5c3e770e0",
+        "texture": "block/cyan_concrete",
+        "tint": null,
+        "sha256": "137591d295aa6c13558621c8fa24053420b89a2c65477c5daff3f8c0d9518c49",
         "content_pixel_rect": [
           336,
           80,
@@ -258,9 +269,9 @@
       },
       {
         "index": 14,
-        "texture": "block/grass_block_top",
-        "tint": "91bd59",
-        "sha256": "52f44b64ce884a13dfe35e4b4da2e35898b790dd4d7a5ea536f1b0c0d56d29b4",
+        "texture": "block/cyan_terracotta",
+        "tint": null,
+        "sha256": "0a5b6294554ab6152626f48aa9ac35d0a6239302f3e8f5199f90c103393df7d2",
         "content_pixel_rect": [
           400,
           80,
@@ -270,9 +281,9 @@
       },
       {
         "index": 15,
-        "texture": "block/gray_concrete",
+        "texture": "block/dirt",
         "tint": null,
-        "sha256": "cf20082db6204d0abe96f4ae66569d45e3f5d111be39f2c4426806c6b20e4c10",
+        "sha256": "1f0f0e619e7dfe683ea45b9254859f14b0ed5f1debdb242ea878828575be5bf0",
         "content_pixel_rect": [
           464,
           80,
@@ -282,9 +293,9 @@
       },
       {
         "index": 16,
-        "texture": "block/green_concrete",
-        "tint": null,
-        "sha256": "5b6fcfbd33ba882074a83620449719c93cc49300e7973606ccaae5d57419456d",
+        "texture": "block/fern",
+        "tint": "91bd59",
+        "sha256": "c8e5d55a1b10a92cd398540412ebf2f035d14c66aa21ec126bb2da6596f94746",
         "content_pixel_rect": [
           16,
           144,
@@ -294,9 +305,9 @@
       },
       {
         "index": 17,
-        "texture": "block/iron_bars",
+        "texture": "block/flowering_azalea_side",
         "tint": null,
-        "sha256": "7a1e5a72fa4d1e37e1077b79a4fe7b3df9b158ad5eefa921d2afbea8cba6d4c5",
+        "sha256": "2e11f7d11958171e8a5a12ca279ee5345f70b7c6960cf02079220d8e06a2c269",
         "content_pixel_rect": [
           80,
           144,
@@ -306,9 +317,9 @@
       },
       {
         "index": 18,
-        "texture": "block/iron_trapdoor",
+        "texture": "block/flowering_azalea_top",
         "tint": null,
-        "sha256": "ca84a5c288bcfe8c9a53f066536175f50effa21e85cfb933094805527c5894ba",
+        "sha256": "8a44e507048de271ef83b99edccc82b93e28d6f60ac9b1bf24db43f28287633e",
         "content_pixel_rect": [
           144,
           144,
@@ -318,9 +329,9 @@
       },
       {
         "index": 19,
-        "texture": "block/lectern_base",
+        "texture": "block/grass_block_side",
         "tint": null,
-        "sha256": "7add44485f9aeb317237aecc1adb672f91d7a00274cb1ca2e709869b208229ad",
+        "sha256": "ab572ac7ebd373abdeb961de1f3cba0afcd91e1acb700745ece4f719790bae3d",
         "content_pixel_rect": [
           208,
           144,
@@ -330,9 +341,9 @@
       },
       {
         "index": 20,
-        "texture": "block/lectern_front",
-        "tint": null,
-        "sha256": "5c407f98f0dfad93d317e57641ff2776d4814c55fd7975a91ab46e82c3ca971a",
+        "texture": "block/grass_block_side_overlay",
+        "tint": "91bd59",
+        "sha256": "43d98318407d9d122b83468cf183d18722e548c2144f9c2ffe2021b5c3e770e0",
         "content_pixel_rect": [
           272,
           144,
@@ -342,9 +353,9 @@
       },
       {
         "index": 21,
-        "texture": "block/lectern_sides",
-        "tint": null,
-        "sha256": "3cea60d4ed44868a058212efa6056252f209db22b2d033f34e41d1a9105dea7f",
+        "texture": "block/grass_block_top",
+        "tint": "91bd59",
+        "sha256": "52f44b64ce884a13dfe35e4b4da2e35898b790dd4d7a5ea536f1b0c0d56d29b4",
         "content_pixel_rect": [
           336,
           144,
@@ -354,9 +365,9 @@
       },
       {
         "index": 22,
-        "texture": "block/lectern_top",
+        "texture": "block/gray_concrete",
         "tint": null,
-        "sha256": "a1b8f9b861ae3b722c4e572dd89db2fbec066a45fba28c603087033224958c71",
+        "sha256": "cf20082db6204d0abe96f4ae66569d45e3f5d111be39f2c4426806c6b20e4c10",
         "content_pixel_rect": [
           400,
           144,
@@ -366,9 +377,9 @@
       },
       {
         "index": 23,
-        "texture": "block/light_blue_concrete",
+        "texture": "block/green_concrete",
         "tint": null,
-        "sha256": "964c54c074d6a94d2ef8a1ffc1a82098f56e7665ac2e309b5a4c03961b840ddf",
+        "sha256": "5b6fcfbd33ba882074a83620449719c93cc49300e7973606ccaae5d57419456d",
         "content_pixel_rect": [
           464,
           144,
@@ -378,9 +389,9 @@
       },
       {
         "index": 24,
-        "texture": "block/light_blue_wool",
+        "texture": "block/iron_bars",
         "tint": null,
-        "sha256": "80ebec0ffcaaeef75809dd94f0583141ebec56198b39603bdcd282b6445fe6ab",
+        "sha256": "7a1e5a72fa4d1e37e1077b79a4fe7b3df9b158ad5eefa921d2afbea8cba6d4c5",
         "content_pixel_rect": [
           16,
           208,
@@ -390,9 +401,9 @@
       },
       {
         "index": 25,
-        "texture": "block/light_gray_concrete",
+        "texture": "block/iron_trapdoor",
         "tint": null,
-        "sha256": "8050c0ce3ad4cc70d7b87fafab61dcbffd8d1b37c5ae471df6edf49e9bf1fb31",
+        "sha256": "ca84a5c288bcfe8c9a53f066536175f50effa21e85cfb933094805527c5894ba",
         "content_pixel_rect": [
           80,
           208,
@@ -402,9 +413,9 @@
       },
       {
         "index": 26,
-        "texture": "block/light_gray_stained_glass",
+        "texture": "block/lectern_base",
         "tint": null,
-        "sha256": "be543d3ad17a329c69b7496bb45ab5ee34d6cb174b35a50c72a871dc45caf1e8",
+        "sha256": "7add44485f9aeb317237aecc1adb672f91d7a00274cb1ca2e709869b208229ad",
         "content_pixel_rect": [
           144,
           208,
@@ -414,9 +425,9 @@
       },
       {
         "index": 27,
-        "texture": "block/oak_leaves",
-        "tint": "77ab2f",
-        "sha256": "69c9c7048695e014aee6b8a2c4cb080607bd7a2a5291c06218b8134cbfcdc04f",
+        "texture": "block/lectern_front",
+        "tint": null,
+        "sha256": "5c407f98f0dfad93d317e57641ff2776d4814c55fd7975a91ab46e82c3ca971a",
         "content_pixel_rect": [
           208,
           208,
@@ -426,9 +437,9 @@
       },
       {
         "index": 28,
-        "texture": "block/oak_log",
+        "texture": "block/lectern_sides",
         "tint": null,
-        "sha256": "060c93128fb65aa350a84e4b6576e616c47d40211bbe537cfe923a81d072e30c",
+        "sha256": "3cea60d4ed44868a058212efa6056252f209db22b2d033f34e41d1a9105dea7f",
         "content_pixel_rect": [
           272,
           208,
@@ -438,9 +449,9 @@
       },
       {
         "index": 29,
-        "texture": "block/oak_log_top",
+        "texture": "block/lectern_top",
         "tint": null,
-        "sha256": "62f38b25ae28b6c4842ee5a83f790394b1ec4d6c6f20dd52044394855346a2a7",
+        "sha256": "a1b8f9b861ae3b722c4e572dd89db2fbec066a45fba28c603087033224958c71",
         "content_pixel_rect": [
           336,
           208,
@@ -450,9 +461,9 @@
       },
       {
         "index": 30,
-        "texture": "block/oak_planks",
+        "texture": "block/light_blue_concrete",
         "tint": null,
-        "sha256": "3a33db67a3ba30537d0890a5cb37c8087ca336be89cbb1393a71c23224e361a8",
+        "sha256": "964c54c074d6a94d2ef8a1ffc1a82098f56e7665ac2e309b5a4c03961b840ddf",
         "content_pixel_rect": [
           400,
           208,
@@ -462,9 +473,9 @@
       },
       {
         "index": 31,
-        "texture": "block/orange_concrete",
+        "texture": "block/light_blue_wool",
         "tint": null,
-        "sha256": "76531a8ae786933581448b091b2e698966e6c6d59b1833cfc88e328d1a04ec11",
+        "sha256": "80ebec0ffcaaeef75809dd94f0583141ebec56198b39603bdcd282b6445fe6ab",
         "content_pixel_rect": [
           464,
           208,
@@ -474,9 +485,9 @@
       },
       {
         "index": 32,
-        "texture": "block/polished_andesite",
+        "texture": "block/light_gray_concrete",
         "tint": null,
-        "sha256": "ffe83daad907f1240fa6f872c5a89aed1d17c5a5c65815e0cdc5cc896069ca16",
+        "sha256": "8050c0ce3ad4cc70d7b87fafab61dcbffd8d1b37c5ae471df6edf49e9bf1fb31",
         "content_pixel_rect": [
           16,
           272,
@@ -486,9 +497,9 @@
       },
       {
         "index": 33,
-        "texture": "block/polished_blackstone",
+        "texture": "block/light_gray_stained_glass",
         "tint": null,
-        "sha256": "df7c7d7328616faf241616af37fbcbc391b09316e7a96667372116eed730313c",
+        "sha256": "be543d3ad17a329c69b7496bb45ab5ee34d6cb174b35a50c72a871dc45caf1e8",
         "content_pixel_rect": [
           80,
           272,
@@ -498,9 +509,9 @@
       },
       {
         "index": 34,
-        "texture": "block/poppy",
-        "tint": null,
-        "sha256": "419b360fb68a795a61100da382884aed41973ee9ba3c236d5a95e47d36462a62",
+        "texture": "block/lily_pad",
+        "tint": "91bd59",
+        "sha256": "5e672ae307932bc4ee46bc29113369bb6f189fdb4f44ca88a1f7408c8ce2d4df",
         "content_pixel_rect": [
           144,
           272,
@@ -510,9 +521,9 @@
       },
       {
         "index": 35,
-        "texture": "block/prismarine",
-        "tint": null,
-        "sha256": "b006f848a18772560cc255dc827ae96f5f01c39b0da9a365c729764c0c9b20f0",
+        "texture": "block/oak_leaves",
+        "tint": "77ab2f",
+        "sha256": "69c9c7048695e014aee6b8a2c4cb080607bd7a2a5291c06218b8134cbfcdc04f",
         "content_pixel_rect": [
           208,
           272,
@@ -522,9 +533,9 @@
       },
       {
         "index": 36,
-        "texture": "block/purple_terracotta",
+        "texture": "block/oak_log",
         "tint": null,
-        "sha256": "58710e8a23e1a6a9e7475df241391bb9c91196c781e5e4104eb9f45de6d0b093",
+        "sha256": "060c93128fb65aa350a84e4b6576e616c47d40211bbe537cfe923a81d072e30c",
         "content_pixel_rect": [
           272,
           272,
@@ -534,9 +545,9 @@
       },
       {
         "index": 37,
-        "texture": "block/quartz_block_bottom",
+        "texture": "block/oak_log_top",
         "tint": null,
-        "sha256": "71257d89af4fa37b33d9454eb6575ec187022dfc591c39a771bd0ffb1cad23e5",
+        "sha256": "62f38b25ae28b6c4842ee5a83f790394b1ec4d6c6f20dd52044394855346a2a7",
         "content_pixel_rect": [
           336,
           272,
@@ -546,9 +557,9 @@
       },
       {
         "index": 38,
-        "texture": "block/quartz_block_side",
+        "texture": "block/oak_planks",
         "tint": null,
-        "sha256": "6a1525cca96303a1fa02e019861ae4fe795c9ad93a79123c654db242cce898f8",
+        "sha256": "3a33db67a3ba30537d0890a5cb37c8087ca336be89cbb1393a71c23224e361a8",
         "content_pixel_rect": [
           400,
           272,
@@ -558,9 +569,9 @@
       },
       {
         "index": 39,
-        "texture": "block/quartz_block_top",
+        "texture": "block/orange_concrete",
         "tint": null,
-        "sha256": "6a1525cca96303a1fa02e019861ae4fe795c9ad93a79123c654db242cce898f8",
+        "sha256": "76531a8ae786933581448b091b2e698966e6c6d59b1833cfc88e328d1a04ec11",
         "content_pixel_rect": [
           464,
           272,
@@ -570,9 +581,9 @@
       },
       {
         "index": 40,
-        "texture": "block/red_terracotta",
+        "texture": "block/polished_andesite",
         "tint": null,
-        "sha256": "e531a94e310f4f6b1ec9d07ed990f628b724a2f7f5040935162c9ca30c38fa93",
+        "sha256": "ffe83daad907f1240fa6f872c5a89aed1d17c5a5c65815e0cdc5cc896069ca16",
         "content_pixel_rect": [
           16,
           336,
@@ -582,9 +593,9 @@
       },
       {
         "index": 41,
-        "texture": "block/sandstone_top",
+        "texture": "block/polished_blackstone",
         "tint": null,
-        "sha256": "321c39b772533abf1b6441d484d05e8e7bf1fa017c97acafcaec9e63781cb40c",
+        "sha256": "df7c7d7328616faf241616af37fbcbc391b09316e7a96667372116eed730313c",
         "content_pixel_rect": [
           80,
           336,
@@ -594,9 +605,9 @@
       },
       {
         "index": 42,
-        "texture": "block/sea_lantern",
+        "texture": "block/poppy",
         "tint": null,
-        "sha256": "e6c54c1ecf81210c94e95d629e4d61b8424075425bb574c635504d2e0b96f59c",
+        "sha256": "419b360fb68a795a61100da382884aed41973ee9ba3c236d5a95e47d36462a62",
         "content_pixel_rect": [
           144,
           336,
@@ -606,9 +617,9 @@
       },
       {
         "index": 43,
-        "texture": "block/smooth_stone",
+        "texture": "block/prismarine",
         "tint": null,
-        "sha256": "53d5b70ba4b3879b8ec7e931ee5c7250859081b4fea41690fd0261271cdb3623",
+        "sha256": "b006f848a18772560cc255dc827ae96f5f01c39b0da9a365c729764c0c9b20f0",
         "content_pixel_rect": [
           208,
           336,
@@ -618,9 +629,9 @@
       },
       {
         "index": 44,
-        "texture": "block/spruce_planks",
+        "texture": "block/purple_terracotta",
         "tint": null,
-        "sha256": "43ddc665352825876985faaed7e5f7b958f9b8fc3cad56d7bca1c2db7a54949a",
+        "sha256": "58710e8a23e1a6a9e7475df241391bb9c91196c781e5e4104eb9f45de6d0b093",
         "content_pixel_rect": [
           272,
           336,
@@ -630,9 +641,9 @@
       },
       {
         "index": 45,
-        "texture": "block/stone_bricks",
+        "texture": "block/quartz_block_bottom",
         "tint": null,
-        "sha256": "33da66239c5586ee712ffa3fab45927cd7d4968cf111829d3049f84152d85953",
+        "sha256": "71257d89af4fa37b33d9454eb6575ec187022dfc591c39a771bd0ffb1cad23e5",
         "content_pixel_rect": [
           336,
           336,
@@ -642,9 +653,9 @@
       },
       {
         "index": 46,
-        "texture": "block/terracotta",
+        "texture": "block/quartz_block_side",
         "tint": null,
-        "sha256": "0070431576a05bab0e0383afafdc4d2c6f46e04dac2c54a90afecc97f759b4fb",
+        "sha256": "6a1525cca96303a1fa02e019861ae4fe795c9ad93a79123c654db242cce898f8",
         "content_pixel_rect": [
           400,
           336,
@@ -654,9 +665,9 @@
       },
       {
         "index": 47,
-        "texture": "block/white_concrete",
+        "texture": "block/quartz_block_top",
         "tint": null,
-        "sha256": "2498f62595e4520d2168b0a446bd5d616bbdeeb41983708f7c12a88e69edd7de",
+        "sha256": "6a1525cca96303a1fa02e019861ae4fe795c9ad93a79123c654db242cce898f8",
         "content_pixel_rect": [
           464,
           336,
@@ -666,9 +677,9 @@
       },
       {
         "index": 48,
-        "texture": "block/yellow_concrete",
+        "texture": "block/red_terracotta",
         "tint": null,
-        "sha256": "6d84546da37093e0142702163863bb130dbaa49acd82a4ad0978288fb90cc07a",
+        "sha256": "e531a94e310f4f6b1ec9d07ed990f628b724a2f7f5040935162c9ca30c38fa93",
         "content_pixel_rect": [
           16,
           400,
@@ -678,12 +689,144 @@
       },
       {
         "index": 49,
+        "texture": "block/sandstone_top",
+        "tint": null,
+        "sha256": "321c39b772533abf1b6441d484d05e8e7bf1fa017c97acafcaec9e63781cb40c",
+        "content_pixel_rect": [
+          80,
+          400,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 50,
+        "texture": "block/sea_lantern",
+        "tint": null,
+        "sha256": "e6c54c1ecf81210c94e95d629e4d61b8424075425bb574c635504d2e0b96f59c",
+        "content_pixel_rect": [
+          144,
+          400,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 51,
+        "texture": "block/short_grass",
+        "tint": "91bd59",
+        "sha256": "ca8502acca569a1e1ac5e69ac296d4ad2e4faa4d179beeb4ece67125cc998ace",
+        "content_pixel_rect": [
+          208,
+          400,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 52,
+        "texture": "block/smooth_stone",
+        "tint": null,
+        "sha256": "53d5b70ba4b3879b8ec7e931ee5c7250859081b4fea41690fd0261271cdb3623",
+        "content_pixel_rect": [
+          272,
+          400,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 53,
+        "texture": "block/spruce_planks",
+        "tint": null,
+        "sha256": "43ddc665352825876985faaed7e5f7b958f9b8fc3cad56d7bca1c2db7a54949a",
+        "content_pixel_rect": [
+          336,
+          400,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 54,
+        "texture": "block/stone",
+        "tint": null,
+        "sha256": "33ac70ba8cb701087642a12c5fd29c1ba3006dc4730e9b014ed3a19ce7cdda7b",
+        "content_pixel_rect": [
+          400,
+          400,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 55,
+        "texture": "block/stone_bricks",
+        "tint": null,
+        "sha256": "33da66239c5586ee712ffa3fab45927cd7d4968cf111829d3049f84152d85953",
+        "content_pixel_rect": [
+          464,
+          400,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 56,
+        "texture": "block/terracotta",
+        "tint": null,
+        "sha256": "0070431576a05bab0e0383afafdc4d2c6f46e04dac2c54a90afecc97f759b4fb",
+        "content_pixel_rect": [
+          16,
+          464,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 57,
+        "texture": "block/water_still",
+        "tint": "3f76e4",
+        "sha256": "5843e8826507c484dfc15d5d255843d041804bcaa2036ed137320610d7fb9af7",
+        "content_pixel_rect": [
+          80,
+          464,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 58,
+        "texture": "block/white_concrete",
+        "tint": null,
+        "sha256": "2498f62595e4520d2168b0a446bd5d616bbdeeb41983708f7c12a88e69edd7de",
+        "content_pixel_rect": [
+          144,
+          464,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 59,
+        "texture": "block/yellow_concrete",
+        "tint": null,
+        "sha256": "6d84546da37093e0142702163863bb130dbaa49acd82a4ad0978288fb90cc07a",
+        "content_pixel_rect": [
+          208,
+          464,
+          32,
+          32
+        ]
+      },
+      {
+        "index": 60,
         "texture": "block/yellow_terracotta",
         "tint": null,
         "sha256": "9a58331a3f4f0cc1f0d886510a11c62649b4ac20019e45a23b5ebf443c09e316",
         "content_pixel_rect": [
-          80,
-          400,
+          272,
+          464,
           32,
           32
         ]
@@ -693,12 +836,12 @@
   "meshGroups": [
     {
       "start": 0,
-      "count": 1049196,
+      "count": 1080144,
       "materialIndex": 0,
       "name": "opaque_and_alpha_cutout"
     },
     {
-      "start": 1049196,
+      "start": 1080144,
       "count": 56748,
       "materialIndex": 1,
       "name": "transparent_glass"
@@ -870,26 +1013,31 @@
     }
   },
   "faces_by_state": {
-    "dirt": 956,
-    "grass_block[snowy=false]": 35464,
+    "dirt": 1019,
+    "grass_block[snowy=false]": 34897,
     "gray_concrete": 6464,
-    "white_concrete": 10963,
+    "white_concrete": 11976,
     "smooth_stone": 42341,
-    "smooth_sandstone": 13923,
+    "smooth_sandstone": 14315,
     "stone_bricks": 1636,
     "iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]": 13488,
+    "andesite": 2940,
+    "iron_bars[east=false,north=false,south=false,west=false,waterlogged=false]": 960,
     "iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]": 8308,
-    "andesite": 2752,
-    "oak_leaves[distance=1,persistent=true,waterlogged=false]": 3870,
-    "coarse_dirt": 2260,
-    "smooth_quartz_slab[type=bottom,waterlogged=false]": 2185,
-    "oak_log[axis=y]": 754,
+    "light_gray_concrete": 7727,
+    "oak_leaves[distance=1,persistent=true,waterlogged=false]": 4566,
+    "coarse_dirt": 2273,
+    "smooth_quartz_slab[type=bottom,waterlogged=false]": 2208,
+    "oak_log[axis=y]": 797,
     "light_gray_stained_glass": 9458,
     "iron_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]": 2152,
-    "light_gray_concrete": 7238,
+    "cobblestone": 157,
     "quartz_block": 2468,
     "birch_planks": 699,
+    "fern": 116,
     "bookshelf": 216,
+    "short_grass": 168,
+    "azalea": 209,
     "birch_slab[type=bottom,waterlogged=false]": 177,
     "lectern[facing=south,has_book=false,powered=false]": 288,
     "birch_slab[type=top,waterlogged=false]": 1022,
@@ -898,7 +1046,7 @@
     "oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 150,
     "black_concrete": 147,
     "sea_lantern": 245,
-    "smooth_quartz": 1889,
+    "smooth_quartz": 1892,
     "oak_slab[type=top,waterlogged=false]": 54,
     "birch_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 966,
     "light_blue_carpet": 1050,
@@ -910,11 +1058,11 @@
     "polished_blackstone_slab[type=bottom,waterlogged=false]": 27,
     "quartz_slab[type=bottom,waterlogged=false]": 15,
     "chiseled_quartz_block": 5,
-    "quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 42,
+    "quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 53,
     "cut_sandstone_slab[type=bottom,waterlogged=false]": 5,
     "birch_button[face=wall,facing=east,powered=false]": 5,
     "bricks": 726,
-    "red_terracotta": 753,
+    "red_terracotta": 1180,
     "cyan_terracotta": 150,
     "prismarine": 213,
     "purple_terracotta": 770,
@@ -925,12 +1073,18 @@
     "light_blue_concrete": 258,
     "stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 241,
     "orange_concrete": 16,
-    "terracotta": 988,
+    "terracotta": 1037,
+    "stone": 51,
+    "smooth_sandstone_slab[type=bottom,waterlogged=false]": 395,
+    "water[level=0]": 63,
+    "flowering_azalea": 56,
+    "lily_pad": 84,
     "spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 96,
     "yellow_concrete": 4,
+    "brick_slab[type=bottom,waterlogged=false]": 45,
+    "quartz_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 91,
     "oak_wall_sign[facing=south,waterlogged=false]": 11,
     "yellow_terracotta": 28,
-    "quartz_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 80,
     "cyan_concrete": 639,
     "polished_andesite_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 798,
     "birch_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 30
@@ -941,11 +1095,14 @@
   "defaulted_properties": {},
   "uv_outside_sprite_states": [],
   "special_geometry": [
-    "wall_sign: thin board geometry; text is rendered separately by HTML"
+    "wall_sign: thin board geometry; text is rendered separately by HTML",
+    "water: flat still-fluid surface at8/9 block; neighbour-aware top/side culling"
   ],
   "weighted_variants_deterministic_first": [
     "dirt",
-    "grass_block[snowy=false]"
+    "grass_block[snowy=false]",
+    "lily_pad",
+    "stone"
   ],
   "limitations": [
     "Preview lighting is not the Minecraft light engine; no per-vertex AO is baked into stride8.",
